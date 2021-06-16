@@ -31,9 +31,10 @@ Pod::Spec.new do |s|
   end
   
   s.subspec "Prebid" do |ss|
-    ss.vendored_frameworks = 'sdks/Playwire_Prebid.xcframework', 'sdks/PrebidMobile.framework'
+    ss.vendored_frameworks = 'sdks/Playwire_Prebid.xcframework'
     ss.preserve_paths =  'sdks/Playwire_Prebid.xcframework/*'
     
+    ss.dependency 'PrebidMobile', '1.8.2'
     ss.dependency 'Playwire/Core', "#{s.version}"
   end
 
