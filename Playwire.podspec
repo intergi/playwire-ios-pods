@@ -30,6 +30,13 @@ Pod::Spec.new do |s|
     ss.dependency 'AmazonPublisherServicesSDK', '~> 3.3.0'
   end
   
+  s.subspec "Prebid" do |ss|
+    ss.vendored_frameworks = 'sdks/Playwire_Prebid.xcframework', 'sdks/PrebidMobile.framework'
+    ss.preserve_paths =  'sdks/Playwire_Prebid.xcframework/*'
+    
+    ss.dependency 'Playwire/Core', "#{s.version}"
+  end
+
   s.subspec "Smaato" do |ss|
     ss.vendored_frameworks = 'sdks/Playwire_Smaato.xcframework'
     ss.preserve_paths =  'sdks/Playwire_Smaato.xcframework/*'
@@ -40,6 +47,7 @@ Pod::Spec.new do |s|
   
   s.subspec "Total" do |ss|
     ss.dependency 'Playwire/Amazon', "#{s.version}"
+    ss.dependency 'Playwire/Prebid', "#{s.version}"
     ss.dependency 'Playwire/Smaato', "#{s.version}"
 
     ss.dependency 'GoogleMobileAdsMediationAdColony', '4.1.5.0'
