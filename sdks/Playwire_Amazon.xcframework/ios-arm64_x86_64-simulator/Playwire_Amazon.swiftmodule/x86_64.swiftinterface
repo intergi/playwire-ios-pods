@@ -10,10 +10,3 @@ import Swift
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers public class PWAdBidder_Amazon : Playwire.PWAdBidder, DTBiOSSDK.DTBAdCallback {
-  override open func load()
-  @objc public func onFailure(_ error: DTBiOSSDK.DTBAdError)
-  @objc public func onSuccess(_ adResponse: DTBiOSSDK.DTBAdResponse!)
-  @objc required dynamic public init()
-  @objc deinit
-}
