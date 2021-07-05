@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Playwire'
-  s.version          = '2.2.1'
+  s.version          = '2.6.0'
   s.summary          = 'Playwire SDK'
   s.homepage         = 'https://www.playwire.com'
   s.license          = { :type => 'Custom', :file => 'LICENSE' }
@@ -55,6 +55,9 @@ Pod::Spec.new do |s|
     ss.dependency 'GoogleMobileAdsMediationChartboost', '8.1.0.1'
     ss.dependency 'GoogleMobileAdsMediationFyber', '7.5.6.0'
     ss.dependency 'GoogleMobileAdsMediationInMobi', '9.0.7.0'
+    ss.dependency 'GoogleMobileAdsMediationIronSource', '6.16.3.0'
+    ss.dependency 'GoogleMobileAdsMediationVungle', '6.5.3.0'
+
   end
   
   # Adding excluded archs because of failing lint process (some dependencies still don't support arm64)
@@ -64,7 +67,7 @@ Pod::Spec.new do |s|
   }
   s.user_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/Playwire/**'
+    'SWIFT_INCLUDE_PATHS' => "$(PODS_XCFRAMEWORKS_BUILD_DIR)/**"
   }
 
   # Adding tests with a swift dependency is a workaround in order to make pod lib lint work
