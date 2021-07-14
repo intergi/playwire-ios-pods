@@ -231,6 +231,7 @@ SWIFT_CLASS("_TtC8Playwire19PWAdUnitStoreConfig")
 
 @protocol PWBannerViewDelegate;
 @class NSString;
+@class NSNumber;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8Playwire12PWBannerView")
@@ -238,7 +239,7 @@ SWIFT_CLASS("_TtC8Playwire12PWBannerView")
 @property (nonatomic, weak) id <PWBannerViewDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWBannerViewDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
-@property (nonatomic, readonly) CGSize intrinsicContentSize;
+@property (nonatomic, readonly) BOOL isLoaded;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -280,6 +281,7 @@ SWIFT_CLASS("_TtC8Playwire14PWInterstitial")
 @property (nonatomic, weak) id <PWInterstitialDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWInterstitialDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
+@property (nonatomic, readonly) BOOL isLoaded;
 - (void)showFromViewController:(UIViewController * _Nonnull)viewController;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -325,6 +327,7 @@ SWIFT_CLASS("_TtC8Playwire10PWRewarded")
 @property (nonatomic, weak) id <PWRewardedDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWRewardedDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (void)load;
+@property (nonatomic, readonly) BOOL isLoaded;
 - (void)showFromViewController:(UIViewController * _Nonnull)viewController;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

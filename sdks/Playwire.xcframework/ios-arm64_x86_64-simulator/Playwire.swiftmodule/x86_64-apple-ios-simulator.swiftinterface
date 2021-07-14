@@ -34,6 +34,9 @@ import UserMessagingPlatform
   @objc weak public var delegate: Playwire.PWInterstitialDelegate?
   @objc public init(adUnitName: Swift.String, delegate: Playwire.PWInterstitialDelegate? = nil)
   @objc public func load()
+  @objc public var isLoaded: Swift.Bool {
+    @objc get
+  }
   @objc public func show(fromViewController viewController: UIKit.UIViewController)
   @objc override dynamic public init()
   @objc deinit
@@ -59,7 +62,7 @@ extension PWInterstitial : GoogleMobileAds.GADInterstitialDelegate {
   @objc weak public var delegate: Playwire.PWBannerViewDelegate?
   @objc public init(adUnitName: Swift.String, delegate: Playwire.PWBannerViewDelegate? = nil)
   @objc public func load()
-  @objc override dynamic public var intrinsicContentSize: CoreGraphics.CGSize {
+  @objc public var isLoaded: Swift.Bool {
     @objc get
   }
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
@@ -85,6 +88,9 @@ extension PWBannerView : GoogleMobileAds.GADBannerViewDelegate {
   @objc weak public var delegate: Playwire.PWRewardedDelegate?
   @objc public init(adUnitName: Swift.String, delegate: Playwire.PWRewardedDelegate? = nil)
   @objc public func load()
+  @objc public var isLoaded: Swift.Bool {
+    @objc get
+  }
   @objc public func show(fromViewController viewController: UIKit.UIViewController)
   @objc override dynamic public init()
   @objc deinit
