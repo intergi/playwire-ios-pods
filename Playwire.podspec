@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Playwire'
-  s.version          = '3.0.0'
+  s.version          = '3.0.1'
   s.summary          = 'Playwire SDK'
   s.homepage         = 'https://www.playwire.com'
   s.license          = { :type => 'Custom', :file => 'LICENSE' }
@@ -18,8 +18,7 @@ Pod::Spec.new do |s|
     ss.vendored_frameworks = 'sdks/Playwire.xcframework'
     ss.preserve_paths =  'sdks/Playwire.xcframework/*'
     
-    ss.dependency 'GoogleUserMessagingPlatform', '~> 1.2.0'
-    ss.dependency 'Google-Mobile-Ads-SDK', '~> 7.60.0' 
+    ss.dependency 'Google-Mobile-Ads-SDK', '8.0.0' 
   end
   
   s.subspec "Amazon" do |ss|
@@ -27,7 +26,7 @@ Pod::Spec.new do |s|
     ss.preserve_paths =  'sdks/Playwire_Amazon.xcframework/*'
     
     ss.dependency 'Playwire/Core', "#{s.version}"
-    ss.dependency 'AmazonPublisherServicesSDK', '~> 3.3.0'
+    ss.dependency 'AmazonPublisherServicesSDK', '4.1.0'
   end
   
   s.subspec "Prebid" do |ss|
@@ -42,7 +41,7 @@ Pod::Spec.new do |s|
     ss.preserve_paths =  'sdks/Playwire_Smaato.xcframework/*'
     
     ss.dependency 'Playwire/Core', "#{s.version}"
-    ss.dependency 'SmaatoSDK', '~> 10.2.7'
+    ss.dependency 'SmaatoSDK', '10.2.7'
   end
   
   s.subspec "Total" do |ss|
@@ -50,13 +49,13 @@ Pod::Spec.new do |s|
     ss.dependency 'Playwire/Prebid', "#{s.version}"
     ss.dependency 'Playwire/Smaato', "#{s.version}"
 
-    ss.dependency 'GoogleMobileAdsMediationAdColony', '4.1.5.0'
-    ss.dependency 'GoogleMobileAdsMediationAppLovin', '6.12.8.0'
-    ss.dependency 'GoogleMobileAdsMediationChartboost', '8.1.0.1'
-    ss.dependency 'GoogleMobileAdsMediationFyber', '7.5.6.0'
-    ss.dependency 'GoogleMobileAdsMediationInMobi', '9.0.7.0'
-    ss.dependency 'GoogleMobileAdsMediationIronSource', '6.16.3.0'
-    ss.dependency 'GoogleMobileAdsMediationVungle', '6.5.3.0'
+    ss.dependency 'GoogleMobileAdsMediationAdColony'
+    ss.dependency 'GoogleMobileAdsMediationAppLovin'
+    ss.dependency 'GoogleMobileAdsMediationChartboost'
+    ss.dependency 'GoogleMobileAdsMediationFyber'
+    ss.dependency 'GoogleMobileAdsMediationInMobi'
+    ss.dependency 'GoogleMobileAdsMediationIronSource'
+    ss.dependency 'GoogleMobileAdsMediationVungle'
 
   end
   
