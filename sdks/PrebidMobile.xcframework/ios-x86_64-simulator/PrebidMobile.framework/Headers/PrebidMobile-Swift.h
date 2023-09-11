@@ -1058,7 +1058,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) EventType * 
 
 /// Defines the User Id Object from an External Thrid Party Source
 SWIFT_CLASS("_TtC12PrebidMobile14ExternalUserId")
-@interface ExternalUserId : NSObject <NSCoding>
+@interface ExternalUserId : NSObject <NSSecureCoding>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL supportsSecureCoding;)
++ (BOOL)supportsSecureCoding SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, copy) NSString * _Nonnull source;
 @property (nonatomic, copy) NSString * _Nonnull identifier;
 @property (nonatomic, strong) NSNumber * _Nullable atype;
@@ -1503,6 +1505,11 @@ SWIFT_CLASS_NAMED("MediationUtils")
 + (BOOL)isServerParameterInTargetingInfoDict:(NSString * _Nonnull)serverParameter :(NSDictionary<NSString *, NSString *> * _Nonnull)targetingInfoDictionary SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isServerParameterDictInTargetingInfoDict:(NSDictionary<NSString *, NSString *> * _Nonnull)serverParametersDictionary :(NSDictionary<NSString *, NSString *> * _Nonnull)targetingInfoDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface NSString (SWIFT_EXTENSION(PrebidMobile))
+@property (nonatomic, readonly, strong) UIImage * _Nullable base64DecodedImage;
 @end
 
 @class NativeAdMarkup;
@@ -1980,6 +1987,8 @@ SWIFT_CLASS("_TtC12PrebidMobile15PrebidConstants")
 @interface PrebidConstants : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<PBApi *> * _Nonnull supportedRenderingBannerAPISignals;)
 + (NSArray<PBApi *> * _Nonnull)supportedRenderingBannerAPISignals SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull companionHTMLTemplate;)
++ (NSString * _Nonnull)companionHTMLTemplate SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1991,6 +2000,20 @@ typedef SWIFT_ENUM(NSInteger, PrebidHost, open) {
   PrebidHostCustom = 2,
 };
 
+
+SWIFT_CLASS("_TtC12PrebidMobile22PrebidImagesRepository")
+@interface PrebidImagesRepository : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull muteDisabled;)
++ (NSString * _Nonnull)muteDisabled SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull muteEnabled;)
++ (NSString * _Nonnull)muteEnabled SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull closeButton;)
++ (NSString * _Nonnull)closeButton SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull skipButton;)
++ (NSString * _Nonnull)skipButton SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 typedef SWIFT_ENUM(NSInteger, PrebidInitializationStatus, open) {
 /// Prebid SDK successfully initialized.
   PrebidInitializationStatusSucceeded = 0,
@@ -1999,6 +2022,28 @@ typedef SWIFT_ENUM(NSInteger, PrebidInitializationStatus, open) {
 /// Something went wrong during PBS status checking.
   PrebidInitializationStatusServerStatusWarning = 2,
 };
+
+
+SWIFT_CLASS("_TtC12PrebidMobile15PrebidJSLibrary")
+@interface PrebidJSLibrary : NSObject
+@property (nonatomic, copy) NSString * _Nullable downloadURLString;
+@property (nonatomic, copy) NSString * _Nonnull name;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name downloadURLString:(NSString * _Nullable)downloadURLString OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC12PrebidMobile22PrebidJSLibraryManager")
+@interface PrebidJSLibraryManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PrebidJSLibraryManager * _Nonnull shared;)
++ (PrebidJSLibraryManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (void)downloadLibraries;
+- (NSString * _Nullable)getMRAIDLibrary SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getOMSDKLibrary SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_PROTOCOL("_TtP12PrebidMobile23PrebidMediationDelegate_")

@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Assets.car</key>
-		<data>
-		bAe/fXsJgDqxs+/0yYvpCPPZBiA=
-		</data>
 		<key>Headers/Log+Extensions.h</key>
 		<data>
 		35acOECTc3dT+UxpeEM4qy9c9qQ=
@@ -166,7 +162,7 @@
 		</data>
 		<key>Headers/PBMInterstitialDisplayProperties.h</key>
 		<data>
-		CoLzY3psMpAtwKpqqhriSzmiHD0=
+		VJRXw/dAIuDtys1E2X+zq50mWI8=
 		</data>
 		<key>Headers/PBMInterstitialEventHandler.h</key>
 		<data>
@@ -302,7 +298,7 @@
 		</data>
 		<key>Headers/PBMOpenMeasurementWrapper.h</key>
 		<data>
-		Fy8WbX8mTWKw4pxH4yjNDBuvoZo=
+		OVfiqQ2XCCQ4sJ1RKet6fWthiYE=
 		</data>
 		<key>Headers/PBMPrimaryAdRequesterProtocol.h</key>
 		<data>
@@ -402,7 +398,7 @@
 		</data>
 		<key>Headers/PrebidMobile-Swift.h</key>
 		<data>
-		21S8yu9z77Te+XZWg9VdEgRQeC0=
+		VRkPROc1leitWYHRLCVd/7JCcXM=
 		</data>
 		<key>Headers/PrebidMobile.h</key>
 		<data>
@@ -414,15 +410,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		z9pSkwq/92ntslJQr7zhKShhgCA=
+		UcIomM9Z10JYIkXMQWdIkBQbznQ=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		jj4s/Zfd0r0dWomSdREGCP9bCjQ=
+		nAzmsqQR59O4/aKDO1AfsxTSXps=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		kB866WAw/h/xj3lpLqx7G5lU5Po=
+		DW63p+eTijgXmZ8YB0XuHIUJuq8=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -430,11 +426,11 @@
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kB866WAw/h/xj3lpLqx7G5lU5Po=
+		DW63p+eTijgXmZ8YB0XuHIUJuq8=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		t/G8X7LExVCB0+sLFf68PP6Ksxc=
+		5RZvd1UHLT43szx9viWAaMkga8k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -444,28 +440,9 @@
 		<data>
 		gc0iZppOMnMt+OhXrMefvSduNcM=
 		</data>
-		<key>companion.html</key>
-		<data>
-		NhLCGomJdkcbLTXc1GHXRF2JSzs=
-		</data>
-		<key>mraid.js</key>
-		<data>
-		w/U1CCucLpP/H2bl8eyI6hhGRso=
-		</data>
-		<key>omsdk.js</key>
-		<data>
-		IArKkjSttaekVM5vECqRl6g52NU=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Bn0s02KbDHrL5aTdIB16o3Ph+PCsn6DNv7m5qQ0XHJM=
-			</data>
-		</dict>
 		<key>Headers/Log+Extensions.h</key>
 		<dict>
 			<key>hash2</key>
@@ -743,7 +720,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UtSVLxy+SqeA1m2T3cPf/AOuir8UWWtCIT8SAwpQfek=
+			4eobf8O3ZF6BviXeY7bsHz19Dtech0BGtiUg7Fz1/q4=
 			</data>
 		</dict>
 		<key>Headers/PBMInterstitialEventHandler.h</key>
@@ -981,7 +958,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1vT96a8R1cyFNbx/GDtEBpVyGQj/6ie31Bp3+xWyzwQ=
+			YaVl7tn41E/52j6843dNDqQ/XAMDL4NVQVlvVaoTOa8=
 			</data>
 		</dict>
 		<key>Headers/PBMPrimaryAdRequesterProtocol.h</key>
@@ -1156,7 +1133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uIZaHGA6V0El5f7LaUb4KpAh6b29Wq7QddZI1KBswVs=
+			2VY5F/RLDBQ25EJNDowkE5wPHIto+mrXYnw0nfMI0rQ=
 			</data>
 		</dict>
 		<key>Headers/PrebidMobile.h</key>
@@ -1177,14 +1154,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+wyukX+fqAf9pvnPk48AkbACJDqXLjfH9HdpEA3ja4Q=
+			bvDZg6+xVMqTuc2iwgTtrLErHrWxPhEJK2CZVeUDNW8=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nicNvaSggHjPzHV3N3zqad8BK00XInjWklCsLO8hMoE=
+			mGJcGJGkGq1tWgnaRWhuq64Xy5gpU+Ktr5TKsPnUVsU=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1198,14 +1175,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nicNvaSggHjPzHV3N3zqad8BK00XInjWklCsLO8hMoE=
+			mGJcGJGkGq1tWgnaRWhuq64Xy5gpU+Ktr5TKsPnUVsU=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EB/OUcCA4RCuhuwcU/+hvqqiMvZdQSYaIQShKjTC66k=
+			/8rkDctvlRbAFqv2gvKljUDO2rdxxKxqr3+/ABi0L/8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1220,27 +1197,6 @@
 			<key>hash2</key>
 			<data>
 			lvV95hS4jlgUozguYTbNiBhWaViQPrWKHNUVoSGwD58=
-			</data>
-		</dict>
-		<key>companion.html</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UsYyo6mmGwMOG5UV8/U9wCXXmIMMgtemG022RTT6plo=
-			</data>
-		</dict>
-		<key>mraid.js</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fmiQYqOzEVjTDwJr3YyfzYPTVXu1A2DgTcbK6dGeiJM=
-			</data>
-		</dict>
-		<key>omsdk.js</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7xSt1f5Lbj465O3iBFqgokLaa58fRFCbtNBf+p2ECyI=
 			</data>
 		</dict>
 	</dict>
