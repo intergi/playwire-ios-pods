@@ -921,6 +921,11 @@ SWIFT_CLASS("_TtC8Playwire14PWSchainConfig")
 
 SWIFT_CLASS("_TtC8Playwire11PWTargeting")
 @interface PWTargeting : NSObject
+- (PWTargeting * _Nonnull)clear SWIFT_WARN_UNUSED_RESULT;
+- (PWTargeting * _Nonnull)add:(NSDictionary<NSString *, NSString *> * _Nullable)targets;
+- (PWTargeting * _Nonnull)remove:(NSArray<NSString *> * _Nullable)keys;
+- (PWTargeting * _Nonnull)setClientTag:(NSString * _Nonnull)clientTag at:(NSInteger)index;
+- (PWTargeting * _Nonnull)removeClientTagAt:(NSInteger)index;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

@@ -296,18 +296,18 @@ import _SwiftConcurrencyShims
   required public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class PWTargeting : ObjectiveC.NSObject {
-  public func clear() -> Playwire.PWTargeting
+  @objc public func clear() -> Playwire.PWTargeting
   @discardableResult
   public func add(_ targeting: Playwire.PWTargeting?) -> Playwire.PWTargeting
   @discardableResult
-  public func add(_ targets: [Swift.String : Swift.String]?) -> Playwire.PWTargeting
+  @objc public func add(_ targets: [Swift.String : Swift.String]?) -> Playwire.PWTargeting
   @discardableResult
-  public func remove(_ keys: [Swift.String]?) -> Playwire.PWTargeting
+  @objc public func remove(_ keys: [Swift.String]?) -> Playwire.PWTargeting
   public static var clientTagBase: Swift.String
   @discardableResult
-  public func setClientTag(_ clientTag: Swift.String, at index: Swift.Int) -> Playwire.PWTargeting
+  @objc public func setClientTag(_ clientTag: Swift.String, at index: Swift.Int) -> Playwire.PWTargeting
   @discardableResult
-  public func removeClientTag(at index: Swift.Int) -> Playwire.PWTargeting
+  @objc public func removeClientTag(at index: Swift.Int) -> Playwire.PWTargeting
   @discardableResult
   public func setClientTags(_ clientTags: [Swift.String?]) -> Playwire.PWTargeting
   @objc override dynamic public init()

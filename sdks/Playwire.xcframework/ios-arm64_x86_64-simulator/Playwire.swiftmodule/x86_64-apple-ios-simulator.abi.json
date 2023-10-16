@@ -7749,11 +7749,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Playwire11PWTargetingC5clearACyF",
+            "usr": "c:@M@Playwire@objc(cs)PWTargeting(im)clear",
             "mangledName": "$s8Playwire11PWTargetingC5clearACyF",
             "moduleName": "Playwire",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7834,12 +7835,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Playwire11PWTargetingC3addyACSDyS2SGSgF",
+            "usr": "c:@M@Playwire@objc(cs)PWTargeting(im)add:",
             "mangledName": "$s8Playwire11PWTargetingC3addyACSDyS2SGSgF",
             "moduleName": "Playwire",
             "declAttributes": [
               "AccessControl",
-              "DiscardableResult"
+              "DiscardableResult",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7878,12 +7880,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Playwire11PWTargetingC6removeyACSaySSGSgF",
+            "usr": "c:@M@Playwire@objc(cs)PWTargeting(im)remove:",
             "mangledName": "$s8Playwire11PWTargetingC6removeyACSaySSGSgF",
             "moduleName": "Playwire",
             "declAttributes": [
               "AccessControl",
-              "DiscardableResult"
+              "DiscardableResult",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -8012,12 +8015,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Playwire11PWTargetingC12setClientTag_2atACSS_SitF",
+            "usr": "c:@M@Playwire@objc(cs)PWTargeting(im)setClientTag:at:",
             "mangledName": "$s8Playwire11PWTargetingC12setClientTag_2atACSS_SitF",
             "moduleName": "Playwire",
             "declAttributes": [
               "AccessControl",
               "DiscardableResult",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -8041,12 +8045,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8Playwire11PWTargetingC15removeClientTag2atACSi_tF",
+            "usr": "c:@M@Playwire@objc(cs)PWTargeting(im)removeClientTagAt:",
             "mangledName": "$s8Playwire11PWTargetingC15removeClientTag2atACSi_tF",
             "moduleName": "Playwire",
+            "objc_name": "removeClientTagAt:",
             "declAttributes": [
               "AccessControl",
-              "DiscardableResult"
+              "DiscardableResult",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -25116,21 +25122,21 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-sdk\/ios\/playwire-ios-sdk\/PlaywireSDK\/ads\/PWTargeting.swift",
       "kind": "StringLiteral",
-      "offset": 1093,
+      "offset": 1123,
       "length": 14,
       "value": "\"cust_cli_tag\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-sdk\/ios\/playwire-ios-sdk\/PlaywireSDK\/ads\/PWTargeting.swift",
       "kind": "IntegerLiteral",
-      "offset": 1723,
+      "offset": 1773,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-sdk\/ios\/playwire-ios-sdk\/PlaywireSDK\/ads\/PWTargeting.swift",
       "kind": "IntegerLiteral",
-      "offset": 1791,
+      "offset": 1841,
       "length": 1,
       "value": "1"
     },
@@ -25678,7 +25684,7 @@
       "kind": "StringLiteral",
       "offset": 253,
       "length": 7,
-      "value": "\"9.0.0\""
+      "value": "\"9.0.1\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-sdk\/ios\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
