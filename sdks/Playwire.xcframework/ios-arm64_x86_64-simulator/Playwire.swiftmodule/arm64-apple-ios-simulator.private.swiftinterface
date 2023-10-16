@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Playwire
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import FirebaseAnalytics
@@ -11,6 +11,7 @@ import UIKit
 import UserMessagingPlatform
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class PWBannerViewInline : Playwire.PWBannerViewBase {
   @_Concurrency.MainActor(unsafe) public var mode: Playwire.PWAdUnit.PWAdMode? {
     get
@@ -30,6 +31,7 @@ import _StringProcessing
     get
   }
   @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any Playwire.PWViewAdDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) final public let targeting: Playwire.PWTargeting
   @objc @_Concurrency.MainActor(unsafe) weak public var viewController: UIKit.UIViewController?
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
@@ -230,6 +232,7 @@ import _StringProcessing
     case Fyber
     case Chartboost
     case IronSource
+    case Meta
     case Vungle
     case Pangle
     public init?(rawValue: Swift.String)
@@ -292,6 +295,24 @@ import _StringProcessing
   @objc deinit
   required public init(from decoder: any Swift.Decoder) throws
 }
+@_inheritsConvenienceInitializers @objc public class PWTargeting : ObjectiveC.NSObject {
+  public func clear() -> Playwire.PWTargeting
+  @discardableResult
+  public func add(_ targeting: Playwire.PWTargeting?) -> Playwire.PWTargeting
+  @discardableResult
+  public func add(_ targets: [Swift.String : Swift.String]?) -> Playwire.PWTargeting
+  @discardableResult
+  public func remove(_ keys: [Swift.String]?) -> Playwire.PWTargeting
+  public static var clientTagBase: Swift.String
+  @discardableResult
+  public func setClientTag(_ clientTag: Swift.String, at index: Swift.Int) -> Playwire.PWTargeting
+  @discardableResult
+  public func removeClientTag(at index: Swift.Int) -> Playwire.PWTargeting
+  @discardableResult
+  public func setClientTags(_ clientTags: [Swift.String?]) -> Playwire.PWTargeting
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @_hasMissingDesignatedInitializers public class PWListenerToken : ObjectiveC.NSObject {
   @objc public func cancel()
   @objc deinit
@@ -335,6 +356,7 @@ import _StringProcessing
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PWFullScreenAd : ObjectiveC.NSObject {
   @objc final public let adUnit: Playwire.PWAdUnit?
+  @objc public var targeting: Playwire.PWTargeting
   @objc public var isLoaded: Swift.Bool {
     @objc get
   }
@@ -398,8 +420,10 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
   @objc public static let EVT_CTX_adUnit_name: Swift.String
   @objc public static let EVT_CTX_adUnit_gadUnitId: Swift.String
   @objc public static let EVT_CTX_requestTimestamp: Swift.String
-  @objc public static let EVT_CTX_staticTargeting: Swift.String
-  @objc public static let EVT_CTX_dynamicTargeting: Swift.String
+  @objc public static let EVT_CTX_configTargeting: Swift.String
+  @objc public static let EVT_CTX_loadTargeting: Swift.String
+  @objc public static let EVT_CTX_globalTargeting: Swift.String
+  @objc public static let EVT_CTX_unitTargeting: Swift.String
   @objc public static let EVT_gamRequestSuccess: Swift.String
   @objc public static let EVT_gamRequestSuccess_response: Swift.String
   @objc public static let EVT_gamRequestSuccess_timestamp: Swift.String
@@ -516,9 +540,12 @@ extension Playwire.PWNativeView : GoogleMobileAds.GADNativeAdDelegate {
   @objc static func register()
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PWLoadParams : ObjectiveC.NSObject {
-  @objc public func withTargeting(_ targeting: [Swift.String : Swift.String]) -> Playwire.PWLoadParams
-  @objc public func withWidth(_ width: CoreFoundation.CGFloat) -> Playwire.PWLoadParams
-  @objc public func withDeviceOrientation(_ orientation: UIKit.UIInterfaceOrientation) -> Playwire.PWLoadParams
+  @objc @discardableResult
+  public func withTargeting(_ targeting: [Swift.String : Swift.String]) -> Playwire.PWLoadParams
+  @objc @discardableResult
+  public func withWidth(_ width: CoreFoundation.CGFloat) -> Playwire.PWLoadParams
+  @objc @discardableResult
+  public func withDeviceOrientation(_ orientation: UIKit.UIInterfaceOrientation) -> Playwire.PWLoadParams
   @objc override dynamic public init()
   @objc deinit
 }
@@ -734,6 +761,7 @@ extension Foundation.Date {
   @objc public var config: Playwire.PWConfig? {
     get
   }
+  @objc final public let targeting: Playwire.PWTargeting
   @objc public var test: Swift.Bool
   @objc public static let shared: Playwire.PlaywireSDK
   @objc public func initialize(publisherId: Swift.String, appId: Swift.String, viewController: UIKit.UIViewController, completionHandler: @escaping () -> Swift.Void)
