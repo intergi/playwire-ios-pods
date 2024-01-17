@@ -407,6 +407,8 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
   @objc public static let Version: Swift.String
   @objc public static let EVT_gamInit: Swift.String
   @objc public static let EVT_gamInit_status: Swift.String
+  @objc public static let EVT_gamInit_error: Swift.String
+  @objc public static let EVT_gamInit_error_dontmatch: Swift.String
   @objc public static let EVT_ump: Swift.String
   @objc public static let EVT_ump_result: Swift.String
   @objc public static let EVT_CTX_bidding_index: Swift.String
