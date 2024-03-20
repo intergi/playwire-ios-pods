@@ -554,7 +554,7 @@ extension Playwire.PWNativeView : GoogleMobileAds.GADNativeAdDelegate {
 @objc public protocol PWAdMediator {
   @objc init()
   @objc func setup()
-  @objc func enableGDPR(_ enabled: Swift.Bool)
+  @objc func configureGDPR()
   @objc func configure(request: GoogleMobileAds.GADRequest)
 }
 extension Foundation.Date {
@@ -759,10 +759,19 @@ extension Foundation.Date {
   }
   @objc deinit
 }
+@objc public enum PWCMPType : Swift.Int {
+  case None, AlreadyLaunched, GoogleUmp
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PlaywireSDK : ObjectiveC.NSObject {
   @objc public var config: Playwire.PWConfig? {
     get
   }
+  @objc public var cmp: Playwire.PWCMPType
   @objc final public let targeting: Playwire.PWTargeting
   @objc public var test: Swift.Bool
   @objc public static let shared: Playwire.PlaywireSDK
@@ -795,3 +804,6 @@ extension Playwire.PWRampConfig_AdUnit_Bid.PWRampConfig_AdUnit_Bid_Type : Swift.
 extension Playwire.PWRampConfigAdUnitRefresh.PWRampConfigAdUnitRefreshType : Swift.Equatable {}
 extension Playwire.PWRampConfigAdUnitRefresh.PWRampConfigAdUnitRefreshType : Swift.Hashable {}
 extension Playwire.PWRampConfigAdUnitRefresh.PWRampConfigAdUnitRefreshType : Swift.RawRepresentable {}
+extension Playwire.PWCMPType : Swift.Equatable {}
+extension Playwire.PWCMPType : Swift.Hashable {}
+extension Playwire.PWCMPType : Swift.RawRepresentable {}
