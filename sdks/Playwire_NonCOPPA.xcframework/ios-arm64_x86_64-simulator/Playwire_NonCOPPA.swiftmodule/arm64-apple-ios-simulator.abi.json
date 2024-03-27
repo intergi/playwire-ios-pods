@@ -2227,6 +2227,13 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/AppLovin\/PWAdMediator_AppLovin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 401,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 276,
@@ -2428,6 +2435,13 @@
       "offset": 7905,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Meta\/PWAdMediator_Meta.swift",
+      "kind": "BooleanLiteral",
+      "offset": 424,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWAdBidder_Amazon.swift",

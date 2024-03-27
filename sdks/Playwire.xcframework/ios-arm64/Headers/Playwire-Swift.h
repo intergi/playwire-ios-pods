@@ -315,7 +315,7 @@ SWIFT_PROTOCOL("_TtP8Playwire12PWAdMediator_")
 @protocol PWAdMediator
 - (nonnull instancetype)init;
 - (void)setup;
-- (void)enableGDPR:(BOOL)enabled;
+- (void)configureGDPR;
 - (void)configureWithRequest:(GADRequest * _Nonnull)request;
 @end
 
@@ -715,6 +715,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 
 
+typedef SWIFT_ENUM(NSInteger, PWCMPType, open) {
+  PWCMPTypeNone = 0,
+  PWCMPTypeAlreadyLaunched = 1,
+  PWCMPTypeGoogleUmp = 2,
+};
+
 @class PWOMConfig;
 @class PWSchainConfig;
 
@@ -952,6 +958,7 @@ SWIFT_PROTOCOL("_TtP8Playwire16PWViewAdDelegate_")
 SWIFT_CLASS("_TtC8Playwire11PlaywireSDK")
 @interface PlaywireSDK : NSObject
 @property (nonatomic, readonly, strong) PWConfig * _Nullable config;
+@property (nonatomic) enum PWCMPType cmp;
 @property (nonatomic, readonly, strong) PWTargeting * _Nonnull targeting;
 @property (nonatomic) BOOL test;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PlaywireSDK * _Nonnull shared;)
