@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Playwire
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Playwire
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import FirebaseAnalytics
 import FirebaseCore
@@ -345,7 +345,6 @@ import _SwiftConcurrencyShims
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PWAppOpenAd : Playwire.PWFullScreenAd {
   @objc public var autoReloadOnExpiration: Swift.Bool
   @objc convenience public init(adUnitName: Swift.String, delegate: (any Playwire.PWFullScreenAdDelegate)? = nil)
-  @objc override public func load(params: Playwire.PWLoadParams)
   @objc override public func show(fromViewController viewController: UIKit.UIViewController)
   @objc deinit
 }

@@ -437,7 +437,6 @@ SWIFT_CLASS("_TtC8Playwire11PWAppOpenAd")
 @interface PWAppOpenAd : PWFullScreenAd
 @property (nonatomic) BOOL autoReloadOnExpiration;
 - (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
-- (void)loadWithParams:(PWLoadParams * _Nonnull)params;
 - (void)showFromViewController:(UIViewController * _Nonnull)viewController;
 @end
 
@@ -1422,7 +1421,6 @@ SWIFT_CLASS("_TtC8Playwire11PWAppOpenAd")
 @interface PWAppOpenAd : PWFullScreenAd
 @property (nonatomic) BOOL autoReloadOnExpiration;
 - (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
-- (void)loadWithParams:(PWLoadParams * _Nonnull)params;
 - (void)showFromViewController:(UIViewController * _Nonnull)viewController;
 @end
 
