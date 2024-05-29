@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import GoogleMobileAds;
 @import ObjectiveC;
+@import PlaywireMobile;
 @import UIKit;
 #endif
 
@@ -417,7 +418,6 @@ SWIFT_CLASS("_TtC8Playwire11PWAppConfig")
 @class PWTargeting;
 @protocol PWFullScreenAdDelegate;
 @class PWLoadParams;
-@class UIViewController;
 
 SWIFT_CLASS("_TtC8Playwire14PWFullScreenAd")
 @interface PWFullScreenAd : NSObject
@@ -427,17 +427,18 @@ SWIFT_CLASS("_TtC8Playwire14PWFullScreenAd")
 @property (nonatomic, weak) id <PWFullScreenAdDelegate> _Nullable delegate;
 - (void)load;
 - (void)loadWithParams:(PWLoadParams * _Nonnull)params;
-- (void)showFromViewController:(UIViewController * _Nonnull)viewController;
+- (void)show;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class UIViewController;
 
 SWIFT_CLASS("_TtC8Playwire11PWAppOpenAd")
 @interface PWAppOpenAd : PWFullScreenAd
 @property (nonatomic) BOOL autoReloadOnExpiration;
-- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
-- (void)showFromViewController:(UIViewController * _Nonnull)viewController;
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName viewController:(UIViewController * _Nonnull)viewController delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
+- (void)show;
 @end
 
 
@@ -764,8 +765,18 @@ SWIFT_PROTOCOL("_TtP8Playwire22PWFullScreenAdDelegate_")
 
 SWIFT_CLASS("_TtC8Playwire14PWInterstitial")
 @interface PWInterstitial : PWFullScreenAd
-- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
-- (void)showFromViewController:(UIViewController * _Nonnull)viewController;
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName viewController:(UIViewController * _Nonnull)viewController delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
+- (void)show;
+@end
+
+@protocol PMFullScreenAd;
+
+@interface PWInterstitial (SWIFT_EXTENSION(Playwire)) <PMInterstitialAdDelegate>
+- (void)fullScreenAdClosedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreenAdWillCloseWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreeenAdPresentedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreeenAdImpressionRecordedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreeenAdClickedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 @end
 
 
@@ -904,15 +915,15 @@ SWIFT_CLASS("_TtC8Playwire21PWRampConfig_Settings")
 
 SWIFT_CLASS("_TtC8Playwire10PWRewarded")
 @interface PWRewarded : PWFullScreenAd
-- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
-- (void)showFromViewController:(UIViewController * _Nonnull)viewController;
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName viewController:(UIViewController * _Nonnull)viewController delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
+- (void)show;
 @end
 
 
 SWIFT_CLASS("_TtC8Playwire22PWRewardedInterstitial")
 @interface PWRewardedInterstitial : PWFullScreenAd
-- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
-- (void)showFromViewController:(UIViewController * _Nonnull)viewController;
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName viewController:(UIViewController * _Nonnull)viewController delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
+- (void)show;
 @end
 
 @class SchainNodeConfig;
@@ -1265,6 +1276,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import GoogleMobileAds;
 @import ObjectiveC;
+@import PlaywireMobile;
 @import UIKit;
 #endif
 
@@ -1401,7 +1413,6 @@ SWIFT_CLASS("_TtC8Playwire11PWAppConfig")
 @class PWTargeting;
 @protocol PWFullScreenAdDelegate;
 @class PWLoadParams;
-@class UIViewController;
 
 SWIFT_CLASS("_TtC8Playwire14PWFullScreenAd")
 @interface PWFullScreenAd : NSObject
@@ -1411,17 +1422,18 @@ SWIFT_CLASS("_TtC8Playwire14PWFullScreenAd")
 @property (nonatomic, weak) id <PWFullScreenAdDelegate> _Nullable delegate;
 - (void)load;
 - (void)loadWithParams:(PWLoadParams * _Nonnull)params;
-- (void)showFromViewController:(UIViewController * _Nonnull)viewController;
+- (void)show;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class UIViewController;
 
 SWIFT_CLASS("_TtC8Playwire11PWAppOpenAd")
 @interface PWAppOpenAd : PWFullScreenAd
 @property (nonatomic) BOOL autoReloadOnExpiration;
-- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
-- (void)showFromViewController:(UIViewController * _Nonnull)viewController;
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName viewController:(UIViewController * _Nonnull)viewController delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
+- (void)show;
 @end
 
 
@@ -1748,8 +1760,18 @@ SWIFT_PROTOCOL("_TtP8Playwire22PWFullScreenAdDelegate_")
 
 SWIFT_CLASS("_TtC8Playwire14PWInterstitial")
 @interface PWInterstitial : PWFullScreenAd
-- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
-- (void)showFromViewController:(UIViewController * _Nonnull)viewController;
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName viewController:(UIViewController * _Nonnull)viewController delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
+- (void)show;
+@end
+
+@protocol PMFullScreenAd;
+
+@interface PWInterstitial (SWIFT_EXTENSION(Playwire)) <PMInterstitialAdDelegate>
+- (void)fullScreenAdClosedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreenAdWillCloseWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreeenAdPresentedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreeenAdImpressionRecordedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreeenAdClickedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 @end
 
 
@@ -1888,15 +1910,15 @@ SWIFT_CLASS("_TtC8Playwire21PWRampConfig_Settings")
 
 SWIFT_CLASS("_TtC8Playwire10PWRewarded")
 @interface PWRewarded : PWFullScreenAd
-- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
-- (void)showFromViewController:(UIViewController * _Nonnull)viewController;
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName viewController:(UIViewController * _Nonnull)viewController delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
+- (void)show;
 @end
 
 
 SWIFT_CLASS("_TtC8Playwire22PWRewardedInterstitial")
 @interface PWRewardedInterstitial : PWFullScreenAd
-- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
-- (void)showFromViewController:(UIViewController * _Nonnull)viewController;
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName viewController:(UIViewController * _Nonnull)viewController delegate:(id <PWFullScreenAdDelegate> _Nullable)delegate;
+- (void)show;
 @end
 
 @class SchainNodeConfig;
