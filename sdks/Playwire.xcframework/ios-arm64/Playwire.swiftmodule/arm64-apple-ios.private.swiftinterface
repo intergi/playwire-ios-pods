@@ -6,6 +6,7 @@ import FirebaseAnalytics
 import FirebaseCore
 import Foundation
 import GoogleMobileAds
+import PlaywireMobile
 import Swift
 import UIKit
 import UserMessagingPlatform
@@ -338,20 +339,27 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PWRewardedInterstitial : Playwire.PWFullScreenAd {
-  @objc convenience public init(adUnitName: Swift.String, delegate: (any Playwire.PWFullScreenAdDelegate)? = nil)
-  @objc override public func show(fromViewController viewController: UIKit.UIViewController)
+  @objc convenience public init(adUnitName: Swift.String, viewController: UIKit.UIViewController, delegate: (any Playwire.PWFullScreenAdDelegate)? = nil)
+  @objc override public func show()
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PWAppOpenAd : Playwire.PWFullScreenAd {
   @objc public var autoReloadOnExpiration: Swift.Bool
-  @objc convenience public init(adUnitName: Swift.String, delegate: (any Playwire.PWFullScreenAdDelegate)? = nil)
-  @objc override public func show(fromViewController viewController: UIKit.UIViewController)
+  @objc convenience public init(adUnitName: Swift.String, viewController: UIKit.UIViewController, delegate: (any Playwire.PWFullScreenAdDelegate)? = nil)
+  @objc override public func show()
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PWInterstitial : Playwire.PWFullScreenAd {
-  @objc convenience public init(adUnitName: Swift.String, delegate: (any Playwire.PWFullScreenAdDelegate)? = nil)
-  @objc override public func show(fromViewController viewController: UIKit.UIViewController)
+  @objc convenience public init(adUnitName: Swift.String, viewController: UIKit.UIViewController, delegate: (any Playwire.PWFullScreenAdDelegate)? = nil)
+  @objc override public func show()
   @objc deinit
+}
+extension Playwire.PWInterstitial : PlaywireMobile.PMInterstitialAdDelegate {
+  @objc dynamic public func fullScreenAdClosed(fullScreen: any PlaywireMobile.PMFullScreenAd)
+  @objc dynamic public func fullScreenAdWillClose(fullScreen: any PlaywireMobile.PMFullScreenAd)
+  @objc dynamic public func fullScreeenAdPresented(fullScreen: any PlaywireMobile.PMFullScreenAd)
+  @objc dynamic public func fullScreeenAdImpressionRecorded(fullScreen: any PlaywireMobile.PMFullScreenAd)
+  @objc dynamic public func fullScreeenAdClicked(fullScreen: any PlaywireMobile.PMFullScreenAd)
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PWFullScreenAd : ObjectiveC.NSObject {
   @objc final public let adUnit: Playwire.PWAdUnit?
@@ -362,7 +370,7 @@ import _SwiftConcurrencyShims
   @objc weak public var delegate: (any Playwire.PWFullScreenAdDelegate)?
   @objc public func load()
   @objc public func load(params: Playwire.PWLoadParams)
-  @objc public func show(fromViewController viewController: UIKit.UIViewController)
+  @objc public func show()
   @objc deinit
 }
 extension Playwire.PWFullScreenAd : GoogleMobileAds.GADFullScreenContentDelegate {
@@ -374,8 +382,8 @@ extension Playwire.PWFullScreenAd : GoogleMobileAds.GADFullScreenContentDelegate
   @objc dynamic public func adDidRecordClick(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PWRewarded : Playwire.PWFullScreenAd {
-  @objc convenience public init(adUnitName: Swift.String, delegate: (any Playwire.PWFullScreenAdDelegate)? = nil)
-  @objc override public func show(fromViewController viewController: UIKit.UIViewController)
+  @objc convenience public init(adUnitName: Swift.String, viewController: UIKit.UIViewController, delegate: (any Playwire.PWFullScreenAdDelegate)? = nil)
+  @objc override public func show()
   @objc deinit
 }
 public typealias PWAdBid = [Swift.AnyHashable : Any]
