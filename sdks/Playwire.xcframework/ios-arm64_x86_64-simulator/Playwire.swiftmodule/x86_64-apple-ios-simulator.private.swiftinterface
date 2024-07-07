@@ -39,13 +39,20 @@ import _SwiftConcurrencyShims
   @objc @_Concurrency.MainActor(unsafe) convenience public init(adUnitName: Swift.String, delegate: (any Playwire.PWViewAdDelegate)? = nil)
   @objc @_Concurrency.MainActor(unsafe) convenience public init(adUnitName: Swift.String, controller: UIKit.UIViewController?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @objc @_Concurrency.MainActor(unsafe) public func load()
   @objc @_Concurrency.MainActor(unsafe) public func load(params: Playwire.PWLoadParams)
   @objc @_Concurrency.MainActor(unsafe) public var isLoaded: Swift.Bool {
     @objc get
   }
   @objc @_Concurrency.MainActor(unsafe) public func refresh()
-  @objc deinit
+}
+extension Playwire.PWViewAd : PlaywireMobile.PMFloatingBannerManagerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func floatingManagerStartBeingDelegate(manager: PlaywireMobile.PMFloatingBannerManager)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func floatingManagerResignBeingDelegate(manager: PlaywireMobile.PMFloatingBannerManager)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func floatingManagerLoadResult(manager: PlaywireMobile.PMFloatingBannerManager, banner: (any PlaywireMobile.PMBannerAd)?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func floatingManagerViewVisibilityChange(manager: PlaywireMobile.PMFloatingBannerManager, visible: Swift.Bool)
 }
 @objc public protocol PWFullScreenAdDelegate {
   @objc func fullScreenAdDidLoad(_ ad: Playwire.PWFullScreenAd)
@@ -355,11 +362,11 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 extension Playwire.PWInterstitial : PlaywireMobile.PMInterstitialAdDelegate {
+  @objc dynamic public func adImpressed(ad: any PlaywireMobile.PMAd)
+  @objc dynamic public func adClicked(ad: any PlaywireMobile.PMAd)
   @objc dynamic public func fullScreenAdClosed(fullScreen: any PlaywireMobile.PMFullScreenAd)
   @objc dynamic public func fullScreenAdWillClose(fullScreen: any PlaywireMobile.PMFullScreenAd)
   @objc dynamic public func fullScreeenAdPresented(fullScreen: any PlaywireMobile.PMFullScreenAd)
-  @objc dynamic public func fullScreeenAdImpressionRecorded(fullScreen: any PlaywireMobile.PMFullScreenAd)
-  @objc dynamic public func fullScreeenAdClicked(fullScreen: any PlaywireMobile.PMFullScreenAd)
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PWFullScreenAd : ObjectiveC.NSObject {
   @objc final public let adUnit: Playwire.PWAdUnit?

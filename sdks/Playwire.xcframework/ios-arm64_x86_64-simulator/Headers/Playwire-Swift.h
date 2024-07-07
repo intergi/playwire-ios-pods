@@ -465,6 +465,7 @@ SWIFT_CLASS("_TtC8Playwire8PWViewAd")
 - (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWViewAdDelegate> _Nullable)delegate;
 - (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName controller:(UIViewController * _Nullable)controller;
 - (void)awakeFromNib;
+- (void)layoutSubviews;
 - (void)load;
 - (void)loadWithParams:(PWLoadParams * _Nonnull)params;
 @property (nonatomic, readonly) BOOL isLoaded;
@@ -769,14 +770,15 @@ SWIFT_CLASS("_TtC8Playwire14PWInterstitial")
 - (void)show;
 @end
 
+@protocol PMAd;
 @protocol PMFullScreenAd;
 
 @interface PWInterstitial (SWIFT_EXTENSION(Playwire)) <PMInterstitialAdDelegate>
+- (void)adImpressedWithAd:(id <PMAd> _Nonnull)ad;
+- (void)adClickedWithAd:(id <PMAd> _Nonnull)ad;
 - (void)fullScreenAdClosedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 - (void)fullScreenAdWillCloseWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 - (void)fullScreeenAdPresentedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
-- (void)fullScreeenAdImpressionRecordedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
-- (void)fullScreeenAdClickedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 @end
 
 
@@ -949,6 +951,16 @@ SWIFT_CLASS("_TtC8Playwire11PWTargeting")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+@class PMFloatingBannerManager;
+@protocol PMBannerAd;
+
+@interface PWViewAd (SWIFT_EXTENSION(Playwire)) <PMFloatingBannerManagerDelegate>
+- (void)floatingManagerStartBeingDelegateWithManager:(PMFloatingBannerManager * _Nonnull)manager;
+- (void)floatingManagerResignBeingDelegateWithManager:(PMFloatingBannerManager * _Nonnull)manager;
+- (void)floatingManagerLoadResultWithManager:(PMFloatingBannerManager * _Nonnull)manager banner:(id <PMBannerAd> _Nullable)banner;
+- (void)floatingManagerViewVisibilityChangeWithManager:(PMFloatingBannerManager * _Nonnull)manager visible:(BOOL)visible;
+@end
 
 
 
@@ -1460,6 +1472,7 @@ SWIFT_CLASS("_TtC8Playwire8PWViewAd")
 - (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWViewAdDelegate> _Nullable)delegate;
 - (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName controller:(UIViewController * _Nullable)controller;
 - (void)awakeFromNib;
+- (void)layoutSubviews;
 - (void)load;
 - (void)loadWithParams:(PWLoadParams * _Nonnull)params;
 @property (nonatomic, readonly) BOOL isLoaded;
@@ -1764,14 +1777,15 @@ SWIFT_CLASS("_TtC8Playwire14PWInterstitial")
 - (void)show;
 @end
 
+@protocol PMAd;
 @protocol PMFullScreenAd;
 
 @interface PWInterstitial (SWIFT_EXTENSION(Playwire)) <PMInterstitialAdDelegate>
+- (void)adImpressedWithAd:(id <PMAd> _Nonnull)ad;
+- (void)adClickedWithAd:(id <PMAd> _Nonnull)ad;
 - (void)fullScreenAdClosedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 - (void)fullScreenAdWillCloseWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 - (void)fullScreeenAdPresentedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
-- (void)fullScreeenAdImpressionRecordedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
-- (void)fullScreeenAdClickedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 @end
 
 
@@ -1944,6 +1958,16 @@ SWIFT_CLASS("_TtC8Playwire11PWTargeting")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+@class PMFloatingBannerManager;
+@protocol PMBannerAd;
+
+@interface PWViewAd (SWIFT_EXTENSION(Playwire)) <PMFloatingBannerManagerDelegate>
+- (void)floatingManagerStartBeingDelegateWithManager:(PMFloatingBannerManager * _Nonnull)manager;
+- (void)floatingManagerResignBeingDelegateWithManager:(PMFloatingBannerManager * _Nonnull)manager;
+- (void)floatingManagerLoadResultWithManager:(PMFloatingBannerManager * _Nonnull)manager banner:(id <PMBannerAd> _Nullable)banner;
+- (void)floatingManagerViewVisibilityChangeWithManager:(PMFloatingBannerManager * _Nonnull)manager visible:(BOOL)visible;
+@end
 
 
 
