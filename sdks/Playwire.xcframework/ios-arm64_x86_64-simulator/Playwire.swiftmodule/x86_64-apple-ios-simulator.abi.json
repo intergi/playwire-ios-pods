@@ -26517,7 +26517,7 @@
       "kind": "StringLiteral",
       "offset": 253,
       "length": 8,
-      "value": "\"10.1.0\""
+      "value": "\"10.2.0\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
@@ -28236,78 +28236,85 @@
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6139,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6657,
+      "offset": 6700,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 6808,
+      "offset": 6851,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 7284,
+      "offset": 7327,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 7711,
+      "offset": 7754,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 8307,
+      "offset": 8350,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "Dictionary",
-      "offset": 8335,
+      "offset": 8378,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 9843,
+      "offset": 9886,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "Dictionary",
-      "offset": 11969,
+      "offset": 12012,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 12023,
+      "offset": 12066,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "StringLiteral",
-      "offset": 12388,
+      "offset": 12431,
       "length": 5,
       "value": "\"npa\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "StringLiteral",
-      "offset": 12395,
+      "offset": 12438,
       "length": 3,
       "value": "\"1\""
     },
