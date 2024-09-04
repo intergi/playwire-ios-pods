@@ -525,6 +525,12 @@ SWIFT_CLASS("_TtC8Playwire3PWC")
 @interface PWC : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull Version;)
 + (NSString * _Nonnull)Version SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit;)
++ (NSString * _Nonnull)EVT_sdkInit SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_info;)
++ (NSString * _Nonnull)EVT_sdkInit_info SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_info_doubleInitialization;)
++ (NSString * _Nonnull)EVT_sdkInit_info_doubleInitialization SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamInit;)
 + (NSString * _Nonnull)EVT_gamInit SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamInit_status;)
@@ -1532,6 +1538,12 @@ SWIFT_CLASS("_TtC8Playwire3PWC")
 @interface PWC : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull Version;)
 + (NSString * _Nonnull)Version SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit;)
++ (NSString * _Nonnull)EVT_sdkInit SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_info;)
++ (NSString * _Nonnull)EVT_sdkInit_info SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_info_doubleInitialization;)
++ (NSString * _Nonnull)EVT_sdkInit_info_doubleInitialization SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamInit;)
 + (NSString * _Nonnull)EVT_gamInit SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamInit_status;)
