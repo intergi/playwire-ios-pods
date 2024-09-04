@@ -419,6 +419,9 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PWC : ObjectiveC.NSObject {
   @objc public static let Version: Swift.String
+  @objc public static let EVT_sdkInit: Swift.String
+  @objc public static let EVT_sdkInit_info: Swift.String
+  @objc public static let EVT_sdkInit_info_doubleInitialization: Swift.String
   @objc public static let EVT_gamInit: Swift.String
   @objc public static let EVT_gamInit_status: Swift.String
   @objc public static let EVT_gamInit_error: Swift.String
