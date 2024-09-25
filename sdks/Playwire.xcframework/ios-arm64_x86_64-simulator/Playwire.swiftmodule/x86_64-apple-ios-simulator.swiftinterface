@@ -40,7 +40,6 @@ import _SwiftConcurrencyShims
   @objc @_Concurrency.MainActor(unsafe) convenience public init(adUnitName: Swift.String, controller: UIKit.UIViewController?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
   @objc deinit
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @objc @_Concurrency.MainActor(unsafe) public func load()
   @objc @_Concurrency.MainActor(unsafe) public func load(params: Playwire.PWLoadParams)
   @objc @_Concurrency.MainActor(unsafe) public var isLoaded: Swift.Bool {
@@ -48,11 +47,9 @@ import _SwiftConcurrencyShims
   }
   @objc @_Concurrency.MainActor(unsafe) public func refresh()
 }
-extension Playwire.PWViewAd : PlaywireMobile.PMFloatingBannerManagerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func floatingManagerStartBeingDelegate(manager: PlaywireMobile.PMFloatingBannerManager)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func floatingManagerResignBeingDelegate(manager: PlaywireMobile.PMFloatingBannerManager)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func floatingManagerLoadResult(manager: PlaywireMobile.PMFloatingBannerManager, banner: (any PlaywireMobile.PMBannerAd)?)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func floatingManagerViewVisibilityChange(manager: PlaywireMobile.PMFloatingBannerManager, visible: Swift.Bool)
+extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func willStartPresentingAd(presenter: PlaywireMobile.PMAdViewPresenter, refresh: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func didEndPresentingAd(presenter: PlaywireMobile.PMAdViewPresenter, willRefresh: Swift.Bool)
 }
 @objc public protocol PWFullScreenAdDelegate {
   @objc func fullScreenAdDidLoad(_ ad: Playwire.PWFullScreenAd)

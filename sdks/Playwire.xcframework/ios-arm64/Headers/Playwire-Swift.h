@@ -465,7 +465,6 @@ SWIFT_CLASS("_TtC8Playwire8PWViewAd")
 - (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PWViewAdDelegate> _Nullable)delegate;
 - (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName controller:(UIViewController * _Nullable)controller;
 - (void)awakeFromNib;
-- (void)layoutSubviews;
 - (void)load;
 - (void)loadWithParams:(PWLoadParams * _Nonnull)params;
 @property (nonatomic, readonly) BOOL isLoaded;
@@ -958,14 +957,11 @@ SWIFT_CLASS("_TtC8Playwire11PWTargeting")
 @end
 
 
-@class PMFloatingBannerManager;
-@protocol PMBannerAd;
+@class PMAdViewPresenter;
 
-@interface PWViewAd (SWIFT_EXTENSION(Playwire)) <PMFloatingBannerManagerDelegate>
-- (void)floatingManagerStartBeingDelegateWithManager:(PMFloatingBannerManager * _Nonnull)manager;
-- (void)floatingManagerResignBeingDelegateWithManager:(PMFloatingBannerManager * _Nonnull)manager;
-- (void)floatingManagerLoadResultWithManager:(PMFloatingBannerManager * _Nonnull)manager banner:(id <PMBannerAd> _Nullable)banner;
-- (void)floatingManagerViewVisibilityChangeWithManager:(PMFloatingBannerManager * _Nonnull)manager visible:(BOOL)visible;
+@interface PWViewAd (SWIFT_EXTENSION(Playwire)) <PMAdViewPresenterViewHolder>
+- (void)willStartPresentingAdWithPresenter:(PMAdViewPresenter * _Nonnull)presenter refresh:(BOOL)refresh;
+- (void)didEndPresentingAdWithPresenter:(PMAdViewPresenter * _Nonnull)presenter willRefresh:(BOOL)willRefresh;
 @end
 
 
