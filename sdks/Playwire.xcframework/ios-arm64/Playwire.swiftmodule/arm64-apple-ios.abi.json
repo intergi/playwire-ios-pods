@@ -285,10 +285,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "PMFloatingBannerManagerDelegate",
-            "printedName": "PMFloatingBannerManagerDelegate",
-            "usr": "c:@M@PlaywireMobile@objc(pl)PMFloatingBannerManagerDelegate",
-            "mangledName": "$s14PlaywireMobile31PMFloatingBannerManagerDelegateP"
+            "name": "PMAdViewPresenterViewHolder",
+            "printedName": "PMAdViewPresenterViewHolder",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAdViewPresenterViewHolder",
+            "mangledName": "$s14PlaywireMobile017PMAdViewPresenterD6HolderP"
           }
         ]
       },
@@ -1059,32 +1059,6 @@
           },
           {
             "kind": "Function",
-            "name": "layoutSubviews",
-            "printedName": "layoutSubviews()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@Playwire@objc(cs)PWViewAd(im)layoutSubviews",
-            "mangledName": "$s8Playwire8PWViewAdC14layoutSubviewsyyF",
-            "moduleName": "Playwire",
-            "overriding": true,
-            "objc_name": "layoutSubviews",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl",
-              "Override"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "load",
             "printedName": "load()",
             "children": [
@@ -1202,8 +1176,8 @@
           },
           {
             "kind": "Function",
-            "name": "floatingManagerStartBeingDelegate",
-            "printedName": "floatingManagerStartBeingDelegate(manager:)",
+            "name": "willStartPresentingAd",
+            "printedName": "willStartPresentingAd(presenter:refresh:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1212,116 +1186,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "PMFloatingBannerManager",
-                "printedName": "PlaywireMobile.PMFloatingBannerManager",
-                "usr": "c:@M@PlaywireMobile@objc(cs)PMFloatingBannerManager"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@Playwire@objc(cs)PWViewAd(im)floatingManagerStartBeingDelegateWithManager:",
-            "mangledName": "$s8Playwire8PWViewAdC33floatingManagerStartBeingDelegate7managery0A6Mobile016PMFloatingBannerE0C_tF",
-            "moduleName": "Playwire",
-            "objc_name": "floatingManagerStartBeingDelegateWithManager:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "floatingManagerResignBeingDelegate",
-            "printedName": "floatingManagerResignBeingDelegate(manager:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PMFloatingBannerManager",
-                "printedName": "PlaywireMobile.PMFloatingBannerManager",
-                "usr": "c:@M@PlaywireMobile@objc(cs)PMFloatingBannerManager"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@Playwire@objc(cs)PWViewAd(im)floatingManagerResignBeingDelegateWithManager:",
-            "mangledName": "$s8Playwire8PWViewAdC34floatingManagerResignBeingDelegate7managery0A6Mobile016PMFloatingBannerE0C_tF",
-            "moduleName": "Playwire",
-            "objc_name": "floatingManagerResignBeingDelegateWithManager:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "floatingManagerLoadResult",
-            "printedName": "floatingManagerLoadResult(manager:banner:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PMFloatingBannerManager",
-                "printedName": "PlaywireMobile.PMFloatingBannerManager",
-                "usr": "c:@M@PlaywireMobile@objc(cs)PMFloatingBannerManager"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "PlaywireMobile.PMBannerAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PMBannerAd",
-                    "printedName": "PlaywireMobile.PMBannerAd",
-                    "usr": "c:@M@PlaywireMobile@objc(pl)PMBannerAd"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@Playwire@objc(cs)PWViewAd(im)floatingManagerLoadResultWithManager:banner:",
-            "mangledName": "$s8Playwire8PWViewAdC25floatingManagerLoadResult7manager6bannery0A6Mobile016PMFloatingBannerE0C_AG08PMBannerC0_pSgtF",
-            "moduleName": "Playwire",
-            "objc_name": "floatingManagerLoadResultWithManager:banner:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "floatingManagerViewVisibilityChange",
-            "printedName": "floatingManagerViewVisibilityChange(manager:visible:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PMFloatingBannerManager",
-                "printedName": "PlaywireMobile.PMFloatingBannerManager",
-                "usr": "c:@M@PlaywireMobile@objc(cs)PMFloatingBannerManager"
+                "name": "PMAdViewPresenter",
+                "printedName": "PlaywireMobile.PMAdViewPresenter",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMAdViewPresenter"
               },
               {
                 "kind": "TypeNominal",
@@ -1331,10 +1198,47 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@Playwire@objc(cs)PWViewAd(im)floatingManagerViewVisibilityChangeWithManager:visible:",
-            "mangledName": "$s8Playwire8PWViewAdC35floatingManagerViewVisibilityChange7manager7visibley0A6Mobile016PMFloatingBannerE0C_SbtF",
+            "usr": "c:@CM@Playwire@objc(cs)PWViewAd(im)willStartPresentingAdWithPresenter:refresh:",
+            "mangledName": "$s8Playwire8PWViewAdC019willStartPresentingC09presenter7refreshy0A6Mobile17PMAdViewPresenterC_SbtF",
             "moduleName": "Playwire",
-            "objc_name": "floatingManagerViewVisibilityChangeWithManager:visible:",
+            "objc_name": "willStartPresentingAdWithPresenter:refresh:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didEndPresentingAd",
+            "printedName": "didEndPresentingAd(presenter:willRefresh:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PMAdViewPresenter",
+                "printedName": "PlaywireMobile.PMAdViewPresenter",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMAdViewPresenter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Playwire@objc(cs)PWViewAd(im)didEndPresentingAdWithPresenter:willRefresh:",
+            "mangledName": "$s8Playwire8PWViewAdC016didEndPresentingC09presenter11willRefreshy0A6Mobile17PMAdViewPresenterC_SbtF",
+            "moduleName": "Playwire",
+            "objc_name": "didEndPresentingAdWithPresenter:willRefresh:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -1366,10 +1270,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "PMFloatingBannerManagerDelegate",
-            "printedName": "PMFloatingBannerManagerDelegate",
-            "usr": "c:@M@PlaywireMobile@objc(pl)PMFloatingBannerManagerDelegate",
-            "mangledName": "$s14PlaywireMobile31PMFloatingBannerManagerDelegateP"
+            "name": "PMAdViewPresenterViewHolder",
+            "printedName": "PMAdViewPresenterViewHolder",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAdViewPresenterViewHolder",
+            "mangledName": "$s14PlaywireMobile017PMAdViewPresenterD6HolderP"
           },
           {
             "kind": "Conformance",
@@ -9289,10 +9193,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "PMFloatingBannerManagerDelegate",
-            "printedName": "PMFloatingBannerManagerDelegate",
-            "usr": "c:@M@PlaywireMobile@objc(pl)PMFloatingBannerManagerDelegate",
-            "mangledName": "$s14PlaywireMobile31PMFloatingBannerManagerDelegateP"
+            "name": "PMAdViewPresenterViewHolder",
+            "printedName": "PMAdViewPresenterViewHolder",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAdViewPresenterViewHolder",
+            "mangledName": "$s14PlaywireMobile017PMAdViewPresenterD6HolderP"
           },
           {
             "kind": "Conformance",
@@ -17878,10 +17782,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "PMFloatingBannerManagerDelegate",
-            "printedName": "PMFloatingBannerManagerDelegate",
-            "usr": "c:@M@PlaywireMobile@objc(pl)PMFloatingBannerManagerDelegate",
-            "mangledName": "$s14PlaywireMobile31PMFloatingBannerManagerDelegateP"
+            "name": "PMAdViewPresenterViewHolder",
+            "printedName": "PMAdViewPresenterViewHolder",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAdViewPresenterViewHolder",
+            "mangledName": "$s14PlaywireMobile017PMAdViewPresenterD6HolderP"
           }
         ]
       },
@@ -18457,10 +18361,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "PMFloatingBannerManagerDelegate",
-            "printedName": "PMFloatingBannerManagerDelegate",
-            "usr": "c:@M@PlaywireMobile@objc(pl)PMFloatingBannerManagerDelegate",
-            "mangledName": "$s14PlaywireMobile31PMFloatingBannerManagerDelegateP"
+            "name": "PMAdViewPresenterViewHolder",
+            "printedName": "PMAdViewPresenterViewHolder",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAdViewPresenterViewHolder",
+            "mangledName": "$s14PlaywireMobile017PMAdViewPresenterD6HolderP"
           },
           {
             "kind": "Conformance",
@@ -23101,10 +23005,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "PMFloatingBannerManagerDelegate",
-            "printedName": "PMFloatingBannerManagerDelegate",
-            "usr": "c:@M@PlaywireMobile@objc(pl)PMFloatingBannerManagerDelegate",
-            "mangledName": "$s14PlaywireMobile31PMFloatingBannerManagerDelegateP"
+            "name": "PMAdViewPresenterViewHolder",
+            "printedName": "PMAdViewPresenterViewHolder",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAdViewPresenterViewHolder",
+            "mangledName": "$s14PlaywireMobile017PMAdViewPresenterD6HolderP"
           },
           {
             "kind": "Conformance",
@@ -25434,233 +25338,212 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 4682,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5622,
+      "offset": 5489,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "StringLiteral",
-      "offset": 5629,
+      "offset": 5496,
       "length": 42,
       "value": "\"Must be overridden in the derived class.\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6115,
+      "offset": 5982,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 6653,
+      "offset": 6520,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 9665,
+      "offset": 9083,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 10993,
+      "offset": 10411,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "StringLiteral",
-      "offset": 11000,
+      "offset": 10418,
       "length": 42,
       "value": "\"Must be overridden in the derived class.\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13036,
+      "offset": 12454,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13155,
+      "offset": 12573,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13242,
+      "offset": 12660,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13373,
+      "offset": 12791,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13427,
+      "offset": 12845,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13556,
+      "offset": 12974,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 13908,
+      "offset": 13326,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 14140,
+      "offset": 13558,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 14587,
+      "offset": 14005,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 15113,
+      "offset": 14531,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 15571,
+      "offset": 14989,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 16135,
+      "offset": 15553,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 16646,
+      "offset": 16064,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 16821,
+      "offset": 16239,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 17177,
+      "offset": 16595,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 17208,
+      "offset": 16626,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 17672,
+      "offset": 17090,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 18000,
+      "offset": 17418,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 18031,
+      "offset": 17449,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 18207,
+      "offset": 17625,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 18680,
+      "offset": 18098,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 19206,
+      "offset": 18624,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 19866,
+      "offset": 19284,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 20373,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/PWViewAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 20783,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWHttpDataLoader.swift",
@@ -26675,7 +26558,7 @@
       "kind": "StringLiteral",
       "offset": 253,
       "length": 8,
-      "value": "\"10.3.0\""
+      "value": "\"10.4.0\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
@@ -28451,49 +28334,49 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 9034,
+      "offset": 8987,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "Dictionary",
-      "offset": 9062,
+      "offset": 9015,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 10570,
+      "offset": 10523,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "Dictionary",
-      "offset": 12696,
+      "offset": 12649,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 12750,
+      "offset": 12703,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13115,
+      "offset": 13068,
       "length": 5,
       "value": "\"npa\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "StringLiteral",
-      "offset": 13122,
+      "offset": 13075,
       "length": 3,
       "value": "\"1\""
     },
