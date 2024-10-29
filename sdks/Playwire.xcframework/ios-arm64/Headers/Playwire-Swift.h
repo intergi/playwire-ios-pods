@@ -742,6 +742,7 @@ SWIFT_CLASS("_TtC8Playwire8PWConfig")
 @end
 
 
+
 @protocol GADFullScreenPresentingAd;
 
 @interface PWFullScreenAd (SWIFT_EXTENSION(Playwire)) <GADFullScreenContentDelegate>

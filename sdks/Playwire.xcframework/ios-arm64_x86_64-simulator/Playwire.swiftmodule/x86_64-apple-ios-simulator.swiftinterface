@@ -10,6 +10,7 @@ import PlaywireMobile
 import Swift
 import UIKit
 import UserMessagingPlatform
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -395,8 +396,6 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
   public var adUnit: Playwire.PWAdUnit
   public var adUnitConfig: Playwire.PWAdUnitConfig
   public var adServerConfig: Playwire.PWAdServerConfig
-  public var onSuccess: () -> ()
-  public var onFailure: () -> ()
   public var bid: Playwire.PWAdBid?
   @objc deinit
 }
@@ -407,7 +406,9 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
     set
   }
   @objc override required dynamic public init()
-  open func load()
+  #if compiler(>=5.3) && $AsyncAwait
+  open func load() async throws
+  #endif
   @objc deinit
 }
 @objc public protocol PWNativeViewFactory {
@@ -531,6 +532,23 @@ extension Playwire.PWBannerViewBase : GoogleMobileAds.GADBannerViewDelegate {
 }
 extension Playwire.PWBannerViewBase : GoogleMobileAds.GADAdSizeDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func adView(_ bannerView: GoogleMobileAds.GADBannerView, willChangeAdSizeTo size: GoogleMobileAds.GADAdSize)
+}
+@usableFromInline
+internal protocol _AnyEncodable {
+  var value: Any { get }
+  init<T>(_ value: T?)
+}
+extension Playwire._AnyEncodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension Playwire._AnyEncodable {
+  public init(nilLiteral _: ())
+  public init(booleanLiteral value: Swift.Bool)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(stringLiteral value: Swift.String)
+  public init(arrayLiteral elements: Any...)
+  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class PWNativeView : Playwire.PWViewAd {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
