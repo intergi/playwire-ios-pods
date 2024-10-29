@@ -742,6 +742,7 @@ SWIFT_CLASS("_TtC8Playwire8PWConfig")
 @end
 
 
+
 @protocol GADFullScreenPresentingAd;
 
 @interface PWFullScreenAd (SWIFT_EXTENSION(Playwire)) <GADFullScreenContentDelegate>
@@ -1749,6 +1750,7 @@ SWIFT_CLASS("_TtC8Playwire8PWConfig")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 @protocol GADFullScreenPresentingAd;
