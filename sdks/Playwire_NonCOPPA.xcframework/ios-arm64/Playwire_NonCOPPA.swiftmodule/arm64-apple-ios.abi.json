@@ -1525,13 +1525,20 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
         "declKind": "Import",
         "moduleName": "Playwire_NonCOPPA",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
       },
       {
         "kind": "Import",
@@ -2288,13 +2295,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/AppLovin\/PWAdMediator_AppLovin.swift",
-      "kind": "BooleanLiteral",
-      "offset": 401,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 276,
@@ -2412,132 +2412,6 @@
       "offset": 847,
       "length": 10,
       "value": "\"duration\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWAdBidder_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 1193,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWAdBidder_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 1269,
-      "length": 5,
-      "value": "\"Dev\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWAdBidder_Prebid.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2523,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWAdBidder_Prebid.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3599,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWAdBidder_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 3778,
-      "length": 5,
-      "value": "\"\/id\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWAdBidder_Prebid.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4325,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWAdBidder_Prebid.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4439,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWAdBidder_Prebid.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6405,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWAdBidder_Prebid.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7023,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWAdBidder_Prebid.swift",
-      "kind": "Dictionary",
-      "offset": 7156,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWAdBidder_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 7942,
-      "length": 7,
-      "value": "\"hb_pb\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWAdBidder_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 8169,
-      "length": 8,
-      "value": "\"hb_val\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWAdBidder_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 8196,
-      "length": 6,
-      "value": "\"%.2f\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Meta\/PWAdMediator_Meta.swift",
-      "kind": "BooleanLiteral",
-      "offset": 424,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWAdBidder_Amazon.swift",
-      "kind": "BooleanLiteral",
-      "offset": 987,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWAdBidder_Amazon.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1066,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWAdBidder_Amazon.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3408,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWAdBidder_Amazon.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4175,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/PWConstant.swift",
