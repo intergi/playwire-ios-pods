@@ -722,6 +722,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 
 
+typedef SWIFT_ENUM(NSInteger, PWCMPType, open) {
+  PWCMPTypeNone = 0,
+  PWCMPTypeAlreadyLaunched = 1,
+  PWCMPTypeGoogleUmp = 2,
+};
+
 @class PWOMConfig;
 @class PWSchainConfig;
 
@@ -981,6 +987,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PlaywireSDK 
 + (PlaywireSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) PWTargeting * _Nonnull targeting;
 @property (nonatomic) BOOL test;
+@property (nonatomic) enum PWCMPType cmp;
 @property (nonatomic, readonly, strong) PWConfig * _Nullable config;
 - (void)initializeWithPublisherId:(NSString * _Nonnull)publisherId appId:(NSString * _Nonnull)appId viewController:(UIViewController * _Nonnull)viewController completionHandler:(void (^ _Nonnull)(void))completionHandler;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull adUnitsDictionary;
@@ -1725,6 +1732,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 
 
+typedef SWIFT_ENUM(NSInteger, PWCMPType, open) {
+  PWCMPTypeNone = 0,
+  PWCMPTypeAlreadyLaunched = 1,
+  PWCMPTypeGoogleUmp = 2,
+};
+
 @class PWOMConfig;
 @class PWSchainConfig;
 
@@ -1984,6 +1997,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PlaywireSDK 
 + (PlaywireSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) PWTargeting * _Nonnull targeting;
 @property (nonatomic) BOOL test;
+@property (nonatomic) enum PWCMPType cmp;
 @property (nonatomic, readonly, strong) PWConfig * _Nullable config;
 - (void)initializeWithPublisherId:(NSString * _Nonnull)publisherId appId:(NSString * _Nonnull)appId viewController:(UIViewController * _Nonnull)viewController completionHandler:(void (^ _Nonnull)(void))completionHandler;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull adUnitsDictionary;

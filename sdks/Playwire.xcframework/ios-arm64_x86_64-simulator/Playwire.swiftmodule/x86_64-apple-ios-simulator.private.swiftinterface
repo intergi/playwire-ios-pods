@@ -343,7 +343,7 @@ extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @objc deinit
 }
-public enum PWCMPType : Swift.Int {
+@objc public enum PWCMPType : Swift.Int {
   case None, AlreadyLaunched, GoogleUmp
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -805,7 +805,7 @@ extension Foundation.Date {
   @objc public static let shared: Playwire.PlaywireSDK
   @objc final public let targeting: Playwire.PWTargeting
   @objc public var test: Swift.Bool
-  public var cmp: Playwire.PWCMPType
+  @objc public var cmp: Playwire.PWCMPType
   @objc public var config: Playwire.PWConfig? {
     get
   }

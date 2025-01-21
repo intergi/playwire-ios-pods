@@ -9334,7 +9334,7 @@
                     "kind": "TypeNominal",
                     "name": "PWCMPType",
                     "printedName": "Playwire.PWCMPType",
-                    "usr": "s:8Playwire9PWCMPTypeO"
+                    "usr": "c:@M@Playwire@E@PWCMPType"
                   },
                   {
                     "kind": "TypeNominal",
@@ -9345,7 +9345,7 @@
                         "kind": "TypeNominal",
                         "name": "PWCMPType",
                         "printedName": "Playwire.PWCMPType",
-                        "usr": "s:8Playwire9PWCMPTypeO"
+                        "usr": "c:@M@Playwire@E@PWCMPType"
                       }
                     ]
                   }
@@ -9353,9 +9353,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8Playwire9PWCMPTypeO4NoneyA2CmF",
+            "usr": "c:@M@Playwire@E@PWCMPType@PWCMPTypeNone",
             "mangledName": "$s8Playwire9PWCMPTypeO4NoneyA2CmF",
-            "moduleName": "Playwire"
+            "moduleName": "Playwire",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
           },
           {
             "kind": "Var",
@@ -9371,7 +9375,7 @@
                     "kind": "TypeNominal",
                     "name": "PWCMPType",
                     "printedName": "Playwire.PWCMPType",
-                    "usr": "s:8Playwire9PWCMPTypeO"
+                    "usr": "c:@M@Playwire@E@PWCMPType"
                   },
                   {
                     "kind": "TypeNominal",
@@ -9382,7 +9386,7 @@
                         "kind": "TypeNominal",
                         "name": "PWCMPType",
                         "printedName": "Playwire.PWCMPType",
-                        "usr": "s:8Playwire9PWCMPTypeO"
+                        "usr": "c:@M@Playwire@E@PWCMPType"
                       }
                     ]
                   }
@@ -9390,9 +9394,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8Playwire9PWCMPTypeO15AlreadyLaunchedyA2CmF",
+            "usr": "c:@M@Playwire@E@PWCMPType@PWCMPTypeAlreadyLaunched",
             "mangledName": "$s8Playwire9PWCMPTypeO15AlreadyLaunchedyA2CmF",
-            "moduleName": "Playwire"
+            "moduleName": "Playwire",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
           },
           {
             "kind": "Var",
@@ -9408,7 +9416,7 @@
                     "kind": "TypeNominal",
                     "name": "PWCMPType",
                     "printedName": "Playwire.PWCMPType",
-                    "usr": "s:8Playwire9PWCMPTypeO"
+                    "usr": "c:@M@Playwire@E@PWCMPType"
                   },
                   {
                     "kind": "TypeNominal",
@@ -9419,7 +9427,7 @@
                         "kind": "TypeNominal",
                         "name": "PWCMPType",
                         "printedName": "Playwire.PWCMPType",
-                        "usr": "s:8Playwire9PWCMPTypeO"
+                        "usr": "c:@M@Playwire@E@PWCMPType"
                       }
                     ]
                   }
@@ -9427,9 +9435,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8Playwire9PWCMPTypeO9GoogleUmpyA2CmF",
+            "usr": "c:@M@Playwire@E@PWCMPType@PWCMPTypeGoogleUmp",
             "mangledName": "$s8Playwire9PWCMPTypeO9GoogleUmpyA2CmF",
-            "moduleName": "Playwire"
+            "moduleName": "Playwire",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Constructor",
@@ -9445,7 +9457,7 @@
                     "kind": "TypeNominal",
                     "name": "PWCMPType",
                     "printedName": "Playwire.PWCMPType",
-                    "usr": "s:8Playwire9PWCMPTypeO"
+                    "usr": "c:@M@Playwire@E@PWCMPType"
                   }
                 ],
                 "usr": "s:Sq"
@@ -9505,11 +9517,12 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:8Playwire9PWCMPTypeO",
+        "usr": "c:@M@Playwire@E@PWCMPType",
         "mangledName": "$s8Playwire9PWCMPTypeO",
         "moduleName": "Playwire",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -24613,17 +24626,18 @@
                 "kind": "TypeNominal",
                 "name": "PWCMPType",
                 "printedName": "Playwire.PWCMPType",
-                "usr": "s:8Playwire9PWCMPTypeO"
+                "usr": "c:@M@Playwire@E@PWCMPType"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8Playwire0A3SDKC3cmpAA9PWCMPTypeOvp",
+            "usr": "c:@M@Playwire@objc(cs)PlaywireSDK(py)cmp",
             "mangledName": "$s8Playwire0A3SDKC3cmpAA9PWCMPTypeOvp",
             "moduleName": "Playwire",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -24636,14 +24650,17 @@
                     "kind": "TypeNominal",
                     "name": "PWCMPType",
                     "printedName": "Playwire.PWCMPType",
-                    "usr": "s:8Playwire9PWCMPTypeO"
+                    "usr": "c:@M@Playwire@E@PWCMPType"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Playwire0A3SDKC3cmpAA9PWCMPTypeOvg",
+                "usr": "c:@M@Playwire@objc(cs)PlaywireSDK(im)cmp",
                 "mangledName": "$s8Playwire0A3SDKC3cmpAA9PWCMPTypeOvg",
                 "moduleName": "Playwire",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -24660,14 +24677,17 @@
                     "kind": "TypeNominal",
                     "name": "PWCMPType",
                     "printedName": "Playwire.PWCMPType",
-                    "usr": "s:8Playwire9PWCMPTypeO"
+                    "usr": "c:@M@Playwire@E@PWCMPType"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Playwire0A3SDKC3cmpAA9PWCMPTypeOvs",
+                "usr": "c:@M@Playwire@objc(cs)PlaywireSDK(im)setCmp:",
                 "mangledName": "$s8Playwire0A3SDKC3cmpAA9PWCMPTypeOvs",
                 "moduleName": "Playwire",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -25876,42 +25896,28 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/consent\/PWCMPType.swift",
       "kind": "IntegerLiteral",
-      "offset": 196,
+      "offset": 202,
       "length": 15,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/consent\/PWCMPType.swift",
       "kind": "IntegerLiteral",
-      "offset": 213,
+      "offset": 219,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/consent\/PWCMPType.swift",
       "kind": "IntegerLiteral",
-      "offset": 196,
+      "offset": 202,
       "length": 15,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/consent\/PWCMPType.swift",
       "kind": "IntegerLiteral",
-      "offset": 213,
-      "length": 9,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/consent\/PWCMPType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 196,
-      "length": 15,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/consent\/PWCMPType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 213,
+      "offset": 219,
       "length": 9,
       "value": "2"
     },
@@ -25990,7 +25996,7 @@
       "kind": "StringLiteral",
       "offset": 253,
       "length": 8,
-      "value": "\"10.6.0\""
+      "value": "\"10.6.1\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
