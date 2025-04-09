@@ -224,6 +224,9 @@ extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
   @objc public var gadSizes: [Playwire.PWAdSize]? {
     get
   }
+  public var includeNative: Swift.Bool? {
+    get
+  }
   @objc public var customTargets: [Swift.String : Swift.String]? {
     get
   }
@@ -342,6 +345,24 @@ extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @objc deinit
+}
+extension Playwire.PWBannerView : GoogleMobileAds.GADAdLoaderDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func adLoader(_ adLoader: GoogleMobileAds.GADAdLoader, didFailToReceiveAdWithError error: any Swift.Error)
+}
+extension Playwire.PWBannerView : GoogleMobileAds.GAMBannerAdLoaderDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func validBannerSizes(for adLoader: GoogleMobileAds.GADAdLoader) -> [Foundation.NSValue]
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func adLoader(_ adLoader: GoogleMobileAds.GADAdLoader, didReceive bannerView: GoogleMobileAds.GAMBannerView)
+}
+extension Playwire.PWBannerView : GoogleMobileAds.GADNativeAdLoaderDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func adLoader(_ adLoader: GoogleMobileAds.GADAdLoader, didReceive nativeAd: GoogleMobileAds.GADNativeAd)
+}
+extension Playwire.PWBannerView : GoogleMobileAds.GADNativeAdDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdDidRecordImpression(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdDidRecordClick(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdWillPresentScreen(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdWillDismissScreen(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdDidDismissScreen(_ nativeAd: GoogleMobileAds.GADNativeAd)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func nativeAdIsMuted(_ nativeAd: GoogleMobileAds.GADNativeAd)
 }
 @objc public enum PWCMPType : Swift.Int {
   case None, AlreadyLaunched, GoogleUmp
@@ -687,6 +708,9 @@ extension Foundation.Date {
     get
   }
   public var refresh: Playwire.PWRampConfigAdUnitRefresh? {
+    get
+  }
+  public var includeNative: Swift.Bool? {
     get
   }
   public var bids: [Playwire.PWRampConfig_AdUnit_Bid] {
