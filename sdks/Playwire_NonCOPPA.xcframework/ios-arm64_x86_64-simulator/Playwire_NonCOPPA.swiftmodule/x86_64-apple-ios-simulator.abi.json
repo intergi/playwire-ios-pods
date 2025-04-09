@@ -698,6 +698,7 @@
         "declAttributes": [
           "AccessControl",
           "ObjCMembers",
+          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -1272,6 +1273,7 @@
         "declAttributes": [
           "AccessControl",
           "ObjCMembers",
+          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -1892,16 +1894,6 @@
       },
       {
         "kind": "Import",
-        "name": "Playwire",
-        "printedName": "Playwire",
-        "declKind": "Import",
-        "moduleName": "Playwire_NonCOPPA",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2297,149 +2289,121 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 276,
+      "offset": 349,
       "length": 22,
       "value": "\"prebidRequestSuccess\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 357,
+      "offset": 430,
       "length": 10,
       "value": "\"response\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 456,
+      "offset": 529,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 538,
+      "offset": 611,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 610,
+      "offset": 683,
       "length": 19,
       "value": "\"prebidRequestFail\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 682,
+      "offset": 755,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 772,
+      "offset": 845,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
-      "offset": 854,
+      "offset": 927,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "FloatLiteral",
-      "offset": 933,
+      "offset": 1006,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
-      "offset": 269,
+      "offset": 342,
       "length": 22,
       "value": "\"amazonRequestSuccess\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
-      "offset": 350,
+      "offset": 423,
       "length": 10,
       "value": "\"response\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
-      "offset": 449,
+      "offset": 522,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
-      "offset": 531,
+      "offset": 604,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
-      "offset": 603,
+      "offset": 676,
       "length": 19,
       "value": "\"amazonRequestFail\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
-      "offset": 675,
+      "offset": 748,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
-      "offset": 765,
+      "offset": 838,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
-      "offset": 847,
+      "offset": 920,
       "length": 10,
       "value": "\"duration\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/PWConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 234,
-      "length": 58,
-      "value": "\"https:\/\/prebid-server-dev.herokuapp.com\/openrtb2\/auction\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/PWConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 351,
-      "length": 65,
-      "value": "\"https:\/\/prebid-server-production.herokuapp.com\/openrtb2\/auction\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/PWConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 467,
-      "length": 10,
-      "value": "\"playwire\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/PWConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 521,
-      "length": 23,
-      "value": "\"PWinitRampEnvironment\""
     }
   ]
 }

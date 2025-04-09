@@ -115,7 +115,7 @@ extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
   @objc public var adUnitId: Swift.String {
     get
   }
-  @objc public var adSizes: Swift.Array<Playwire.PWAdSize>? {
+  @objc public var adSizes: [Playwire.PWAdSize]? {
     get
   }
   @objc deinit
@@ -148,10 +148,10 @@ extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
   required public init(from decoder: any Swift.Decoder) throws
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PWConfig : ObjectiveC.NSObject, Swift.Decodable {
-  @objc public var serverConfigs: Swift.Array<Playwire.PWAdServerConfig>? {
+  @objc public var serverConfigs: [Playwire.PWAdServerConfig]? {
     get
   }
-  @objc public var adUnits: Swift.Array<Playwire.PWAdUnit> {
+  @objc public var adUnits: [Playwire.PWAdUnit] {
     get
   }
   @objc public var app: Playwire.PWAppConfig? {
@@ -203,7 +203,7 @@ extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
   @objc public var name: Swift.String {
     get
   }
-  @objc public var adUnitConfigs: Swift.Array<Playwire.PWAdUnitConfig>? {
+  @objc public var adUnitConfigs: [Playwire.PWAdUnitConfig]? {
     get
   }
   public var strategy: Playwire.PWAdUnit.PWAdBidStrategyType? {
@@ -221,7 +221,7 @@ extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
   @objc public var gadUnitId: Swift.String {
     get
   }
-  @objc public var gadSizes: Swift.Array<Playwire.PWAdSize>? {
+  @objc public var gadSizes: [Playwire.PWAdSize]? {
     get
   }
   @objc public var customTargets: [Swift.String : Swift.String]? {

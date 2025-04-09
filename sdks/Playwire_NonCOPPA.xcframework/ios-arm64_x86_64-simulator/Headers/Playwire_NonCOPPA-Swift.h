@@ -299,7 +299,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
 @class NSString;
 
 SWIFT_CLASS("_TtC17Playwire_NonCOPPA7PWC_AMZ")
@@ -697,7 +696,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
 @class NSString;
 
 SWIFT_CLASS("_TtC17Playwire_NonCOPPA7PWC_AMZ")
