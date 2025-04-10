@@ -1729,6 +1729,23 @@
       },
       {
         "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "Playwire"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -5850,6 +5867,67 @@
           },
           {
             "kind": "Var",
+            "name": "includeNative",
+            "printedName": "includeNative",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Playwire8PWAdUnitC13includeNativeSbSgvp",
+            "mangledName": "$s8Playwire8PWAdUnitC13includeNativeSbSgvp",
+            "moduleName": "Playwire",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Playwire8PWAdUnitC13includeNativeSbSgvg",
+                "mangledName": "$s8Playwire8PWAdUnitC13includeNativeSbSgvg",
+                "moduleName": "Playwire",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "customTargets",
             "printedName": "customTargets",
             "children": [
@@ -9195,6 +9273,343 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "adLoader",
+            "printedName": "adLoader(_:didFailToReceiveAdWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADAdLoader",
+                "printedName": "GoogleMobileAds.GADAdLoader",
+                "usr": "c:objc(cs)GADAdLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Playwire@objc(cs)PWBannerView(im)adLoader:didFailToReceiveAdWithError:",
+            "mangledName": "$s8Playwire12PWBannerViewC8adLoader_27didFailToReceiveAdWithErrorySo05GADAdE0C_s0L0_ptF",
+            "moduleName": "Playwire",
+            "objc_name": "adLoader:didFailToReceiveAdWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "validBannerSizes",
+            "printedName": "validBannerSizes(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSValue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSValue",
+                    "printedName": "Foundation.NSValue",
+                    "usr": "c:objc(cs)NSValue"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADAdLoader",
+                "printedName": "GoogleMobileAds.GADAdLoader",
+                "usr": "c:objc(cs)GADAdLoader"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Playwire@objc(cs)PWBannerView(im)validBannerSizesForAdLoader:",
+            "mangledName": "$s8Playwire12PWBannerViewC16validBannerSizes3forSaySo7NSValueCGSo11GADAdLoaderC_tF",
+            "moduleName": "Playwire",
+            "objc_name": "validBannerSizesForAdLoader:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adLoader",
+            "printedName": "adLoader(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADAdLoader",
+                "printedName": "GoogleMobileAds.GADAdLoader",
+                "usr": "c:objc(cs)GADAdLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GAMBannerView",
+                "printedName": "GoogleMobileAds.GAMBannerView",
+                "usr": "c:objc(cs)GAMBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Playwire@objc(cs)PWBannerView(im)adLoader:didReceiveGAMBannerView:",
+            "mangledName": "$s8Playwire12PWBannerViewC8adLoader_10didReceiveySo05GADAdE0C_So09GAMBannerC0CtF",
+            "moduleName": "Playwire",
+            "objc_name": "adLoader:didReceiveGAMBannerView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adLoader",
+            "printedName": "adLoader(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADAdLoader",
+                "printedName": "GoogleMobileAds.GADAdLoader",
+                "usr": "c:objc(cs)GADAdLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADNativeAd",
+                "printedName": "GoogleMobileAds.GADNativeAd",
+                "usr": "c:objc(cs)GADNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Playwire@objc(cs)PWBannerView(im)adLoader:didReceiveNativeAd:",
+            "mangledName": "$s8Playwire12PWBannerViewC8adLoader_10didReceiveySo05GADAdE0C_So11GADNativeAdCtF",
+            "moduleName": "Playwire",
+            "objc_name": "adLoader:didReceiveNativeAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nativeAdDidRecordImpression",
+            "printedName": "nativeAdDidRecordImpression(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADNativeAd",
+                "printedName": "GoogleMobileAds.GADNativeAd",
+                "usr": "c:objc(cs)GADNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Playwire@objc(cs)PWBannerView(im)nativeAdDidRecordImpression:",
+            "mangledName": "$s8Playwire12PWBannerViewC27nativeAdDidRecordImpressionyySo09GADNativeE0CF",
+            "moduleName": "Playwire",
+            "objc_name": "nativeAdDidRecordImpression:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nativeAdDidRecordClick",
+            "printedName": "nativeAdDidRecordClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADNativeAd",
+                "printedName": "GoogleMobileAds.GADNativeAd",
+                "usr": "c:objc(cs)GADNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Playwire@objc(cs)PWBannerView(im)nativeAdDidRecordClick:",
+            "mangledName": "$s8Playwire12PWBannerViewC22nativeAdDidRecordClickyySo09GADNativeE0CF",
+            "moduleName": "Playwire",
+            "objc_name": "nativeAdDidRecordClick:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nativeAdWillPresentScreen",
+            "printedName": "nativeAdWillPresentScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADNativeAd",
+                "printedName": "GoogleMobileAds.GADNativeAd",
+                "usr": "c:objc(cs)GADNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Playwire@objc(cs)PWBannerView(im)nativeAdWillPresentScreen:",
+            "mangledName": "$s8Playwire12PWBannerViewC25nativeAdWillPresentScreenyySo09GADNativeE0CF",
+            "moduleName": "Playwire",
+            "objc_name": "nativeAdWillPresentScreen:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nativeAdWillDismissScreen",
+            "printedName": "nativeAdWillDismissScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADNativeAd",
+                "printedName": "GoogleMobileAds.GADNativeAd",
+                "usr": "c:objc(cs)GADNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Playwire@objc(cs)PWBannerView(im)nativeAdWillDismissScreen:",
+            "mangledName": "$s8Playwire12PWBannerViewC25nativeAdWillDismissScreenyySo09GADNativeE0CF",
+            "moduleName": "Playwire",
+            "objc_name": "nativeAdWillDismissScreen:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nativeAdDidDismissScreen",
+            "printedName": "nativeAdDidDismissScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADNativeAd",
+                "printedName": "GoogleMobileAds.GADNativeAd",
+                "usr": "c:objc(cs)GADNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Playwire@objc(cs)PWBannerView(im)nativeAdDidDismissScreen:",
+            "mangledName": "$s8Playwire12PWBannerViewC24nativeAdDidDismissScreenyySo09GADNativeE0CF",
+            "moduleName": "Playwire",
+            "objc_name": "nativeAdDidDismissScreen:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "nativeAdIsMuted",
+            "printedName": "nativeAdIsMuted(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADNativeAd",
+                "printedName": "GoogleMobileAds.GADNativeAd",
+                "usr": "c:objc(cs)GADNativeAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Playwire@objc(cs)PWBannerView(im)nativeAdIsMuted:",
+            "mangledName": "$s8Playwire12PWBannerViewC15nativeAdIsMutedyySo09GADNativeE0CF",
+            "moduleName": "Playwire",
+            "objc_name": "nativeAdIsMuted:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -21484,6 +21899,68 @@
           },
           {
             "kind": "Var",
+            "name": "includeNative",
+            "printedName": "includeNative",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8Playwire19PWRampConfig_AdUnitC13includeNativeSbSgvp",
+            "mangledName": "$s8Playwire19PWRampConfig_AdUnitC13includeNativeSbSgvp",
+            "moduleName": "Playwire",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8Playwire19PWRampConfig_AdUnitC13includeNativeSbSgvg",
+                "mangledName": "$s8Playwire19PWRampConfig_AdUnitC13includeNativeSbSgvg",
+                "moduleName": "Playwire",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "bids",
             "printedName": "bids",
             "children": [
@@ -21509,8 +21986,7 @@
             "declAttributes": [
               "HasStorage",
               "SetterAccess",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -25595,6 +26071,41 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/banner\/PWNativeBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 288,
+      "length": 3,
+      "value": "320"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/banner\/PWNativeBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 301,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/banner\/PWNativeBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 349,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/banner\/PWNativeBannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 362,
+      "length": 3,
+      "value": "250"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/banner\/PWNativeBannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 742,
+      "length": 18,
+      "value": "\"Playwire.PWNativeBannerView\""
+    },
+    {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/analytics\/Ramp\/RampAnalyticsLogger.swift",
       "kind": "StringLiteral",
       "offset": 609,
@@ -25807,49 +26318,49 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6245,
+      "offset": 6368,
       "length": 10,
       "value": "\"AdColony\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6304,
+      "offset": 6427,
       "length": 8,
       "value": "\"Vungle\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6361,
+      "offset": 6484,
       "length": 8,
       "value": "\"Smaato\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5898,
+      "offset": 6021,
       "length": 18,
       "value": "\"Playwire.PWAdMediatorConfig\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6596,
+      "offset": 6719,
       "length": 16,
       "value": "\"Playwire.SchainNodeConfig\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6541,
+      "offset": 6664,
       "length": 14,
       "value": "\"Playwire.PWSchainConfig\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7883,
+      "offset": 8006,
       "length": 15,
       "value": "\"Playwire.PWBannerRefresh\""
     },
@@ -26005,7 +26516,7 @@
       "kind": "StringLiteral",
       "offset": 290,
       "length": 8,
-      "value": "\"10.7.0\""
+      "value": "\"10.8.0\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
@@ -27361,112 +27872,112 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3506,
+      "offset": 3555,
       "length": 8,
       "value": "\"amazon\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3537,
+      "offset": 3586,
       "length": 8,
       "value": "\"prebid\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3506,
+      "offset": 3555,
       "length": 8,
       "value": "\"amazon\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3537,
+      "offset": 3586,
       "length": 8,
       "value": "\"prebid\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3995,
+      "offset": 4044,
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4020,
+      "offset": 4069,
       "length": 6,
       "value": "\"auto\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4049,
+      "offset": 4098,
       "length": 8,
       "value": "\"manual\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4080,
+      "offset": 4129,
       "length": 8,
       "value": "\"hybrid\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3995,
+      "offset": 4044,
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4020,
+      "offset": 4069,
       "length": 6,
       "value": "\"auto\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4049,
+      "offset": 4098,
       "length": 8,
       "value": "\"manual\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4080,
+      "offset": 4129,
       "length": 8,
       "value": "\"hybrid\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4148,
+      "offset": 4197,
       "length": 4,
       "value": "\"No\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4208,
+      "offset": 4257,
       "length": 6,
       "value": "\"Auto\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4272,
+      "offset": 4321,
       "length": 8,
       "value": "\"Manual\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4338,
+      "offset": 4387,
       "length": 8,
       "value": "\"Hybrid\""
     },

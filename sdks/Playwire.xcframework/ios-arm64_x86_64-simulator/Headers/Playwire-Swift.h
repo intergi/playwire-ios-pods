@@ -486,6 +486,36 @@ SWIFT_CLASS("_TtC8Playwire12PWBannerView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class GADAdLoader;
+
+@interface PWBannerView (SWIFT_EXTENSION(Playwire)) <GADAdLoaderDelegate>
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
+@end
+
+@class GADNativeAd;
+
+@interface PWBannerView (SWIFT_EXTENSION(Playwire)) <GADNativeAdLoaderDelegate>
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveNativeAd:(GADNativeAd * _Nonnull)nativeAd;
+@end
+
+@class NSValue;
+@class GAMBannerView;
+
+@interface PWBannerView (SWIFT_EXTENSION(Playwire)) <GAMBannerAdLoaderDelegate>
+- (NSArray<NSValue *> * _Nonnull)validBannerSizesForAdLoader:(GADAdLoader * _Nonnull)adLoader SWIFT_WARN_UNUSED_RESULT;
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveGAMBannerView:(GAMBannerView * _Nonnull)bannerView;
+@end
+
+
+@interface PWBannerView (SWIFT_EXTENSION(Playwire)) <GADNativeAdDelegate>
+- (void)nativeAdDidRecordImpression:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdDidRecordClick:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdWillPresentScreen:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdWillDismissScreen:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdDidDismissScreen:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdIsMuted:(GADNativeAd * _Nonnull)nativeAd;
+@end
+
 
 SWIFT_CLASS("_TtC8Playwire20PWBannerViewAnchored")
 @interface PWBannerViewAnchored : PWBannerViewBase
@@ -816,8 +846,6 @@ SWIFT_CLASS("_TtC8Playwire12PWNativeView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
-@class GADAdLoader;
-@class GADNativeAd;
 
 @interface PWNativeView (SWIFT_EXTENSION(Playwire)) <GADNativeAdLoaderDelegate>
 - (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveNativeAd:(GADNativeAd * _Nonnull)nativeAd;
@@ -1496,6 +1524,36 @@ SWIFT_CLASS("_TtC8Playwire12PWBannerView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class GADAdLoader;
+
+@interface PWBannerView (SWIFT_EXTENSION(Playwire)) <GADAdLoaderDelegate>
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
+@end
+
+@class GADNativeAd;
+
+@interface PWBannerView (SWIFT_EXTENSION(Playwire)) <GADNativeAdLoaderDelegate>
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveNativeAd:(GADNativeAd * _Nonnull)nativeAd;
+@end
+
+@class NSValue;
+@class GAMBannerView;
+
+@interface PWBannerView (SWIFT_EXTENSION(Playwire)) <GAMBannerAdLoaderDelegate>
+- (NSArray<NSValue *> * _Nonnull)validBannerSizesForAdLoader:(GADAdLoader * _Nonnull)adLoader SWIFT_WARN_UNUSED_RESULT;
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveGAMBannerView:(GAMBannerView * _Nonnull)bannerView;
+@end
+
+
+@interface PWBannerView (SWIFT_EXTENSION(Playwire)) <GADNativeAdDelegate>
+- (void)nativeAdDidRecordImpression:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdDidRecordClick:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdWillPresentScreen:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdWillDismissScreen:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdDidDismissScreen:(GADNativeAd * _Nonnull)nativeAd;
+- (void)nativeAdIsMuted:(GADNativeAd * _Nonnull)nativeAd;
+@end
+
 
 SWIFT_CLASS("_TtC8Playwire20PWBannerViewAnchored")
 @interface PWBannerViewAnchored : PWBannerViewBase
@@ -1826,8 +1884,6 @@ SWIFT_CLASS("_TtC8Playwire12PWNativeView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
-@class GADAdLoader;
-@class GADNativeAd;
 
 @interface PWNativeView (SWIFT_EXTENSION(Playwire)) <GADNativeAdLoaderDelegate>
 - (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveNativeAd:(GADNativeAd * _Nonnull)nativeAd;
