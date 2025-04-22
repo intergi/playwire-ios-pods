@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "Playwire",
+    "printedName": "Playwire",
     "children": [
       {
         "kind": "Import",
@@ -59,6 +59,7 @@
             "moduleName": "Playwire",
             "overriding": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -118,6 +119,7 @@
             "objc_name": "loadWithParams:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -160,6 +162,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -193,6 +196,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -204,6 +208,7 @@
         "mangledName": "$s8Playwire18PWBannerViewInlineC",
         "moduleName": "Playwire",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjCMembers",
@@ -220,6 +225,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -346,6 +365,7 @@
             "mangledName": "$s8Playwire8PWViewAdC10adUnitNameSSSgvp",
             "moduleName": "Playwire",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -452,8 +472,9 @@
             "moduleName": "Playwire",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
@@ -554,8 +575,9 @@
             "moduleName": "Playwire",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "SetterAccess",
               "AccessControl",
               "ObjC"
@@ -611,8 +633,9 @@
             "moduleName": "Playwire",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC"
@@ -723,9 +746,10 @@
             "moduleName": "Playwire",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
               "Final",
+              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
@@ -774,8 +798,9 @@
             "moduleName": "Playwire",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC"
@@ -903,6 +928,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required",
               "AccessControl"
@@ -936,6 +962,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -980,6 +1007,7 @@
             "mangledName": "$s8Playwire8PWViewAdC10adUnitName8delegateACSS_AA0bC8Delegate_pSgtcfc",
             "moduleName": "Playwire",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Convenience",
               "AccessControl",
@@ -1024,6 +1052,7 @@
             "mangledName": "$s8Playwire8PWViewAdC10adUnitName10controllerACSS_So16UIViewControllerCSgtcfc",
             "moduleName": "Playwire",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "Convenience",
               "AccessControl",
@@ -1051,6 +1080,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -1073,6 +1103,7 @@
             "mangledName": "$s8Playwire8PWViewAdC4loadyyF",
             "moduleName": "Playwire",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1101,6 +1132,7 @@
             "mangledName": "$s8Playwire8PWViewAdC4load6paramsyAA12PWLoadParamsC_tF",
             "moduleName": "Playwire",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1124,6 +1156,7 @@
             "mangledName": "$s8Playwire8PWViewAdC8isLoadedSbvp",
             "moduleName": "Playwire",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1168,6 +1201,7 @@
             "mangledName": "$s8Playwire8PWViewAdC7refreshyyF",
             "moduleName": "Playwire",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -1205,6 +1239,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1242,6 +1277,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1254,6 +1290,7 @@
         "mangledName": "$s8Playwire8PWViewAdC",
         "moduleName": "Playwire",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjCMembers",
@@ -1270,10 +1307,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "PMAdViewPresenterViewHolder",
-            "printedName": "PMAdViewPresenterViewHolder",
-            "usr": "c:@M@PlaywireMobile@objc(pl)PMAdViewPresenterViewHolder",
-            "mangledName": "$s14PlaywireMobile017PMAdViewPresenterD6HolderP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -1337,6 +1381,13 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PMAdViewPresenterViewHolder",
+            "printedName": "PMAdViewPresenterViewHolder",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAdViewPresenterViewHolder",
+            "mangledName": "$s14PlaywireMobile017PMAdViewPresenterD6HolderP"
           }
         ]
       },
@@ -1658,6 +1709,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1956,6 +2023,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2171,6 +2252,20 @@
             ],
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -2808,6 +2903,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3116,6 +3225,20 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -3444,6 +3567,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3732,6 +3869,20 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -4209,6 +4360,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4424,6 +4589,20 @@
             ],
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -4958,6 +5137,20 @@
             ],
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -6099,6 +6292,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6575,6 +6782,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -6898,6 +7119,20 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -7234,6 +7469,20 @@
                 "printedName": "Decodable",
                 "usr": "s:Se",
                 "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -7596,6 +7845,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7912,6 +8175,20 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -8396,6 +8673,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8542,6 +8833,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -9028,6 +9333,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -9166,6 +9485,7 @@
             "moduleName": "Playwire",
             "overriding": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -9236,6 +9556,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -9269,6 +9590,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -9286,8 +9608,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADAdLoader",
-                "printedName": "GoogleMobileAds.GADAdLoader",
+                "name": "AdLoader",
+                "printedName": "GoogleMobileAds.AdLoader",
                 "usr": "c:objc(cs)GADAdLoader"
               },
               {
@@ -9305,6 +9627,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -9332,8 +9655,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADAdLoader",
-                "printedName": "GoogleMobileAds.GADAdLoader",
+                "name": "AdLoader",
+                "printedName": "GoogleMobileAds.AdLoader",
                 "usr": "c:objc(cs)GADAdLoader"
               }
             ],
@@ -9345,6 +9668,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -9363,14 +9687,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADAdLoader",
-                "printedName": "GoogleMobileAds.GADAdLoader",
+                "name": "AdLoader",
+                "printedName": "GoogleMobileAds.AdLoader",
                 "usr": "c:objc(cs)GADAdLoader"
               },
               {
                 "kind": "TypeNominal",
-                "name": "GAMBannerView",
-                "printedName": "GoogleMobileAds.GAMBannerView",
+                "name": "AdManagerBannerView",
+                "printedName": "GoogleMobileAds.AdManagerBannerView",
                 "usr": "c:objc(cs)GAMBannerView"
               }
             ],
@@ -9382,6 +9706,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -9400,14 +9725,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADAdLoader",
-                "printedName": "GoogleMobileAds.GADAdLoader",
+                "name": "AdLoader",
+                "printedName": "GoogleMobileAds.AdLoader",
                 "usr": "c:objc(cs)GADAdLoader"
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -9419,6 +9744,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -9437,8 +9763,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -9450,6 +9776,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -9468,8 +9795,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -9481,6 +9808,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -9499,8 +9827,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -9512,6 +9840,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -9530,8 +9859,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -9543,6 +9872,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -9561,8 +9891,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -9574,6 +9904,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -9592,8 +9923,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -9605,6 +9936,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -9617,6 +9949,7 @@
         "mangledName": "$s8Playwire12PWBannerViewC",
         "moduleName": "Playwire",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjCMembers",
@@ -9633,6 +9966,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -9948,6 +10295,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -10090,6 +10451,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10347,6 +10722,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10671,24 +11060,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "PMInterstitialAdDelegate",
-            "printedName": "PMInterstitialAdDelegate",
-            "usr": "c:@M@PlaywireMobile@objc(pl)PMInterstitialAdDelegate",
-            "mangledName": "$s14PlaywireMobile24PMInterstitialAdDelegateP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
-            "name": "PMFullScreenAdDelegate",
-            "printedName": "PMFullScreenAdDelegate",
-            "usr": "c:@M@PlaywireMobile@objc(pl)PMFullScreenAdDelegate",
-            "mangledName": "$s14PlaywireMobile22PMFullScreenAdDelegateP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "PMAdDelegate",
-            "printedName": "PMAdDelegate",
-            "usr": "c:@M@PlaywireMobile@objc(pl)PMAdDelegate",
-            "mangledName": "$s14PlaywireMobile12PMAdDelegateP"
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -10738,6 +11120,27 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PMInterstitialAdDelegate",
+            "printedName": "PMInterstitialAdDelegate",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMInterstitialAdDelegate",
+            "mangledName": "$s14PlaywireMobile24PMInterstitialAdDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PMFullScreenAdDelegate",
+            "printedName": "PMFullScreenAdDelegate",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMFullScreenAdDelegate",
+            "mangledName": "$s14PlaywireMobile22PMFullScreenAdDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PMAdDelegate",
+            "printedName": "PMAdDelegate",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAdDelegate",
+            "mangledName": "$s14PlaywireMobile12PMAdDelegateP"
           }
         ]
       },
@@ -10791,8 +11194,8 @@
             "mangledName": "$s8Playwire14PWFullScreenAdC6adUnitAA04PWAdF0CSgvp",
             "moduleName": "Playwire",
             "declAttributes": [
-              "HasStorage",
               "Final",
+              "HasStorage",
               "AccessControl",
               "ObjC"
             ],
@@ -11186,8 +11589,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADFullScreenPresentingAd",
-                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -11199,6 +11602,8 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -11216,8 +11621,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADFullScreenPresentingAd",
-                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -11229,6 +11634,8 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -11246,8 +11653,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADFullScreenPresentingAd",
-                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -11259,6 +11666,8 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -11276,8 +11685,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADFullScreenPresentingAd",
-                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               },
               {
@@ -11295,6 +11704,8 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -11312,8 +11723,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADFullScreenPresentingAd",
-                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -11325,6 +11736,8 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -11342,8 +11755,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADFullScreenPresentingAd",
-                "printedName": "any GoogleMobileAds.GADFullScreenPresentingAd",
+                "name": "FullScreenPresentingAd",
+                "printedName": "any GoogleMobileAds.FullScreenPresentingAd",
                 "usr": "c:objc(pl)GADFullScreenPresentingAd"
               }
             ],
@@ -11355,6 +11768,8 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -11376,6 +11791,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11580,6 +12009,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -12078,7 +12521,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -12446,6 +12905,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -12643,6 +13116,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -17875,6 +18364,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -18009,6 +18512,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -18042,6 +18546,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -18059,8 +18564,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADBannerView",
-                "printedName": "GoogleMobileAds.GADBannerView",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
                 "usr": "c:objc(cs)GADBannerView"
               }
             ],
@@ -18072,6 +18577,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -18090,8 +18596,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADBannerView",
-                "printedName": "GoogleMobileAds.GADBannerView",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
                 "usr": "c:objc(cs)GADBannerView"
               },
               {
@@ -18109,6 +18615,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -18127,8 +18634,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADBannerView",
-                "printedName": "GoogleMobileAds.GADBannerView",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
                 "usr": "c:objc(cs)GADBannerView"
               }
             ],
@@ -18140,6 +18647,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -18158,8 +18666,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADBannerView",
-                "printedName": "GoogleMobileAds.GADBannerView",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
                 "usr": "c:objc(cs)GADBannerView"
               }
             ],
@@ -18171,6 +18679,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -18189,8 +18698,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADBannerView",
-                "printedName": "GoogleMobileAds.GADBannerView",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
                 "usr": "c:objc(cs)GADBannerView"
               }
             ],
@@ -18202,6 +18711,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -18220,8 +18730,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADBannerView",
-                "printedName": "GoogleMobileAds.GADBannerView",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
                 "usr": "c:objc(cs)GADBannerView"
               }
             ],
@@ -18233,6 +18743,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -18251,8 +18762,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADBannerView",
-                "printedName": "GoogleMobileAds.GADBannerView",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
                 "usr": "c:objc(cs)GADBannerView"
               }
             ],
@@ -18264,6 +18775,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -18282,14 +18794,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADBannerView",
-                "printedName": "GoogleMobileAds.GADBannerView",
+                "name": "BannerView",
+                "printedName": "GoogleMobileAds.BannerView",
                 "usr": "c:objc(cs)GADBannerView"
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADAdSize",
-                "printedName": "GoogleMobileAds.GADAdSize",
+                "name": "AdSize",
+                "printedName": "GoogleMobileAds.AdSize",
                 "usr": "c:@S@GADAdSize"
               }
             ],
@@ -18301,6 +18813,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -18313,6 +18826,7 @@
         "mangledName": "$s8Playwire16PWBannerViewBaseC",
         "moduleName": "Playwire",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjCMembers",
@@ -18328,6 +18842,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -18755,6 +19283,22 @@
         "moduleName": "Playwire",
         "declAttributes": [
           "UsableFromInline"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -18821,6 +19365,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required",
               "AccessControl"
@@ -18885,6 +19430,7 @@
             "mangledName": "$s8Playwire12PWNativeViewC10adUnitName10controller7factory8delegateACSS_So16UIViewControllerCSgAA0bC7Factory_pAA16PWViewAdDelegate_pSgtcfc",
             "moduleName": "Playwire",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -18917,6 +19463,7 @@
             "moduleName": "Playwire",
             "overriding": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -18979,6 +19526,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -18996,14 +19544,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADAdLoader",
-                "printedName": "GoogleMobileAds.GADAdLoader",
+                "name": "AdLoader",
+                "printedName": "GoogleMobileAds.AdLoader",
                 "usr": "c:objc(cs)GADAdLoader"
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -19015,6 +19563,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -19033,8 +19582,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADAdLoader",
-                "printedName": "GoogleMobileAds.GADAdLoader",
+                "name": "AdLoader",
+                "printedName": "GoogleMobileAds.AdLoader",
                 "usr": "c:objc(cs)GADAdLoader"
               },
               {
@@ -19052,6 +19601,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -19070,8 +19620,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -19083,6 +19633,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -19101,8 +19652,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -19114,6 +19665,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -19132,8 +19684,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -19145,6 +19697,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -19163,8 +19716,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -19176,6 +19729,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -19194,8 +19748,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -19207,6 +19761,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -19225,8 +19780,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADNativeAd",
-                "printedName": "GoogleMobileAds.GADNativeAd",
+                "name": "NativeAd",
+                "printedName": "GoogleMobileAds.NativeAd",
                 "usr": "c:objc(cs)GADNativeAd"
               }
             ],
@@ -19238,6 +19793,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -19250,6 +19806,7 @@
         "mangledName": "$s8Playwire12PWNativeViewC",
         "moduleName": "Playwire",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjCMembers",
@@ -19264,6 +19821,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -19393,6 +19964,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -19570,6 +20157,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -19761,8 +20362,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GADRequest",
-                "printedName": "GoogleMobileAds.GADRequest",
+                "name": "Request",
+                "printedName": "GoogleMobileAds.Request",
                 "usr": "c:objc(cs)GADRequest"
               }
             ],
@@ -19789,6 +20390,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -19979,6 +20596,20 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -20527,6 +21158,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -20735,6 +21380,20 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -21175,6 +21834,20 @@
             ],
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -22071,6 +22744,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -22286,6 +22973,20 @@
             ],
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -22581,6 +23282,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -22728,6 +23443,20 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -23020,6 +23749,20 @@
             ],
             "enumRawTypeName": "String",
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Equatable",
@@ -23471,6 +24214,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -23756,6 +24513,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -23853,6 +24626,7 @@
             "moduleName": "Playwire",
             "overriding": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "Override"
@@ -23912,6 +24686,7 @@
             "objc_name": "loadWithParams:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -23954,6 +24729,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -23987,6 +24763,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -23998,6 +24775,7 @@
         "mangledName": "$s8Playwire20PWBannerViewAnchoredC",
         "moduleName": "Playwire",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjCMembers",
@@ -24014,6 +24792,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -24793,6 +25585,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -25533,8 +26339,8 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GAMRequest",
-                "printedName": "GoogleMobileAds.GAMRequest",
+                "name": "AdManagerRequest",
+                "printedName": "GoogleMobileAds.AdManagerRequest",
                 "usr": "c:objc(cs)GAMRequest"
               }
             ],
@@ -25590,6 +26396,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -25716,6 +26536,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -25796,6 +26630,20 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -25920,6 +26768,20 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -26099,13 +26961,6 @@
       "value": "250"
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/banner\/PWNativeBannerView.swift",
-      "kind": "StringLiteral",
-      "offset": 742,
-      "length": 18,
-      "value": "\"Playwire.PWNativeBannerView\""
-    },
-    {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/analytics\/Ramp\/RampAnalyticsLogger.swift",
       "kind": "StringLiteral",
       "offset": 609,
@@ -26139,48 +26994,6 @@
       "offset": 868,
       "length": 38,
       "value": "\"benchmark_fullAdLoadToImpressionTime\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/analytics\/Ramp\/RampAnalyticsLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 609,
-      "length": 31,
-      "value": "\"benchmark_prebidAdRequestTime\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/analytics\/Ramp\/RampAnalyticsLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 673,
-      "length": 28,
-      "value": "\"benchmark_amzAdRequestTime\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/analytics\/Ramp\/RampAnalyticsLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 734,
-      "length": 28,
-      "value": "\"benchmark_gamAdRequestTime\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/analytics\/Ramp\/RampAnalyticsLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 796,
-      "length": 29,
-      "value": "\"benchmark_fullAdRequestTime\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/analytics\/Ramp\/RampAnalyticsLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 868,
-      "length": 38,
-      "value": "\"benchmark_fullAdLoadToImpressionTime\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 207,
-      "length": 8,
-      "value": "\"Playwire.PWAdSize\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
@@ -26198,34 +27011,6 @@
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 487,
-      "length": 16,
-      "value": "\"Playwire.PWAdServerConfig\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1523,
-      "length": 14,
-      "value": "\"Playwire.PWAdUnitConfig\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1963,
-      "length": 11,
-      "value": "\"Playwire.PWAppConfig\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 2404,
-      "length": 10,
-      "value": "\"Playwire.PWOMConfig\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
       "kind": "Array",
       "offset": 3642,
       "length": 2,
@@ -26237,13 +27022,6 @@
       "offset": 3708,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 2841,
-      "length": 8,
-      "value": "\"Playwire.PWConfig\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
@@ -26311,13 +27089,6 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3785,
-      "length": 8,
-      "value": "\"Playwire.PWAdUnit\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
-      "kind": "StringLiteral",
       "offset": 6368,
       "length": 10,
       "value": "\"AdColony\""
@@ -26339,30 +27110,23 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6021,
-      "length": 18,
-      "value": "\"Playwire.PWAdMediatorConfig\""
+      "offset": 7661,
+      "length": 5,
+      "value": "\"ver\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6719,
-      "length": 16,
-      "value": "\"Playwire.SchainNodeConfig\""
+      "offset": 7699,
+      "length": 10,
+      "value": "\"complete\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6664,
-      "length": 14,
-      "value": "\"Playwire.PWSchainConfig\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 8006,
-      "length": 15,
-      "value": "\"Playwire.PWBannerRefresh\""
+      "offset": 7903,
+      "length": 7,
+      "value": "\"nodes\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/PWTargeting.swift",
@@ -26370,13 +27134,6 @@
       "offset": 1122,
       "length": 15,
       "value": "\"cust_cli_tag_\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/notifier\/PWNotifier.swift",
-      "kind": "StringLiteral",
-      "offset": 262,
-      "length": 15,
-      "value": "\"Playwire.PWListenerToken\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/analytics\/Ramp\/AdUnitTimestampTracker.swift",
@@ -26407,18 +27164,11 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/consent\/PWCMPType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 248,
-      "length": 15,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/consent\/PWCMPType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 265,
-      "length": 9,
-      "value": "2"
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/Extensions\/PWConfig+ChildProtection.swift",
+      "kind": "BooleanLiteral",
+      "offset": 252,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/consent\/PWCMPType.swift",
@@ -26433,13 +27183,6 @@
       "offset": 265,
       "length": 9,
       "value": "2"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/fullScreen\/rewardedInterstitial\/PWRewardedInterstitial.swift",
-      "kind": "StringLiteral",
-      "offset": 203,
-      "length": 22,
-      "value": "\"Playwire.PWRewardedInterstitial\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/fullScreen\/appOpen\/PWAppOpenAd.swift",
@@ -26447,20 +27190,6 @@
       "offset": 290,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/fullScreen\/appOpen\/PWAppOpenAd.swift",
-      "kind": "StringLiteral",
-      "offset": 205,
-      "length": 11,
-      "value": "\"Playwire.PWAppOpenAd\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/fullScreen\/interstitial\/PWInterstitial.swift",
-      "kind": "StringLiteral",
-      "offset": 283,
-      "length": 14,
-      "value": "\"Playwire.PWInterstitial\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/fullScreen\/PWFullScreenAd.swift",
@@ -26477,13 +27206,6 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/fullScreen\/PWFullScreenAd.swift",
-      "kind": "StringLiteral",
-      "offset": 195,
-      "length": 14,
-      "value": "\"Playwire.PWFullScreenAd\""
-    },
-    {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWDataLoaderRetrier.swift",
       "kind": "IntegerLiteral",
       "offset": 371,
@@ -26498,25 +27220,11 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/headerBidding\/PWAdSlot.swift",
-      "kind": "StringLiteral",
-      "offset": 611,
-      "length": 8,
-      "value": "\"Playwire.PWAdSlot\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/fullScreen\/rewarded\/PWRewarded.swift",
-      "kind": "StringLiteral",
-      "offset": 219,
-      "length": 10,
-      "value": "\"Playwire.PWRewarded\""
-    },
-    {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
       "kind": "StringLiteral",
       "offset": 290,
       "length": 8,
-      "value": "\"10.8.0\""
+      "value": "\"11.0.0\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
@@ -27688,76 +28396,6 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/native\/PWNativeView.swift",
-      "kind": "StringLiteral",
-      "offset": 326,
-      "length": 12,
-      "value": "\"Playwire.PWNativeView\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/native\/PWNativeView.swift",
-      "kind": "StringLiteral",
-      "offset": 326,
-      "length": 12,
-      "value": "\"Playwire.PWNativeView\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1288,
-      "length": 8,
-      "value": "\"banner\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1327,
-      "length": 17,
-      "value": "\"banner_anchored\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1373,
-      "length": 15,
-      "value": "\"banner_inline\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1417,
-      "length": 14,
-      "value": "\"interstitial\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1456,
-      "length": 13,
-      "value": "\"rewarded_ad\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1495,
-      "length": 10,
-      "value": "\"app_open\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1542,
-      "length": 23,
-      "value": "\"rewarded_interstitial\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1588,
-      "length": 11,
-      "value": "\"native_ad\""
-    },
-    {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
       "offset": 1288,
@@ -27886,48 +28524,6 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3555,
-      "length": 8,
-      "value": "\"amazon\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 3586,
-      "length": 8,
-      "value": "\"prebid\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4044,
-      "length": 4,
-      "value": "\"no\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4069,
-      "length": 6,
-      "value": "\"auto\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4098,
-      "length": 8,
-      "value": "\"manual\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4129,
-      "length": 8,
-      "value": "\"hybrid\""
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampConfig.swift",
-      "kind": "StringLiteral",
       "offset": 4044,
       "length": 4,
       "value": "\"no\""
@@ -27990,10 +28586,38 @@
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/native\/PWNativeViewContent.swift",
-      "kind": "StringLiteral",
-      "offset": 225,
-      "length": 19,
-      "value": "\"Playwire.PWNativeViewContent\""
+      "kind": "IntegerLiteral",
+      "offset": 648,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/native\/PWNativeViewContent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 979,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/native\/PWNativeViewContent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1222,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/native\/PWNativeViewContent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1284,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/ads\/view\/native\/PWNativeViewContent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1325,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWEndpoint.swift",
@@ -28040,6 +28664,13 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
       "kind": "BooleanLiteral",
+      "offset": 790,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
+      "kind": "BooleanLiteral",
       "offset": 979,
       "length": 5,
       "value": "false"
@@ -28053,10 +28684,17 @@
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
-      "kind": "StringLiteral",
-      "offset": 242,
-      "length": 11,
-      "value": "\"Playwire.PlaywireSDK\""
+      "kind": "IntegerLiteral",
+      "offset": 2992,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/PlaywireSDK.swift",
+      "kind": "Dictionary",
+      "offset": 3020,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/PlaywireSDK\/config\/PWRampToPlatformAdapterConfigParser.swift",
