@@ -614,8 +614,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Playwire_Inmobi",
-        "printedName": "Playwire_Inmobi",
+        "name": "Playwire_InMobi",
+        "printedName": "Playwire_InMobi",
         "children": [
           {
             "kind": "Function",
@@ -629,8 +629,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Playwire_COPPA@objc(cs)Playwire_Inmobi(cm)register",
-            "mangledName": "$s14Playwire_COPPA0A7_InmobiC8registeryyFZ",
+            "usr": "c:@M@Playwire_COPPA@objc(cs)Playwire_InMobi(cm)register",
+            "mangledName": "$s14Playwire_COPPA0A7_InMobiC8registeryyFZ",
             "moduleName": "Playwire_COPPA",
             "static": true,
             "objc_name": "register",
@@ -647,14 +647,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Playwire_Inmobi",
-                "printedName": "Playwire_COPPA.Playwire_Inmobi",
-                "usr": "c:@M@Playwire_COPPA@objc(cs)Playwire_Inmobi"
+                "name": "Playwire_InMobi",
+                "printedName": "Playwire_COPPA.Playwire_InMobi",
+                "usr": "c:@M@Playwire_COPPA@objc(cs)Playwire_InMobi"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@Playwire_COPPA@objc(cs)Playwire_Inmobi(im)init",
-            "mangledName": "$s14Playwire_COPPA0A7_InmobiCACycfc",
+            "usr": "c:@M@Playwire_COPPA@objc(cs)Playwire_InMobi(im)init",
+            "mangledName": "$s14Playwire_COPPA0A7_InMobiCACycfc",
             "moduleName": "Playwire_COPPA",
             "overriding": true,
             "implicit": true,
@@ -668,8 +668,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@Playwire_COPPA@objc(cs)Playwire_Inmobi",
-        "mangledName": "$s14Playwire_COPPA0A7_InmobiC",
+        "usr": "c:@M@Playwire_COPPA@objc(cs)Playwire_InMobi",
+        "mangledName": "$s14Playwire_COPPA0A7_InMobiC",
         "moduleName": "Playwire_COPPA",
         "declAttributes": [
           "AccessControl",

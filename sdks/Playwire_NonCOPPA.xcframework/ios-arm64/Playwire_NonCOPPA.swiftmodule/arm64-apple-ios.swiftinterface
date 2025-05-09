@@ -1,7 +1,8 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios18.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Playwire_NonCOPPA
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Playwire_NonCOPPA
 import AppLovinAdapter
+import AppLovinSDK
 import AppTrackingTransparency
 import CoreGraphics
 import DTBiOSSDK
@@ -14,6 +15,7 @@ import PAGAdSDK
 import PangleAdapter
 import Playwire
 import PrebidMobile
+import PrebidMobileMAXAdapters
 import Swift
 import UIKit
 import _Concurrency

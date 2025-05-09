@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target x86_64-apple-ios18.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Playwire
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Playwire
 import FirebaseAnalytics
 import FirebaseCore
 import Foundation
@@ -50,6 +50,12 @@ import _SwiftConcurrencyShims
 extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func willStartPresentingAd(presenter: PlaywireMobile.PMAdViewPresenter, refresh: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func didEndPresentingAd(presenter: PlaywireMobile.PMAdViewPresenter, willRefresh: Swift.Bool)
+}
+extension Playwire.PWViewAd : Playwire.PWAdNetworkDelegate {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdLoaded()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdLoadFailed()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdClicked()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdImpression()
 }
 @objc public protocol PWFullScreenAdDelegate {
   @objc func fullScreenAdDidLoad(_ ad: Playwire.PWFullScreenAd)
@@ -125,10 +131,16 @@ extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
   @objc public var gamAppId: Swift.String? {
     get
   }
+  @objc public var appLovinAppId: Swift.String? {
+    get
+  }
   @objc public var storeUrl: Swift.String? {
     get
   }
   public var childProtection: Swift.Bool? {
+    get
+  }
+  @objc public var categories: [Swift.String]? {
     get
   }
   @objc deinit
@@ -221,6 +233,12 @@ extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
   @objc public var gadUnitId: Swift.String {
     get
   }
+  @objc public var appLovinUnitId: Swift.String? {
+    get
+  }
+  public var appLovinRatio: Swift.Double? {
+    get
+  }
   @objc public var gadSizes: [Playwire.PWAdSize]? {
     get
   }
@@ -235,7 +253,6 @@ extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PWAdMediatorConfig : ObjectiveC.NSObject, Swift.Decodable {
   public enum PWAdMediatorType : Swift.String, Swift.Decodable {
-    case AdColony
     case AppLovin
     case Fyber
     case Chartboost
@@ -250,7 +267,6 @@ extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
       get
     }
   }
-  @objc public static let PWAdMediatorType_AdColony: Swift.String
   @objc public static let PWAdMediatorType_Vungle: Swift.String
   @objc public static let PWAdMediatorType_Smaato: Swift.String
   public var type: Playwire.PWAdMediatorConfig.PWAdMediatorType {
@@ -415,6 +431,29 @@ extension Playwire.PWFullScreenAd : GoogleMobileAds.FullScreenContentDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidRecordImpression(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidRecordClick(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
 }
+public protocol PWAdNetwork {
+  init()
+  var type: Playwire.PWAdNetworkType { get }
+  var delegate: (any Playwire.PWAdNetworkDelegate)? { get set }
+  func initialize(config: Playwire.PWConfig) async -> Swift.Bool
+  func createAdView(adUnit: Playwire.PWAdUnit) -> UIKit.UIView?
+  func loadAdView(adView: UIKit.UIView)
+}
+public protocol PWAdNetworkDelegate : AnyObject {
+  func onAdLoaded()
+  func onAdLoadFailed()
+  func onAdClicked()
+  func onAdImpression()
+}
+public enum PWAdNetworkType : Swift.String {
+  case gam
+  case appLovin
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PWRewarded : Playwire.PWFullScreenAd {
   @objc convenience public init(adUnitName: Swift.String, viewController: UIKit.UIViewController, delegate: (any Playwire.PWFullScreenAdDelegate)? = nil)
   @objc override public func show()
@@ -425,6 +464,7 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
   public var adUnit: Playwire.PWAdUnit
   public var adUnitConfig: Playwire.PWAdUnitConfig
   public var adServerConfig: Playwire.PWAdServerConfig
+  final public let adNetworkType: Playwire.PWAdNetworkType
   public var bid: Playwire.PWAdBid?
   @objc deinit
 }
@@ -436,6 +476,7 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
     set
   }
   @objc override required dynamic public init()
+  open func setupAdView(_ adView: UIKit.UIView?) throws
   open func load() async throws
   @objc deinit
 }
@@ -447,7 +488,10 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
   @objc public static let Version: Swift.String
   @objc public static let EVT_sdkInit: Swift.String
   @objc public static let EVT_sdkInit_info: Swift.String
+  @objc public static let EVT_sdkInit_fix: Swift.String
   @objc public static let EVT_sdkInit_info_doubleInitialization: Swift.String
+  @objc public static let EVT_sdkInit_info_inmobiWindowRequired: Swift.String
+  @objc public static let EVT_sdkInit_fix_inmobiWindowRequired: Swift.String
   @objc public static let EVT_gamInit: Swift.String
   @objc public static let EVT_gamInit_status: Swift.String
   @objc public static let EVT_gamInit_error: Swift.String
@@ -463,7 +507,9 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
   @objc public static let EVT_biddingEnd_duration: Swift.String
   @objc public static let EVT_CTX_adUnit_mode: Swift.String
   @objc public static let EVT_CTX_adUnit_name: Swift.String
+  @objc public static let EVT_CTX_adUnit_adNetwork: Swift.String
   @objc public static let EVT_CTX_adUnit_gadUnitId: Swift.String
+  @objc public static let EVT_CTX_adUnit_appLovinUnitId: Swift.String
   @objc public static let EVT_CTX_requestTimestamp: Swift.String
   @objc public static let EVT_CTX_configTargeting: Swift.String
   @objc public static let EVT_CTX_loadTargeting: Swift.String
@@ -638,6 +684,9 @@ extension Foundation.Date {
   public var gamAppId: Swift.String {
     get
   }
+  public var appLovinAppId: Swift.String? {
+    get
+  }
   public var storeUrl: Swift.String {
     get
   }
@@ -700,6 +749,12 @@ extension Foundation.Date {
     get
   }
   public var code: Swift.String {
+    get
+  }
+  public var appLovinUnitId: Swift.String? {
+    get
+  }
+  public var appLovinRatio: Swift.Double? {
     get
   }
   public var sizes: [[Swift.Int]] {
@@ -854,6 +909,9 @@ extension Playwire.PWAdMediatorConfig.PWAdMediatorType : Swift.RawRepresentable 
 extension Playwire.PWCMPType : Swift.Equatable {}
 extension Playwire.PWCMPType : Swift.Hashable {}
 extension Playwire.PWCMPType : Swift.RawRepresentable {}
+extension Playwire.PWAdNetworkType : Swift.Equatable {}
+extension Playwire.PWAdNetworkType : Swift.Hashable {}
+extension Playwire.PWAdNetworkType : Swift.RawRepresentable {}
 extension Playwire.PWRampConfig_AdUnit.PWRampConfigAdUnitUnit : Swift.Equatable {}
 extension Playwire.PWRampConfig_AdUnit.PWRampConfigAdUnitUnit : Swift.Hashable {}
 extension Playwire.PWRampConfig_AdUnit.PWRampConfigAdUnitUnit : Swift.RawRepresentable {}

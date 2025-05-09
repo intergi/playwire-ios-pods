@@ -329,8 +329,6 @@ SWIFT_PROTOCOL("_TtP8Playwire12PWAdMediator_")
 
 SWIFT_CLASS("_TtC8Playwire18PWAdMediatorConfig")
 @interface PWAdMediatorConfig : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PWAdMediatorType_AdColony;)
-+ (NSString * _Nonnull)PWAdMediatorType_AdColony SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PWAdMediatorType_Vungle;)
 + (NSString * _Nonnull)PWAdMediatorType_Vungle SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PWAdMediatorType_Smaato;)
@@ -395,6 +393,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @property (nonatomic, readonly, copy) NSArray<PWAdUnitConfig *> * _Nullable adUnitConfigs;
 @property (nonatomic, readonly, strong) PWBannerRefresh * _Nullable refresh;
 @property (nonatomic, readonly, copy) NSString * _Nonnull gadUnitId;
+@property (nonatomic, readonly, copy) NSString * _Nullable appLovinUnitId;
 @property (nonatomic, readonly, copy) NSArray<PWAdSize *> * _Nullable gadSizes;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nullable customTargets;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -415,7 +414,9 @@ SWIFT_CLASS("_TtC8Playwire14PWAdUnitConfig")
 SWIFT_CLASS("_TtC8Playwire11PWAppConfig")
 @interface PWAppConfig : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable gamAppId;
+@property (nonatomic, readonly, copy) NSString * _Nullable appLovinAppId;
 @property (nonatomic, readonly, copy) NSString * _Nullable storeUrl;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable categories;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -563,8 +564,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)EVT_sdkInit SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_info;)
 + (NSString * _Nonnull)EVT_sdkInit_info SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_fix;)
++ (NSString * _Nonnull)EVT_sdkInit_fix SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_info_doubleInitialization;)
 + (NSString * _Nonnull)EVT_sdkInit_info_doubleInitialization SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_info_inmobiWindowRequired;)
++ (NSString * _Nonnull)EVT_sdkInit_info_inmobiWindowRequired SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_fix_inmobiWindowRequired;)
++ (NSString * _Nonnull)EVT_sdkInit_fix_inmobiWindowRequired SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamInit;)
 + (NSString * _Nonnull)EVT_gamInit SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamInit_status;)
@@ -595,8 +602,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)EVT_CTX_adUnit_mode SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_CTX_adUnit_name;)
 + (NSString * _Nonnull)EVT_CTX_adUnit_name SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_CTX_adUnit_adNetwork;)
++ (NSString * _Nonnull)EVT_CTX_adUnit_adNetwork SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_CTX_adUnit_gadUnitId;)
 + (NSString * _Nonnull)EVT_CTX_adUnit_gadUnitId SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_CTX_adUnit_appLovinUnitId;)
++ (NSString * _Nonnull)EVT_CTX_adUnit_appLovinUnitId SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_CTX_requestTimestamp;)
 + (NSString * _Nonnull)EVT_CTX_requestTimestamp SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_CTX_configTargeting;)
@@ -996,6 +1007,14 @@ SWIFT_CLASS("_TtC8Playwire11PWTargeting")
 @interface PWViewAd (SWIFT_EXTENSION(Playwire)) <PMAdViewPresenterViewHolder>
 - (void)willStartPresentingAdWithPresenter:(PMAdViewPresenter * _Nonnull)presenter refresh:(BOOL)refresh;
 - (void)didEndPresentingAdWithPresenter:(PMAdViewPresenter * _Nonnull)presenter willRefresh:(BOOL)willRefresh;
+@end
+
+
+@interface PWViewAd (SWIFT_EXTENSION(Playwire))
+- (void)onAdLoaded;
+- (void)onAdLoadFailed;
+- (void)onAdClicked;
+- (void)onAdImpression;
 @end
 
 
@@ -1371,8 +1390,6 @@ SWIFT_PROTOCOL("_TtP8Playwire12PWAdMediator_")
 
 SWIFT_CLASS("_TtC8Playwire18PWAdMediatorConfig")
 @interface PWAdMediatorConfig : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PWAdMediatorType_AdColony;)
-+ (NSString * _Nonnull)PWAdMediatorType_AdColony SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PWAdMediatorType_Vungle;)
 + (NSString * _Nonnull)PWAdMediatorType_Vungle SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PWAdMediatorType_Smaato;)
@@ -1437,6 +1454,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @property (nonatomic, readonly, copy) NSArray<PWAdUnitConfig *> * _Nullable adUnitConfigs;
 @property (nonatomic, readonly, strong) PWBannerRefresh * _Nullable refresh;
 @property (nonatomic, readonly, copy) NSString * _Nonnull gadUnitId;
+@property (nonatomic, readonly, copy) NSString * _Nullable appLovinUnitId;
 @property (nonatomic, readonly, copy) NSArray<PWAdSize *> * _Nullable gadSizes;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nullable customTargets;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1457,7 +1475,9 @@ SWIFT_CLASS("_TtC8Playwire14PWAdUnitConfig")
 SWIFT_CLASS("_TtC8Playwire11PWAppConfig")
 @interface PWAppConfig : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable gamAppId;
+@property (nonatomic, readonly, copy) NSString * _Nullable appLovinAppId;
 @property (nonatomic, readonly, copy) NSString * _Nullable storeUrl;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable categories;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1605,8 +1625,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)EVT_sdkInit SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_info;)
 + (NSString * _Nonnull)EVT_sdkInit_info SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_fix;)
++ (NSString * _Nonnull)EVT_sdkInit_fix SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_info_doubleInitialization;)
 + (NSString * _Nonnull)EVT_sdkInit_info_doubleInitialization SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_info_inmobiWindowRequired;)
++ (NSString * _Nonnull)EVT_sdkInit_info_inmobiWindowRequired SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_sdkInit_fix_inmobiWindowRequired;)
++ (NSString * _Nonnull)EVT_sdkInit_fix_inmobiWindowRequired SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamInit;)
 + (NSString * _Nonnull)EVT_gamInit SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamInit_status;)
@@ -1637,8 +1663,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)EVT_CTX_adUnit_mode SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_CTX_adUnit_name;)
 + (NSString * _Nonnull)EVT_CTX_adUnit_name SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_CTX_adUnit_adNetwork;)
++ (NSString * _Nonnull)EVT_CTX_adUnit_adNetwork SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_CTX_adUnit_gadUnitId;)
 + (NSString * _Nonnull)EVT_CTX_adUnit_gadUnitId SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_CTX_adUnit_appLovinUnitId;)
++ (NSString * _Nonnull)EVT_CTX_adUnit_appLovinUnitId SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_CTX_requestTimestamp;)
 + (NSString * _Nonnull)EVT_CTX_requestTimestamp SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_CTX_configTargeting;)
@@ -2038,6 +2068,14 @@ SWIFT_CLASS("_TtC8Playwire11PWTargeting")
 @interface PWViewAd (SWIFT_EXTENSION(Playwire)) <PMAdViewPresenterViewHolder>
 - (void)willStartPresentingAdWithPresenter:(PMAdViewPresenter * _Nonnull)presenter refresh:(BOOL)refresh;
 - (void)didEndPresentingAdWithPresenter:(PMAdViewPresenter * _Nonnull)presenter willRefresh:(BOOL)willRefresh;
+@end
+
+
+@interface PWViewAd (SWIFT_EXTENSION(Playwire))
+- (void)onAdLoaded;
+- (void)onAdLoadFailed;
+- (void)onAdClicked;
+- (void)onAdImpression;
 @end
 
 
