@@ -23,8 +23,8 @@
       },
       {
         "kind": "Import",
-        "name": "AppLovinAdapter",
-        "printedName": "AppLovinAdapter",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
         "declKind": "Import",
         "moduleName": "Playwire_NonCOPPA"
       },
@@ -815,6 +815,37 @@
       },
       {
         "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "Playwire",
+        "printedName": "Playwire",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
         "name": "PrebidMobile",
         "printedName": "PrebidMobile",
         "declKind": "Import",
@@ -1377,13 +1408,41 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
         "declKind": "Import",
         "moduleName": "Playwire_NonCOPPA",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinAdapter",
+        "printedName": "AppLovinAdapter",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
       },
       {
         "kind": "Import",
@@ -1401,15 +1460,8 @@
       },
       {
         "kind": "Import",
-        "name": "CoreGraphics",
-        "printedName": "CoreGraphics",
-        "declKind": "Import",
-        "moduleName": "Playwire_NonCOPPA"
-      },
-      {
-        "kind": "Import",
-        "name": "GoogleMobileAds",
-        "printedName": "GoogleMobileAds",
+        "name": "PrebidMobileMAXAdapters",
+        "printedName": "PrebidMobileMAXAdapters",
         "declKind": "Import",
         "moduleName": "Playwire_NonCOPPA"
       },
@@ -1796,8 +1848,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
         "declKind": "Import",
         "moduleName": "Playwire_NonCOPPA",
         "declAttributes": [
@@ -1806,15 +1858,22 @@
       },
       {
         "kind": "Import",
-        "name": "Playwire",
-        "printedName": "Playwire",
+        "name": "DTBiOSSDK",
+        "printedName": "DTBiOSSDK",
         "declKind": "Import",
         "moduleName": "Playwire_NonCOPPA"
       },
       {
         "kind": "Import",
-        "name": "DTBiOSSDK",
-        "printedName": "DTBiOSSDK",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "Playwire",
+        "printedName": "Playwire",
         "declKind": "Import",
         "moduleName": "Playwire_NonCOPPA"
       },
@@ -2413,123 +2472,137 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 349,
       "length": 22,
       "value": "\"prebidRequestSuccess\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 430,
       "length": 10,
       "value": "\"response\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 529,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 611,
       "length": 10,
       "value": "\"duration\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 683,
       "length": 19,
       "value": "\"prebidRequestFail\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 755,
       "length": 7,
       "value": "\"error\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 845,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 927,
       "length": 10,
       "value": "\"duration\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "FloatLiteral",
       "offset": 1006,
       "length": 4,
       "value": "30.0"
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 22,
       "value": "\"amazonRequestSuccess\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 423,
       "length": 10,
       "value": "\"response\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 522,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 604,
       "length": 10,
       "value": "\"duration\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 676,
       "length": 19,
       "value": "\"amazonRequestFail\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 748,
       "length": 7,
       "value": "\"error\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 838,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 920,
       "length": 10,
       "value": "\"duration\""
+    },
+    {
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWAdBidder_Amazon.swift",
+      "kind": "StringLiteral",
+      "offset": 629,
+      "length": 20,
+      "value": "\"amazon_ad_response\""
+    },
+    {
+      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWAdBidder_Amazon.swift",
+      "kind": "StringLiteral",
+      "offset": 697,
+      "length": 17,
+      "value": "\"amazon_ad_error\""
     }
   ]
 }
