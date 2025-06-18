@@ -52,8 +52,8 @@ extension Playwire.PWViewAd : PlaywireMobile.PMAdViewPresenterViewHolder {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func didEndPresentingAd(presenter: PlaywireMobile.PMAdViewPresenter, willRefresh: Swift.Bool)
 }
 extension Playwire.PWViewAd : Playwire.PWAdNetworkDelegate {
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdLoaded(_ adContent: Playwire.PWAd)
-  @_Concurrency.MainActor @preconcurrency public func onAdLoadFailed(_ error: Playwire.PWError)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdLoaded()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdLoadFailed()
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdClicked()
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdImpression()
 }
@@ -423,21 +423,13 @@ extension Playwire.PWInterstitial : PlaywireMobile.PMInterstitialAdDelegate {
   @objc public func show()
   @objc deinit
 }
-extension Playwire.PWFullScreenAd : Playwire.PWFullScreenAdNetworkDelegate {
-  @objc dynamic public func onAdLoaded(_ adContent: Playwire.PWAd)
-  public func onAdLoadFailed(_ error: Playwire.PWError)
-  @objc dynamic public func onAdClicked()
-  @objc dynamic public func onAdImpression()
-  @objc dynamic public func onFullScreenAdShowed()
-  public func onFullScreenAdShowFailed(_ error: Playwire.PWError)
-  @objc dynamic public func onFullScreenAdWillDismiss()
-  @objc dynamic public func onFullScreenAdDismissed()
-  @objc dynamic public func onFullScreenAdRewarded(type: Swift.String, amount: Swift.Int)
-}
-public typealias PWAd = Swift.AnyObject
-public struct PWError : Swift.Error {
-  public let message: Swift.String
-  public init(_ message: Swift.String)
+extension Playwire.PWFullScreenAd : GoogleMobileAds.FullScreenContentDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adWillPresentFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adWillDismissFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidDismissFullScreenContent(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func ad(_ ad: any GoogleMobileAds.FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidRecordImpression(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adDidRecordClick(_ ad: any GoogleMobileAds.FullScreenPresentingAd)
 }
 public protocol PWAdNetwork {
   init()
@@ -446,22 +438,12 @@ public protocol PWAdNetwork {
   func initialize(config: Playwire.PWConfig) async -> Swift.Bool
   func createAdView(adUnit: Playwire.PWAdUnit) -> UIKit.UIView?
   func loadAdView(adView: UIKit.UIView)
-  func createFullScreenAd(adUnit: Playwire.PWAdUnit) -> Playwire.PWAd?
-  func loadFullScreenAd(adUnit: Playwire.PWAdUnit, adContent: Playwire.PWAd?, extras: [Swift.AnyHashable : Any])
-  func showFullScreenAd(_ adContent: Playwire.PWAd, from viewController: UIKit.UIViewController)
 }
 public protocol PWAdNetworkDelegate : AnyObject {
-  func onAdLoaded(_ adContent: Playwire.PWAd)
-  func onAdLoadFailed(_ error: Playwire.PWError)
+  func onAdLoaded()
+  func onAdLoadFailed()
   func onAdClicked()
   func onAdImpression()
-}
-public protocol PWFullScreenAdNetworkDelegate : Playwire.PWAdNetworkDelegate {
-  func onFullScreenAdShowed()
-  func onFullScreenAdShowFailed(_ error: Playwire.PWError)
-  func onFullScreenAdWillDismiss()
-  func onFullScreenAdDismissed()
-  func onFullScreenAdRewarded(type: Swift.String, amount: Swift.Int)
 }
 public enum PWAdNetworkType : Swift.String {
   case gam
@@ -487,7 +469,6 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class PWAdBidder : ObjectiveC.NSObject {
-  weak public var adObject: Swift.AnyObject?
   open class func configureNetwork(config: Playwire.PWConfig, serverConfig: Playwire.PWAdServerConfig)
   public var config: Playwire.PWAdBidderConfig!
   public var logContext: [Swift.String : Any]? {
@@ -495,6 +476,7 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
     set
   }
   @objc override required dynamic public init()
+  open func setupAdView(_ adView: UIKit.UIView?) throws
   open func load() async throws
   @objc deinit
 }
@@ -541,8 +523,8 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
   @objc public static let EVT_gamRequestFail_error: Swift.String
   @objc public static let EVT_gamRequestFail_timestamp: Swift.String
   @objc public static let EVT_gamRequestFail_duration: Swift.String
-  @objc public static let EVT_adImpression: Swift.String
-  @objc public static let EVT_adImpression_timestamp: Swift.String
+  @objc public static let EVT_gamImpression: Swift.String
+  @objc public static let EVT_gamImpression_timestamp: Swift.String
   @objc public static let EVT_configMetadata: Swift.String
   @objc public static let EVT_configMetadata_Publisher: Swift.String
   @objc public static let EVT_configMetadata_App: Swift.String
@@ -605,7 +587,6 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
   @objc public static let EVT_adLoadWarning_warning: Swift.String
   @objc public static let EVT_adLoadWarning_warning_notProfitable: Swift.String
   @objc public static let EVT_adLoadWarning_autoReload: Swift.String
-  @objc public static let PWAdNetworkParam_GAMAdRequest: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }

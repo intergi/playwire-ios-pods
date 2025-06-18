@@ -846,6 +846,16 @@
       },
       {
         "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1408,6 +1418,13 @@
       },
       {
         "kind": "Import",
+        "name": "AppLovinAdapter",
+        "printedName": "AppLovinAdapter",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
         "name": "CoreGraphics",
         "printedName": "CoreGraphics",
         "declKind": "Import",
@@ -1608,6 +1625,16 @@
       },
       {
         "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AppTrackingTransparency",
         "printedName": "AppTrackingTransparency",
         "declKind": "Import",
@@ -1641,6 +1668,23 @@
         "kind": "Import",
         "name": "FBAudienceNetwork",
         "printedName": "FBAudienceNetwork",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PrebidMobile",
+        "printedName": "PrebidMobile",
         "declKind": "Import",
         "moduleName": "Playwire_NonCOPPA"
       },
@@ -2337,141 +2381,226 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Prebid",
+        "printedName": "Prebid",
+        "declKind": "Class",
+        "usr": "c:@M@PrebidMobile@objc(cs)Prebid",
+        "mangledName": "$s12PrebidMobile0A0C",
+        "moduleName": "PrebidMobile",
+        "declAttributes": [
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 349,
       "length": 22,
       "value": "\"prebidRequestSuccess\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 430,
       "length": 10,
       "value": "\"response\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 529,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 611,
       "length": 10,
       "value": "\"duration\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 683,
       "length": 19,
       "value": "\"prebidRequestFail\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 755,
       "length": 7,
       "value": "\"error\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 845,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "StringLiteral",
       "offset": 927,
       "length": 10,
       "value": "\"duration\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
       "kind": "FloatLiteral",
       "offset": 1006,
       "length": 4,
       "value": "30.0"
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 22,
       "value": "\"amazonRequestSuccess\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 423,
       "length": 10,
       "value": "\"response\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 522,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 604,
       "length": 10,
       "value": "\"duration\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 676,
       "length": 19,
       "value": "\"amazonRequestFail\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 748,
       "length": 7,
       "value": "\"error\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 838,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
       "offset": 920,
       "length": 10,
       "value": "\"duration\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWAdBidder_Amazon.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWAdBidder_Amazon.swift",
       "kind": "StringLiteral",
-      "offset": 637,
+      "offset": 629,
       "length": 20,
       "value": "\"amazon_ad_response\""
     },
     {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWAdBidder_Amazon.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWAdBidder_Amazon.swift",
       "kind": "StringLiteral",
-      "offset": 705,
+      "offset": 697,
       "length": 17,
       "value": "\"amazon_ad_error\""
     }
