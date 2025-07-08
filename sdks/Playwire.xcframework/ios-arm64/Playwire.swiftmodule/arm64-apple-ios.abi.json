@@ -29414,7 +29414,7 @@
       "kind": "StringLiteral",
       "offset": 323,
       "length": 8,
-      "value": "\"11.4.0\""
+      "value": "\"11.5.0\""
     },
     {
       "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
@@ -30240,14 +30240,14 @@
       "kind": "StringLiteral",
       "offset": 9126,
       "length": 17,
-      "value": "\"PWinitSkipCache\""
+      "value": "\"PWInitSkipCache\""
     },
     {
       "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
       "kind": "StringLiteral",
       "offset": 9187,
       "length": 15,
-      "value": "\"PWinitBackend\""
+      "value": "\"PWInitBackend\""
     },
     {
       "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
@@ -30268,21 +30268,21 @@
       "kind": "StringLiteral",
       "offset": 9385,
       "length": 17,
-      "value": "\"PWinitGitBranch\""
+      "value": "\"PWInitGitBranch\""
     },
     {
       "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
       "kind": "StringLiteral",
       "offset": 9447,
       "length": 16,
-      "value": "\"PWinitGitToken\""
+      "value": "\"PWInitGitToken\""
     },
     {
       "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
       "kind": "StringLiteral",
       "offset": 9515,
       "length": 23,
-      "value": "\"PWinitRampEnvironment\""
+      "value": "\"PWInitRampEnvironment\""
     },
     {
       "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
@@ -30310,7 +30310,7 @@
       "kind": "StringLiteral",
       "offset": 9795,
       "length": 25,
-      "value": "\"PWinitPrebidEnvironment\""
+      "value": "\"PWInitPrebidEnvironment\""
     },
     {
       "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
@@ -30324,7 +30324,7 @@
       "kind": "StringLiteral",
       "offset": 9954,
       "length": 17,
-      "value": "\"PWinitOldFormat\""
+      "value": "\"PWInitOldFormat\""
     },
     {
       "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/PlaywireSDK\/PWConstant.swift",
