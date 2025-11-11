@@ -559,6 +559,188 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire_COPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Playwire",
+        "printedName": "Playwire",
+        "declKind": "Import",
+        "moduleName": "Playwire_COPPA"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Playwire_Unity",
+        "printedName": "Playwire_Unity",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Playwire_COPPA@objc(cs)Playwire_Unity(cm)register",
+            "mangledName": "$s14Playwire_COPPA0A6_UnityC8registeryyFZ",
+            "moduleName": "Playwire_COPPA",
+            "static": true,
+            "objc_name": "register",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Playwire_Unity",
+                "printedName": "Playwire_COPPA.Playwire_Unity",
+                "usr": "c:@M@Playwire_COPPA@objc(cs)Playwire_Unity"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Playwire_COPPA@objc(cs)Playwire_Unity(im)init",
+            "mangledName": "$s14Playwire_COPPA0A6_UnityCACycfc",
+            "moduleName": "Playwire_COPPA",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Playwire_COPPA@objc(cs)Playwire_Unity",
+        "mangledName": "$s14Playwire_COPPA0A6_UnityC",
+        "moduleName": "Playwire_COPPA",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PWAdNetworkRegistrable",
+            "printedName": "PWAdNetworkRegistrable",
+            "usr": "c:@M@Playwire@objc(pl)PWAdNetworkRegistrable",
+            "mangledName": "$s8Playwire22PWAdNetworkRegistrableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire_COPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "Playwire_COPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "Playwire",
+        "printedName": "Playwire",
+        "declKind": "Import",
+        "moduleName": "Playwire_COPPA"
+      },
+      {
+        "kind": "Import",
         "name": "VungleAdsSDK",
         "printedName": "VungleAdsSDK",
         "declKind": "Import",
