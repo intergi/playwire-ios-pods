@@ -74,3 +74,8 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class Playwire_Mintegral : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
+  @objc public class func register()
+  @objc override dynamic public init()
+  @objc deinit
+}

@@ -1,8 +1,8 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Playwire
-import FirebaseAnalytics
-import FirebaseCore
+import AdSupport
+import AppTrackingTransparency
 import Foundation
 import GoogleMobileAds
 import PlaywireMobile
@@ -56,6 +56,16 @@ extension Playwire.PWViewAd : Playwire.PWAdNetworkDelegate {
   @_Concurrency.MainActor @preconcurrency public func onAdLoadFailed(_ error: Playwire.PWError)
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdClicked()
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdImpression()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdPaid(_ revenue: Swift.Double)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdExpanded()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdWillCollapse()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func onAdDidCollapse()
+}
+extension Playwire.PWViewAd : Playwire.PWAdSizeManager {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func getViewController() -> UIKit.UIViewController
+  @_Concurrency.MainActor @preconcurrency public func getOrientation() -> UIKit.UIInterfaceOrientation?
+  @_Concurrency.MainActor @preconcurrency public func getWidth() -> CoreFoundation.CGFloat?
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func resizeAdView(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
 }
 @objc public protocol PWFullScreenAdDelegate {
   @objc func fullScreenAdDidLoad(_ ad: Playwire.PWFullScreenAd)
@@ -178,6 +188,10 @@ extension Playwire.PWViewAd : Playwire.PWAdNetworkDelegate {
   @objc deinit
   required public init(from decoder: any Swift.Decoder) throws
 }
+@objc @_hasMissingDesignatedInitializers public class PWAdUnitBidding : ObjectiveC.NSObject, Swift.Decodable {
+  @objc deinit
+  required public init(from decoder: any Swift.Decoder) throws
+}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PWAdUnit : ObjectiveC.NSObject, Swift.Decodable {
   public enum PWAdBidStrategyType : Swift.String, Swift.Decodable {
     case Priority
@@ -245,6 +259,9 @@ extension Playwire.PWViewAd : Playwire.PWAdNetworkDelegate {
   public var includeNative: Swift.Bool? {
     get
   }
+  @objc public var bidding: Playwire.PWAdUnitBidding? {
+    get
+  }
   @objc public var customTargets: [Swift.String : Swift.String]? {
     get
   }
@@ -259,8 +276,10 @@ extension Playwire.PWViewAd : Playwire.PWAdNetworkDelegate {
     case InMobi
     case IronSource
     case Meta
-    case Vungle
+    case mintegral
     case Pangle
+    case unity
+    case Vungle
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -354,6 +373,7 @@ extension Playwire.PWViewAd : Playwire.PWAdNetworkDelegate {
   @objc override dynamic public init()
   @objc deinit
 }
+public func withTimeout<R>(seconds: Foundation.TimeInterval, operation: @escaping @Sendable () async throws -> R) async throws -> R
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor @preconcurrency public class PWBannerView : Playwire.PWBannerViewBase {
   @_Concurrency.MainActor @preconcurrency public var mode: Playwire.PWAdUnit.PWAdMode? {
     get
@@ -371,6 +391,15 @@ extension Playwire.PWBannerView : GoogleMobileAds.AdManagerBannerAdLoaderDelegat
 }
 extension Playwire.PWBannerView : GoogleMobileAds.NativeAdLoaderDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didReceive nativeAd: GoogleMobileAds.NativeAd)
+}
+extension Playwire.PWBannerViewBase : GoogleMobileAds.BannerViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidReceiveAd(_ bannerView: GoogleMobileAds.BannerView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerView(_ bannerView: GoogleMobileAds.BannerView, didFailToReceiveAdWithError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidRecordImpression(_ bannerView: GoogleMobileAds.BannerView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidRecordClick(_ bannerView: GoogleMobileAds.BannerView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewWillPresentScreen(_ bannerView: GoogleMobileAds.BannerView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewWillDismissScreen(_ bannerView: GoogleMobileAds.BannerView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidDismissScreen(_ bannerView: GoogleMobileAds.BannerView)
 }
 extension Playwire.PWBannerView : GoogleMobileAds.NativeAdDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func nativeAdDidRecordImpression(_ nativeAd: GoogleMobileAds.NativeAd)
@@ -418,23 +447,33 @@ extension Playwire.PWInterstitial : PlaywireMobile.PMInterstitialAdDelegate {
     @objc get
   }
   @objc weak public var delegate: (any Playwire.PWFullScreenAdDelegate)?
+  @objc deinit
   @objc public func load()
   @objc public func load(params: Playwire.PWLoadParams)
   @objc public func show()
-  @objc deinit
 }
 extension Playwire.PWFullScreenAd : Playwire.PWFullScreenAdNetworkDelegate {
   @objc dynamic public func onAdLoaded(_ adContent: Playwire.PWAd)
   public func onAdLoadFailed(_ error: Playwire.PWError)
   @objc dynamic public func onAdClicked()
+  @objc dynamic public func onAdExpanded()
+  @objc dynamic public func onAdWillCollapse()
+  @objc dynamic public func onAdDidCollapse()
   @objc dynamic public func onAdImpression()
+  @objc dynamic public func onAdPaid(_ revenue: Swift.Double)
   @objc dynamic public func onFullScreenAdShowed()
   public func onFullScreenAdShowFailed(_ error: Playwire.PWError)
   @objc dynamic public func onFullScreenAdWillDismiss()
   @objc dynamic public func onFullScreenAdDismissed()
   @objc dynamic public func onFullScreenAdRewarded(type: Swift.String, amount: Swift.Int)
 }
-public typealias PWAd = Swift.AnyObject
+@objc public class PWAd : ObjectiveC.NSObject {
+  final public let adNetworkType: Playwire.PWAdNetworkType
+  final public let adObject: Any
+  final public let revenue: Swift.Double?
+  public init(adNetworkType: Playwire.PWAdNetworkType, adObject: Any, revenue: Swift.Double?)
+  @objc deinit
+}
 public struct PWError : Swift.Error {
   public let message: Swift.String
   public init(_ message: Swift.String)
@@ -442,19 +481,30 @@ public struct PWError : Swift.Error {
 public protocol PWAdNetwork {
   init()
   var type: Playwire.PWAdNetworkType { get }
+  var sizeManager: (any Playwire.PWAdSizeManager)? { get set }
   var delegate: (any Playwire.PWAdNetworkDelegate)? { get set }
   func initialize(config: Playwire.PWConfig) async -> Swift.Bool
   func createAdView(adUnit: Playwire.PWAdUnit) -> UIKit.UIView?
-  func loadAdView(adView: UIKit.UIView)
+  func loadAdView(adView: UIKit.UIView, extras: [Swift.AnyHashable : Any])
   func createFullScreenAd(adUnit: Playwire.PWAdUnit) -> Playwire.PWAd?
   func loadFullScreenAd(adUnit: Playwire.PWAdUnit, adContent: Playwire.PWAd?, extras: [Swift.AnyHashable : Any])
   func showFullScreenAd(_ adContent: Playwire.PWAd, from viewController: UIKit.UIViewController)
+}
+public protocol PWAdSizeManager : AnyObject {
+  func getViewController() -> UIKit.UIViewController
+  func getOrientation() -> UIKit.UIInterfaceOrientation?
+  func getWidth() -> CoreFoundation.CGFloat?
+  func resizeAdView(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
 }
 public protocol PWAdNetworkDelegate : AnyObject {
   func onAdLoaded(_ adContent: Playwire.PWAd)
   func onAdLoadFailed(_ error: Playwire.PWError)
   func onAdClicked()
   func onAdImpression()
+  func onAdPaid(_ revenue: Swift.Double)
+  func onAdExpanded()
+  func onAdWillCollapse()
+  func onAdDidCollapse()
 }
 public protocol PWFullScreenAdNetworkDelegate : Playwire.PWAdNetworkDelegate {
   func onFullScreenAdShowed()
@@ -463,11 +513,15 @@ public protocol PWFullScreenAdNetworkDelegate : Playwire.PWAdNetworkDelegate {
   func onFullScreenAdDismissed()
   func onFullScreenAdRewarded(type: Swift.String, amount: Swift.Int)
 }
-public enum PWAdNetworkType : Swift.String {
+public enum PWAdNetworkType : Swift.String, Swift.CaseIterable {
   case gam
   case appLovin
   public init?(rawValue: Swift.String)
+  public typealias AllCases = [Playwire.PWAdNetworkType]
   public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [Playwire.PWAdNetworkType] {
+    get
+  }
   public var rawValue: Swift.String {
     get
   }
@@ -482,12 +536,10 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
   public var adUnit: Playwire.PWAdUnit
   public var adUnitConfig: Playwire.PWAdUnitConfig
   public var adServerConfig: Playwire.PWAdServerConfig
-  final public let adNetworkType: Playwire.PWAdNetworkType
   public var bid: Playwire.PWAdBid?
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class PWAdBidder : ObjectiveC.NSObject {
-  weak public var adObject: Swift.AnyObject?
   open class func configureNetwork(config: Playwire.PWConfig, serverConfig: Playwire.PWAdServerConfig)
   public var config: Playwire.PWAdBidderConfig!
   public var logContext: [Swift.String : Any]? {
@@ -495,7 +547,12 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
     set
   }
   @objc override required dynamic public init()
+  public func getAdContents() -> [Playwire.PWAd]
+  public func clearAdContents()
   open func load() async throws
+  open var type: Playwire.PWAdServerConfig.PWAdServerType {
+    get
+  }
   @objc deinit
 }
 @objc public protocol PWNativeViewFactory {
@@ -533,14 +590,22 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
   @objc public static let EVT_CTX_loadTargeting: Swift.String
   @objc public static let EVT_CTX_globalTargeting: Swift.String
   @objc public static let EVT_CTX_unitTargeting: Swift.String
-  @objc public static let EVT_gamRequestSuccess: Swift.String
-  @objc public static let EVT_gamRequestSuccess_response: Swift.String
-  @objc public static let EVT_gamRequestSuccess_timestamp: Swift.String
-  @objc public static let EVT_gamRequestSuccess_duration: Swift.String
-  @objc public static let EVT_gamRequestFail: Swift.String
-  @objc public static let EVT_gamRequestFail_error: Swift.String
-  @objc public static let EVT_gamRequestFail_timestamp: Swift.String
-  @objc public static let EVT_gamRequestFail_duration: Swift.String
+  @objc @available(*, deprecated)
+  public static let EVT_gamRequestSuccess: Swift.String
+  @objc @available(*, deprecated)
+  public static let EVT_gamRequestSuccess_response: Swift.String
+  @objc @available(*, deprecated)
+  public static let EVT_gamRequestSuccess_timestamp: Swift.String
+  @objc @available(*, deprecated)
+  public static let EVT_gamRequestSuccess_duration: Swift.String
+  @objc @available(*, deprecated)
+  public static let EVT_gamRequestFail: Swift.String
+  @objc @available(*, deprecated)
+  public static let EVT_gamRequestFail_error: Swift.String
+  @objc @available(*, deprecated)
+  public static let EVT_gamRequestFail_timestamp: Swift.String
+  @objc @available(*, deprecated)
+  public static let EVT_gamRequestFail_duration: Swift.String
   @objc public static let EVT_adImpression: Swift.String
   @objc public static let EVT_adImpression_timestamp: Swift.String
   @objc public static let EVT_configMetadata: Swift.String
@@ -548,16 +613,12 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
   @objc public static let EVT_configMetadata_App: Swift.String
   @objc public static let EVT_configMetadata_Version: Swift.String
   @objc public static let EVT_configMetadata_Backend: Swift.String
-  @objc public static let EVT_configMetadata_SkipCache: Swift.String
   @objc public static let EVT_configMetadata_RampEnvironment: Swift.String
   @objc public static let EVT_configMetadata_Format: Swift.String
   @objc public static let EVT_configMetadata_Format_Platform: Swift.String
   @objc public static let EVT_configMetadata_Format_Ramp: Swift.String
   @objc public static let EVT_configMetadata_GitBranch: Swift.String
   @objc public static let EVT_configMetadata_GitToken: Swift.String
-  @objc public static let EVT_configCacheSuccess: Swift.String
-  @objc public static let EVT_configCacheEmpty: Swift.String
-  @objc public static let EVT_configCacheUpdated: Swift.String
   @objc public static let EVT_configRetry: Swift.String
   @objc public static let EVT_configRetry_Count: Swift.String
   @objc public static let EVT_configRetry_Total: Swift.String
@@ -613,18 +674,6 @@ public typealias PWAdBid = [Swift.AnyHashable : Any]
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @objc deinit
-}
-extension Playwire.PWBannerViewBase : GoogleMobileAds.BannerViewDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidReceiveAd(_ bannerView: GoogleMobileAds.BannerView)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerView(_ bannerView: GoogleMobileAds.BannerView, didFailToReceiveAdWithError error: any Swift.Error)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidRecordImpression(_ bannerView: GoogleMobileAds.BannerView)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidRecordClick(_ bannerView: GoogleMobileAds.BannerView)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewWillPresentScreen(_ bannerView: GoogleMobileAds.BannerView)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewWillDismissScreen(_ bannerView: GoogleMobileAds.BannerView)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func bannerViewDidDismissScreen(_ bannerView: GoogleMobileAds.BannerView)
-}
-extension Playwire.PWBannerViewBase : GoogleMobileAds.AdSizeDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adView(_ bannerView: GoogleMobileAds.BannerView, willChangeAdSizeTo size: GoogleMobileAds.AdSize)
 }
 @usableFromInline
 internal protocol _AnyEncodable {
@@ -770,6 +819,9 @@ extension Foundation.Date {
   public var code: Swift.String {
     get
   }
+  public var bidding: Playwire.PWAdUnitBidding? {
+    get
+  }
   public var appLovinUnitId: Swift.String? {
     get
   }
@@ -905,6 +957,7 @@ extension Foundation.Date {
   @objc public var config: Playwire.PWConfig? {
     get
   }
+  @objc deinit
   @objc public func initialize(publisherId: Swift.String, appId: Swift.String, viewController: UIKit.UIViewController, completionHandler: @escaping () -> Swift.Void)
   @objc public var adUnitsDictionary: [Swift.String : [Swift.String]] {
     @objc get
@@ -913,7 +966,6 @@ extension Foundation.Date {
   public func get(factoryFor serverType: Playwire.PWAdServerConfig.PWAdServerType) -> Playwire.PWAdBidder.Type?
   @objc public func set(type: any Playwire.PWAdMediator.Type, for mediator: Swift.String)
   @objc open func configure(request: GoogleMobileAds.AdManagerRequest)
-  @objc deinit
 }
 extension Playwire.PWAdServerConfig.PWAdServerType : Swift.RawRepresentable {}
 extension Playwire.PWAdUnit.PWAdBidStrategyType : Swift.Equatable {}

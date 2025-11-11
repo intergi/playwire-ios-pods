@@ -309,6 +309,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 
+SWIFT_CLASS("_TtC8Playwire4PWAd")
+@interface PWAd : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC8Playwire10PWAdBidder")
 @interface PWAdBidder : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -368,6 +375,7 @@ SWIFT_CLASS("_TtC8Playwire8PWAdSize")
 
 @class PWAdUnitConfig;
 @class PWBannerRefresh;
+@class PWAdUnitBidding;
 
 SWIFT_CLASS("_TtC8Playwire8PWAdUnit")
 @interface PWAdUnit : NSObject
@@ -395,7 +403,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @property (nonatomic, readonly, copy) NSString * _Nonnull gadUnitId;
 @property (nonatomic, readonly, copy) NSString * _Nullable appLovinUnitId;
 @property (nonatomic, readonly, copy) NSArray<PWAdSize *> * _Nullable gadSizes;
+@property (nonatomic, readonly, strong) PWAdUnitBidding * _Nullable bidding;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nullable customTargets;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC8Playwire15PWAdUnitBidding")
+@interface PWAdUnitBidding : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -492,15 +508,15 @@ SWIFT_CLASS("_TtC8Playwire12PWBannerView")
 @end
 
 @class GADAdLoader;
-
-@interface PWBannerView (SWIFT_EXTENSION(Playwire)) <GADAdLoaderDelegate>
-- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
-@end
-
 @class GADNativeAd;
 
 @interface PWBannerView (SWIFT_EXTENSION(Playwire)) <GADNativeAdLoaderDelegate>
 - (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveNativeAd:(GADNativeAd * _Nonnull)nativeAd;
+@end
+
+
+@interface PWBannerView (SWIFT_EXTENSION(Playwire)) <GADAdLoaderDelegate>
+- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
 @end
 
 @class NSValue;
@@ -531,11 +547,6 @@ SWIFT_CLASS("_TtC8Playwire20PWBannerViewAnchored")
 
 
 @class GADBannerView;
-
-@interface PWBannerViewBase (SWIFT_EXTENSION(Playwire)) <GADAdSizeDelegate>
-- (void)adView:(GADBannerView * _Nonnull)bannerView willChangeAdSizeTo:(GADAdSize)size;
-@end
-
 
 @interface PWBannerViewBase (SWIFT_EXTENSION(Playwire)) <GADBannerViewDelegate>
 - (void)bannerViewDidReceiveAd:(GADBannerView * _Nonnull)bannerView;
@@ -618,21 +629,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)EVT_CTX_globalTargeting SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_CTX_unitTargeting;)
 + (NSString * _Nonnull)EVT_CTX_unitTargeting SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestSuccess;)
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestSuccess SWIFT_DEPRECATED;)
 + (NSString * _Nonnull)EVT_gamRequestSuccess SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestSuccess_response;)
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestSuccess_response SWIFT_DEPRECATED;)
 + (NSString * _Nonnull)EVT_gamRequestSuccess_response SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestSuccess_timestamp;)
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestSuccess_timestamp SWIFT_DEPRECATED;)
 + (NSString * _Nonnull)EVT_gamRequestSuccess_timestamp SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestSuccess_duration;)
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestSuccess_duration SWIFT_DEPRECATED;)
 + (NSString * _Nonnull)EVT_gamRequestSuccess_duration SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestFail;)
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestFail SWIFT_DEPRECATED;)
 + (NSString * _Nonnull)EVT_gamRequestFail SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestFail_error;)
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestFail_error SWIFT_DEPRECATED;)
 + (NSString * _Nonnull)EVT_gamRequestFail_error SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestFail_timestamp;)
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestFail_timestamp SWIFT_DEPRECATED;)
 + (NSString * _Nonnull)EVT_gamRequestFail_timestamp SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestFail_duration;)
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_gamRequestFail_duration SWIFT_DEPRECATED;)
 + (NSString * _Nonnull)EVT_gamRequestFail_duration SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_adImpression;)
 + (NSString * _Nonnull)EVT_adImpression SWIFT_WARN_UNUSED_RESULT;
@@ -648,8 +659,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)EVT_configMetadata_Version SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_configMetadata_Backend;)
 + (NSString * _Nonnull)EVT_configMetadata_Backend SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_configMetadata_SkipCache;)
-+ (NSString * _Nonnull)EVT_configMetadata_SkipCache SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_configMetadata_RampEnvironment;)
 + (NSString * _Nonnull)EVT_configMetadata_RampEnvironment SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_configMetadata_Format;)
@@ -662,12 +671,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)EVT_configMetadata_GitBranch SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_configMetadata_GitToken;)
 + (NSString * _Nonnull)EVT_configMetadata_GitToken SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_configCacheSuccess;)
-+ (NSString * _Nonnull)EVT_configCacheSuccess SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_configCacheEmpty;)
-+ (NSString * _Nonnull)EVT_configCacheEmpty SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_configCacheUpdated;)
-+ (NSString * _Nonnull)EVT_configCacheUpdated SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_configRetry;)
 + (NSString * _Nonnull)EVT_configRetry SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_configRetry_Count;)
@@ -792,16 +795,20 @@ SWIFT_CLASS("_TtC8Playwire8PWConfig")
 
 
 
+
 @interface PWFullScreenAd (SWIFT_EXTENSION(Playwire))
-- (void)onAdLoaded:(id _Nonnull)adContent;
+- (void)onAdLoaded:(PWAd * _Nonnull)adContent;
 - (void)onAdClicked;
+- (void)onAdExpanded;
+- (void)onAdWillCollapse;
+- (void)onAdDidCollapse;
 - (void)onAdImpression;
+- (void)onAdPaid:(double)revenue;
 - (void)onFullScreenAdShowed;
 - (void)onFullScreenAdWillDismiss;
 - (void)onFullScreenAdDismissed;
 - (void)onFullScreenAdRewardedWithType:(NSString * _Nonnull)type amount:(NSInteger)amount;
 @end
-
 
 
 SWIFT_PROTOCOL("_TtP8Playwire22PWFullScreenAdDelegate_")
@@ -1013,9 +1020,19 @@ SWIFT_CLASS("_TtC8Playwire11PWTargeting")
 
 
 @interface PWViewAd (SWIFT_EXTENSION(Playwire))
-- (void)onAdLoaded:(id _Nonnull)adContent;
+- (UIViewController * _Nonnull)getViewController SWIFT_WARN_UNUSED_RESULT;
+- (void)resizeAdViewWithWidth:(CGFloat)width height:(CGFloat)height;
+@end
+
+
+@interface PWViewAd (SWIFT_EXTENSION(Playwire))
+- (void)onAdLoaded:(PWAd * _Nonnull)adContent;
 - (void)onAdClicked;
 - (void)onAdImpression;
+- (void)onAdPaid:(double)revenue;
+- (void)onAdExpanded;
+- (void)onAdWillCollapse;
+- (void)onAdDidCollapse;
 @end
 
 
