@@ -30,6 +30,13 @@
       },
       {
         "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -236,558 +243,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Playwire_NonCOPPA",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PWC_PBD",
-        "printedName": "PWC_PBD",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "EVT_prebidRequestSuccess",
-            "printedName": "EVT_prebidRequestSuccess",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cpy)EVT_prebidRequestSuccess",
-            "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC24EVT_prebidRequestSuccessSSvpZ",
-            "moduleName": "Playwire_NonCOPPA",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cm)EVT_prebidRequestSuccess",
-                "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC24EVT_prebidRequestSuccessSSvgZ",
-                "moduleName": "Playwire_NonCOPPA",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "EVT_prebidRequestSuccess_response",
-            "printedName": "EVT_prebidRequestSuccess_response",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cpy)EVT_prebidRequestSuccess_response",
-            "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC33EVT_prebidRequestSuccess_responseSSvpZ",
-            "moduleName": "Playwire_NonCOPPA",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cm)EVT_prebidRequestSuccess_response",
-                "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC33EVT_prebidRequestSuccess_responseSSvgZ",
-                "moduleName": "Playwire_NonCOPPA",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "EVT_prebidRequestSuccess_timestamp",
-            "printedName": "EVT_prebidRequestSuccess_timestamp",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cpy)EVT_prebidRequestSuccess_timestamp",
-            "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC34EVT_prebidRequestSuccess_timestampSSvpZ",
-            "moduleName": "Playwire_NonCOPPA",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cm)EVT_prebidRequestSuccess_timestamp",
-                "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC34EVT_prebidRequestSuccess_timestampSSvgZ",
-                "moduleName": "Playwire_NonCOPPA",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "EVT_prebidRequestSuccess_duration",
-            "printedName": "EVT_prebidRequestSuccess_duration",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cpy)EVT_prebidRequestSuccess_duration",
-            "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC33EVT_prebidRequestSuccess_durationSSvpZ",
-            "moduleName": "Playwire_NonCOPPA",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cm)EVT_prebidRequestSuccess_duration",
-                "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC33EVT_prebidRequestSuccess_durationSSvgZ",
-                "moduleName": "Playwire_NonCOPPA",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "EVT_prebidRequestFail",
-            "printedName": "EVT_prebidRequestFail",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cpy)EVT_prebidRequestFail",
-            "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC21EVT_prebidRequestFailSSvpZ",
-            "moduleName": "Playwire_NonCOPPA",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cm)EVT_prebidRequestFail",
-                "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC21EVT_prebidRequestFailSSvgZ",
-                "moduleName": "Playwire_NonCOPPA",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "EVT_prebidRequestFail_error",
-            "printedName": "EVT_prebidRequestFail_error",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cpy)EVT_prebidRequestFail_error",
-            "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC27EVT_prebidRequestFail_errorSSvpZ",
-            "moduleName": "Playwire_NonCOPPA",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cm)EVT_prebidRequestFail_error",
-                "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC27EVT_prebidRequestFail_errorSSvgZ",
-                "moduleName": "Playwire_NonCOPPA",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "EVT_prebidRequestFail_timestamp",
-            "printedName": "EVT_prebidRequestFail_timestamp",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cpy)EVT_prebidRequestFail_timestamp",
-            "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC31EVT_prebidRequestFail_timestampSSvpZ",
-            "moduleName": "Playwire_NonCOPPA",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cm)EVT_prebidRequestFail_timestamp",
-                "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC31EVT_prebidRequestFail_timestampSSvgZ",
-                "moduleName": "Playwire_NonCOPPA",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "EVT_prebidRequestFail_duration",
-            "printedName": "EVT_prebidRequestFail_duration",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cpy)EVT_prebidRequestFail_duration",
-            "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC30EVT_prebidRequestFail_durationSSvpZ",
-            "moduleName": "Playwire_NonCOPPA",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(cm)EVT_prebidRequestFail_duration",
-                "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC30EVT_prebidRequestFail_durationSSvgZ",
-                "moduleName": "Playwire_NonCOPPA",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PWC_PBD",
-                "printedName": "Playwire_NonCOPPA.PWC_PBD",
-                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD(im)init",
-            "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDCACycfc",
-            "moduleName": "Playwire_NonCOPPA",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@Playwire_NonCOPPA@objc(cs)PWC_PBD",
-        "mangledName": "$s17Playwire_NonCOPPA7PWC_PBDC",
-        "moduleName": "Playwire_NonCOPPA",
-        "declAttributes": [
-          "AccessControl",
-          "ObjCMembers",
-          "RawDocComment",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "DTBiOSSDK",
         "printedName": "DTBiOSSDK",
         "declKind": "Import",
@@ -802,16 +257,6 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Playwire_NonCOPPA"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Playwire_NonCOPPA",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -1398,27 +843,13 @@
       },
       {
         "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Playwire_NonCOPPA",
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreGraphics",
-        "printedName": "CoreGraphics",
-        "declKind": "Import",
-        "moduleName": "Playwire_NonCOPPA"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Playwire_NonCOPPA"
       },
       {
         "kind": "Import",
@@ -1436,17 +867,161 @@
       },
       {
         "kind": "Import",
-        "name": "PrebidMobile",
-        "printedName": "PrebidMobile",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Playwire",
+        "printedName": "Playwire",
         "declKind": "Import",
         "moduleName": "Playwire_NonCOPPA"
       },
       {
-        "kind": "Import",
-        "name": "PrebidMobileMAXAdapters",
-        "printedName": "PrebidMobileMAXAdapters",
-        "declKind": "Import",
-        "moduleName": "Playwire_NonCOPPA"
+        "kind": "TypeDecl",
+        "name": "Playwire_Vungle",
+        "printedName": "Playwire_Vungle",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Vungle(cm)register",
+            "mangledName": "$s17Playwire_NonCOPPA0A7_VungleC8registeryyFZ",
+            "moduleName": "Playwire_NonCOPPA",
+            "static": true,
+            "objc_name": "register",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Playwire_Vungle",
+                "printedName": "Playwire_NonCOPPA.Playwire_Vungle",
+                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Vungle"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Vungle(im)init",
+            "mangledName": "$s17Playwire_NonCOPPA0A7_VungleCACycfc",
+            "moduleName": "Playwire_NonCOPPA",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Vungle",
+        "mangledName": "$s17Playwire_NonCOPPA0A7_VungleC",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PWAdNetworkRegistrable",
+            "printedName": "PWAdNetworkRegistrable",
+            "usr": "c:@M@Playwire@objc(pl)PWAdNetworkRegistrable",
+            "mangledName": "$s8Playwire22PWAdNetworkRegistrableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1801,6 +1376,188 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Playwire",
+        "printedName": "Playwire",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Playwire_Unity",
+        "printedName": "Playwire_Unity",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Unity(cm)register",
+            "mangledName": "$s17Playwire_NonCOPPA0A6_UnityC8registeryyFZ",
+            "moduleName": "Playwire_NonCOPPA",
+            "static": true,
+            "objc_name": "register",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Playwire_Unity",
+                "printedName": "Playwire_NonCOPPA.Playwire_Unity",
+                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Unity"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Unity(im)init",
+            "mangledName": "$s17Playwire_NonCOPPA0A6_UnityCACycfc",
+            "moduleName": "Playwire_NonCOPPA",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Unity",
+        "mangledName": "$s17Playwire_NonCOPPA0A6_UnityC",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PWAdNetworkRegistrable",
+            "printedName": "PWAdNetworkRegistrable",
+            "usr": "c:@M@Playwire@objc(pl)PWAdNetworkRegistrable",
+            "mangledName": "$s8Playwire22PWAdNetworkRegistrableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "Playwire",
+        "printedName": "Playwire",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
       },
       {
         "kind": "Import",
@@ -2192,6 +1949,54 @@
       },
       {
         "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "Playwire",
+        "printedName": "Playwire",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "Playwire",
+        "printedName": "Playwire",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Playwire",
         "printedName": "Playwire",
         "declKind": "Import",
@@ -2199,8 +2004,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Playwire_Prebid",
-        "printedName": "Playwire_Prebid",
+        "name": "Playwire_InMobi",
+        "printedName": "Playwire_InMobi",
         "children": [
           {
             "kind": "Function",
@@ -2214,8 +2019,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Prebid(cm)register",
-            "mangledName": "$s17Playwire_NonCOPPA0A7_PrebidC8registeryyFZ",
+            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_InMobi(cm)register",
+            "mangledName": "$s17Playwire_NonCOPPA0A7_InMobiC8registeryyFZ",
             "moduleName": "Playwire_NonCOPPA",
             "static": true,
             "objc_name": "register",
@@ -2232,14 +2037,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Playwire_Prebid",
-                "printedName": "Playwire_NonCOPPA.Playwire_Prebid",
-                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Prebid"
+                "name": "Playwire_InMobi",
+                "printedName": "Playwire_NonCOPPA.Playwire_InMobi",
+                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_InMobi"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Prebid(im)init",
-            "mangledName": "$s17Playwire_NonCOPPA0A7_PrebidCACycfc",
+            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_InMobi(im)init",
+            "mangledName": "$s17Playwire_NonCOPPA0A7_InMobiCACycfc",
             "moduleName": "Playwire_NonCOPPA",
             "overriding": true,
             "implicit": true,
@@ -2253,8 +2058,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Prebid",
-        "mangledName": "$s17Playwire_NonCOPPA0A7_PrebidC",
+        "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_InMobi",
+        "mangledName": "$s17Playwire_NonCOPPA0A7_InMobiC",
         "moduleName": "Playwire_NonCOPPA",
         "declAttributes": [
           "AccessControl",
@@ -2361,6 +2166,164 @@
         "printedName": "Playwire",
         "declKind": "Import",
         "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Playwire",
+        "printedName": "Playwire",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Playwire_IronSource",
+        "printedName": "Playwire_IronSource",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_IronSource(cm)register",
+            "mangledName": "$s17Playwire_NonCOPPA0A11_IronSourceC8registeryyFZ",
+            "moduleName": "Playwire_NonCOPPA",
+            "static": true,
+            "objc_name": "register",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Playwire_IronSource",
+                "printedName": "Playwire_NonCOPPA.Playwire_IronSource",
+                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_IronSource"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_IronSource(im)init",
+            "mangledName": "$s17Playwire_NonCOPPA0A11_IronSourceCACycfc",
+            "moduleName": "Playwire_NonCOPPA",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_IronSource",
+        "mangledName": "$s17Playwire_NonCOPPA0A11_IronSourceC",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PWAdNetworkRegistrable",
+            "printedName": "PWAdNetworkRegistrable",
+            "usr": "c:@M@Playwire@objc(pl)PWAdNetworkRegistrable",
+            "mangledName": "$s8Playwire22PWAdNetworkRegistrableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -2519,67 +2482,193 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "ChartboostSDK",
+        "printedName": "ChartboostSDK",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "Playwire",
+        "printedName": "Playwire",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Playwire",
+        "printedName": "Playwire",
+        "declKind": "Import",
+        "moduleName": "Playwire_NonCOPPA"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Playwire_Chartboost",
+        "printedName": "Playwire_Chartboost",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Chartboost(cm)register",
+            "mangledName": "$s17Playwire_NonCOPPA0A11_ChartboostC8registeryyFZ",
+            "moduleName": "Playwire_NonCOPPA",
+            "static": true,
+            "objc_name": "register",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Playwire_Chartboost",
+                "printedName": "Playwire_NonCOPPA.Playwire_Chartboost",
+                "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Chartboost"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Chartboost(im)init",
+            "mangledName": "$s17Playwire_NonCOPPA0A11_ChartboostCACycfc",
+            "moduleName": "Playwire_NonCOPPA",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Playwire_NonCOPPA@objc(cs)Playwire_Chartboost",
+        "mangledName": "$s17Playwire_NonCOPPA0A11_ChartboostC",
+        "moduleName": "Playwire_NonCOPPA",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PWAdNetworkRegistrable",
+            "printedName": "PWAdNetworkRegistrable",
+            "usr": "c:@M@Playwire@objc(pl)PWAdNetworkRegistrable",
+            "mangledName": "$s8Playwire22PWAdNetworkRegistrableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
-    {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 349,
-      "length": 22,
-      "value": "\"prebidRequestSuccess\""
-    },
-    {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 430,
-      "length": 10,
-      "value": "\"response\""
-    },
-    {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 529,
-      "length": 11,
-      "value": "\"timestamp\""
-    },
-    {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 611,
-      "length": 10,
-      "value": "\"duration\""
-    },
-    {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 683,
-      "length": 19,
-      "value": "\"prebidRequestFail\""
-    },
-    {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 755,
-      "length": 7,
-      "value": "\"error\""
-    },
-    {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 845,
-      "length": 11,
-      "value": "\"timestamp\""
-    },
-    {
-      "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Prebid\/PWConstant_Prebid.swift",
-      "kind": "StringLiteral",
-      "offset": 927,
-      "length": 10,
-      "value": "\"duration\""
-    },
     {
       "filePath": "\/Users\/rstaines\/Projects\/playwire-ios-sdk\/Playwire_NonCOPPA\/Amazon\/PWConstant_Amazon.swift",
       "kind": "StringLiteral",
