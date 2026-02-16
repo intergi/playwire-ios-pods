@@ -1,9 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Playwire_NonCOPPA
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Playwire_NonCOPPA
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AppLovinSDK
 import AppTrackingTransparency
-import CoreGraphics
+import ChartboostSDK
 import DTBiOSSDK
 import FBAudienceNetwork
 import Foundation
@@ -13,8 +14,6 @@ import MetaAdapter
 import PAGAdSDK
 import PangleAdapter
 import Playwire
-import PrebidMobile
-import PrebidMobileMAXAdapters
 import Swift
 import UIKit
 import _Concurrency
@@ -22,18 +21,6 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc public class Playwire_Pangle : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
   @objc public class func register()
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class PWC_PBD : ObjectiveC.NSObject {
-  @objc public static let EVT_prebidRequestSuccess: Swift.String
-  @objc public static let EVT_prebidRequestSuccess_response: Swift.String
-  @objc public static let EVT_prebidRequestSuccess_timestamp: Swift.String
-  @objc public static let EVT_prebidRequestSuccess_duration: Swift.String
-  @objc public static let EVT_prebidRequestFail: Swift.String
-  @objc public static let EVT_prebidRequestFail_error: Swift.String
-  @objc public static let EVT_prebidRequestFail_timestamp: Swift.String
-  @objc public static let EVT_prebidRequestFail_duration: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -49,12 +36,22 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class Playwire_Vungle : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
+  @objc public class func register()
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class Playwire_AppLovin : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
   @objc public class func register()
   @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class Playwire_Amazon : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
+  @objc public class func register()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class Playwire_Unity : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
   @objc public class func register()
   @objc override dynamic public init()
   @objc deinit
@@ -69,12 +66,22 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class Playwire_Prebid : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
+@_inheritsConvenienceInitializers @objc public class Playwire_InMobi : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
+  @objc public class func register()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class Playwire_IronSource : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
   @objc public class func register()
   @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class Playwire_Mintegral : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
+  @objc public class func register()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class Playwire_Chartboost : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
   @objc public class func register()
   @objc override dynamic public init()
   @objc deinit
