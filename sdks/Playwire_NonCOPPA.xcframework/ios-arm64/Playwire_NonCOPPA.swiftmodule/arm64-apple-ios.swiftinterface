@@ -56,6 +56,13 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class Playwire_Moloco : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
+  @objc public class func register()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension AppLovinSDK.MAAd : @retroactive Playwire.NativeAdObject {
+}
 @_inheritsConvenienceInitializers @objc public class Playwire_Meta : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
   @objc public class func register()
   @objc override dynamic public init()
@@ -72,11 +79,6 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class Playwire_IronSource : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
-  @objc public class func register()
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class Playwire_Mintegral : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
   @objc public class func register()
   @objc override dynamic public init()
   @objc deinit

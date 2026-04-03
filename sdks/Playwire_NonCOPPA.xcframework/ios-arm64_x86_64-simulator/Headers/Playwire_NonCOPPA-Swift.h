@@ -369,8 +369,8 @@ SWIFT_CLASS("_TtC17Playwire_NonCOPPA13Playwire_Meta")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-SWIFT_CLASS("_TtC17Playwire_NonCOPPA18Playwire_Mintegral")
-@interface Playwire_Mintegral : NSObject <PWAdNetworkRegistrable>
+SWIFT_CLASS("_TtC17Playwire_NonCOPPA15Playwire_Moloco")
+@interface Playwire_Moloco : NSObject <PWAdNetworkRegistrable>
 + (void)register;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -772,8 +772,8 @@ SWIFT_CLASS("_TtC17Playwire_NonCOPPA13Playwire_Meta")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-SWIFT_CLASS("_TtC17Playwire_NonCOPPA18Playwire_Mintegral")
-@interface Playwire_Mintegral : NSObject <PWAdNetworkRegistrable>
+SWIFT_CLASS("_TtC17Playwire_NonCOPPA15Playwire_Moloco")
+@interface Playwire_Moloco : NSObject <PWAdNetworkRegistrable>
 + (void)register;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
