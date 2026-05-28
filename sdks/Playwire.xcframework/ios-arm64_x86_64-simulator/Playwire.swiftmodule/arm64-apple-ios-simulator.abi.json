@@ -34847,1105 +34847,1105 @@
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
       "offset": 242,
-      "length": 16,
-      "value": "\"12.2.0-alpha.1\""
+      "length": 8,
+      "value": "\"12.1.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 296,
+      "offset": 288,
       "length": 9,
       "value": "\"SDKInit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 347,
+      "offset": 339,
       "length": 6,
       "value": "\"info\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 394,
+      "offset": 386,
       "length": 5,
       "value": "\"fix\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 462,
+      "offset": 454,
       "length": 41,
       "value": "\"UIApplication.delegate.window not found\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 573,
+      "offset": 565,
       "length": 135,
       "value": "\"Declare `@property (strong, nonatomic) UIWindow *window;` in Objective-C, or `@objc var window: UIWindow?` in your Swift AppDelegate.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 746,
+      "offset": 738,
       "length": 9,
       "value": "\"gamInit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 799,
+      "offset": 791,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 878,
+      "offset": 870,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 974,
+      "offset": 966,
       "length": 69,
       "value": "\"GADApplicationIdentifier in Info.plist does not match value in RAMP\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1077,
+      "offset": 1069,
       "length": 5,
       "value": "\"ump\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1122,
+      "offset": 1114,
       "length": 8,
       "value": "\"result\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1189,
+      "offset": 1181,
       "length": 13,
       "value": "\"bidderIndex\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1258,
+      "offset": 1250,
       "length": 14,
       "value": "\"bidderAdUnit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1326,
+      "offset": 1318,
       "length": 14,
       "value": "\"biddingStart\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1392,
+      "offset": 1384,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1452,
+      "offset": 1444,
       "length": 12,
       "value": "\"biddingEnd\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1514,
+      "offset": 1506,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1582,
+      "offset": 1574,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1646,
+      "offset": 1638,
       "length": 8,
       "value": "\"adMode\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1710,
+      "offset": 1702,
       "length": 8,
       "value": "\"adName\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1779,
+      "offset": 1771,
       "length": 11,
       "value": "\"adNetwork\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1851,
+      "offset": 1843,
       "length": 11,
       "value": "\"gadUnitId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1928,
+      "offset": 1920,
       "length": 16,
       "value": "\"appLovinUnitId\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2006,
+      "offset": 1998,
       "length": 18,
       "value": "\"requestTimestamp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2082,
+      "offset": 2074,
       "length": 18,
       "value": "\"config targeting\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2168,
+      "offset": 2160,
       "length": 16,
       "value": "\"load targeting\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2254,
+      "offset": 2246,
       "length": 18,
       "value": "\"global targeting\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2340,
+      "offset": 2332,
       "length": 16,
       "value": "\"unit targeting\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2455,
+      "offset": 2447,
       "length": 19,
       "value": "\"gamRequestSuccess\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2560,
+      "offset": 2552,
       "length": 10,
       "value": "\"response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2677,
+      "offset": 2669,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2782,
+      "offset": 2774,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2874,
+      "offset": 2866,
       "length": 16,
       "value": "\"gamRequestFail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2970,
+      "offset": 2962,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3071,
+      "offset": 3063,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3173,
+      "offset": 3165,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3247,
+      "offset": 3239,
       "length": 25,
       "value": "\"adNetworkRequestSuccess\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3337,
+      "offset": 3329,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3420,
+      "offset": 3412,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3491,
+      "offset": 3483,
       "length": 22,
       "value": "\"adNetworkRequestFail\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3571,
+      "offset": 3563,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3650,
+      "offset": 3642,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3730,
+      "offset": 3722,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3791,
+      "offset": 3783,
       "length": 14,
       "value": "\"adImpression\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3857,
+      "offset": 3849,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3921,
+      "offset": 3913,
       "length": 16,
       "value": "\"configMetadata\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3992,
+      "offset": 3984,
       "length": 11,
       "value": "\"publisher\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4051,
+      "offset": 4043,
       "length": 5,
       "value": "\"app\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4108,
+      "offset": 4100,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4169,
+      "offset": 4161,
       "length": 9,
       "value": "\"backend\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4238,
+      "offset": 4230,
       "length": 17,
       "value": "\"rampEnvironment\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4306,
+      "offset": 4298,
       "length": 8,
       "value": "\"format\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4375,
+      "offset": 4367,
       "length": 10,
       "value": "\"Platform\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4441,
+      "offset": 4433,
       "length": 6,
       "value": "\"Ramp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4502,
+      "offset": 4494,
       "length": 11,
       "value": "\"gitBranch\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4566,
+      "offset": 4558,
       "length": 10,
       "value": "\"gitToken\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4618,
+      "offset": 4610,
       "length": 13,
       "value": "\"configRetry\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4678,
+      "offset": 4670,
       "length": 7,
       "value": "\"count\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4732,
+      "offset": 4724,
       "length": 7,
       "value": "\"total\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4785,
+      "offset": 4777,
       "length": 17,
       "value": "\"configHttpError\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4853,
+      "offset": 4845,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4907,
+      "offset": 4899,
       "length": 19,
       "value": "\"configHttpSuccess\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4980,
+      "offset": 4972,
       "length": 8,
       "value": "\"config\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5035,
+      "offset": 5027,
       "length": 19,
       "value": "\"configHttpFailure\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5108,
+      "offset": 5100,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5169,
+      "offset": 5161,
       "length": 7,
       "value": "\"retry\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5226,
+      "offset": 5218,
       "length": 21,
       "value": "\"configParserSuccess\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5294,
+      "offset": 5286,
       "length": 19,
       "value": "\"configParserError\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5366,
+      "offset": 5358,
       "length": 22,
       "value": "\"config file is empty\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5435,
+      "offset": 5427,
       "length": 6,
       "value": "\"text\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5495,
+      "offset": 5487,
       "length": 25,
       "value": "\"configDataLoaderSuccess\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5571,
+      "offset": 5563,
       "length": 23,
       "value": "\"configDataLoaderError\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5636,
+      "offset": 5628,
       "length": 13,
       "value": "\"adInitError\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5696,
+      "offset": 5688,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5780,
+      "offset": 5772,
       "length": 24,
       "value": "\"ad already initialized\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5860,
+      "offset": 5852,
       "length": 27,
       "value": "\"adUnit not contains sizes\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5929,
+      "offset": 5921,
       "length": 13,
       "value": "\"adLoadError\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5989,
+      "offset": 5981,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6069,
+      "offset": 6061,
       "length": 41,
       "value": "\"ad internal representation not prepared\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6167,
+      "offset": 6159,
       "length": 31,
       "value": "\"ad not loaded, can't be shown\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6243,
+      "offset": 6235,
       "length": 16,
       "value": "\"adRefreshError\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6298,
+      "offset": 6290,
       "length": 10,
       "value": "\"adReward\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6351,
+      "offset": 6343,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6402,
+      "offset": 6394,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6454,
+      "offset": 6446,
       "length": 15,
       "value": "\"adLoadWarning\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6520,
+      "offset": 6512,
       "length": 9,
       "value": "\"warning\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6605,
+      "offset": 6597,
       "length": 37,
       "value": "\"ad loaded, but may not earn revenue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6696,
+      "offset": 6688,
       "length": 24,
       "value": "\"autoReloadOnExpiration\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "IntegerLiteral",
-      "offset": 6797,
+      "offset": 6789,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6837,
+      "offset": 6829,
       "length": 20,
       "value": "\"app.intergient.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6899,
+      "offset": 6891,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 6946,
+      "offset": 6938,
       "length": 8,
       "value": "\"config\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7001,
+      "offset": 6993,
       "length": 6,
       "value": "\"json\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "IntegerLiteral",
-      "offset": 7076,
+      "offset": 7068,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7122,
+      "offset": 7114,
       "length": 15,
       "value": "\"PWInitBackend\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7178,
+      "offset": 7170,
       "length": 27,
       "value": "\"raw.githubusercontent.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7246,
+      "offset": 7238,
       "length": 28,
       "value": "\"intergi\/mobile-config-file\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7320,
+      "offset": 7312,
       "length": 17,
       "value": "\"PWInitGitBranch\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7382,
+      "offset": 7374,
       "length": 16,
       "value": "\"PWInitGitToken\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7450,
+      "offset": 7442,
       "length": 23,
       "value": "\"PWInitRampEnvironment\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7519,
+      "offset": 7511,
       "length": 6,
       "value": "\"apps\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7577,
+      "offset": 7569,
       "length": 21,
       "value": "\"config.playwire.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7647,
+      "offset": 7639,
       "length": 25,
       "value": "\"config.stg.playwire.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7733,
+      "offset": 7725,
       "length": 26,
       "value": "\"GADApplicationIdentifier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7806,
+      "offset": 7798,
       "length": 17,
       "value": "\"PWInitOldFormat\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7878,
+      "offset": 7870,
       "length": 8,
       "value": "\"config\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 7933,
+      "offset": 7925,
       "length": 10,
       "value": "\"Playwire\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8011,
+      "offset": 8003,
       "length": 39,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8033,
+      "offset": 8025,
       "length": 1,
       "value": "\".PWAdNetwork_GAM\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8098,
+      "offset": 8090,
       "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8120,
+      "offset": 8112,
       "length": 1,
       "value": "\".PWAdNetwork_AppLovin\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8223,
+      "offset": 8215,
       "length": 39,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8245,
+      "offset": 8237,
       "length": 1,
       "value": "\".Playwire_Amazon\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8321,
+      "offset": 8313,
       "length": 41,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8343,
+      "offset": 8335,
       "length": 1,
       "value": "\".Playwire_AppLovin\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8423,
+      "offset": 8415,
       "length": 43,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8445,
+      "offset": 8437,
       "length": 1,
       "value": "\".Playwire_Chartboost\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8522,
+      "offset": 8514,
       "length": 38,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8544,
+      "offset": 8536,
       "length": 1,
       "value": "\".Playwire_Fyber\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8617,
+      "offset": 8609,
       "length": 39,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8639,
+      "offset": 8631,
       "length": 1,
       "value": "\".Playwire_InMobi\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8717,
+      "offset": 8709,
       "length": 43,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8739,
+      "offset": 8731,
       "length": 1,
       "value": "\".Playwire_IronSource\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8817,
+      "offset": 8809,
       "length": 39,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8839,
+      "offset": 8831,
       "length": 1,
       "value": "\".Playwire_Pangle\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8911,
+      "offset": 8903,
       "length": 37,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 8933,
+      "offset": 8925,
       "length": 1,
       "value": "\".Playwire_Meta\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9004,
+      "offset": 8996,
       "length": 38,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9026,
+      "offset": 9018,
       "length": 1,
       "value": "\".Playwire_Unity\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9099,
+      "offset": 9091,
       "length": 39,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9121,
+      "offset": 9113,
       "length": 1,
       "value": "\".Playwire_Vungle\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9195,
+      "offset": 9187,
       "length": 39,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9217,
+      "offset": 9209,
       "length": 1,
       "value": "\".Playwire_Moloco\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9292,
+      "offset": 9284,
       "length": 10,
       "value": "\"register\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9358,
+      "offset": 9350,
       "length": 14,
       "value": "\"GAMAdRequest\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9418,
+      "offset": 9410,
       "length": 24,
       "value": "\"adNetworksRegistration\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9494,
+      "offset": 9486,
       "length": 8,
       "value": "\"Amazon\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9553,
+      "offset": 9545,
       "length": 7,
       "value": "\"Fyber\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9614,
+      "offset": 9606,
       "length": 10,
       "value": "\"AppLovin\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9680,
+      "offset": 9672,
       "length": 12,
       "value": "\"Chartboost\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9742,
+      "offset": 9734,
       "length": 6,
       "value": "\"Meta\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9804,
+      "offset": 9796,
       "length": 12,
       "value": "\"IronSource\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9868,
+      "offset": 9860,
       "length": 8,
       "value": "\"InMobi\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9928,
+      "offset": 9920,
       "length": 8,
       "value": "\"Vungle\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 9988,
+      "offset": 9980,
       "length": 8,
       "value": "\"Pangle\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 10047,
+      "offset": 10039,
       "length": 7,
       "value": "\"Unity\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 10106,
+      "offset": 10098,
       "length": 8,
       "value": "\"Moloco\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 10155,
+      "offset": 10147,
       "length": 15,
       "value": "\"PWConfig.json\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 10203,
+      "offset": 10195,
       "length": 13,
       "value": "\"app_test_ad\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 10306,
+      "offset": 10298,
       "length": 51,
       "value": "\"https:\/\/cd836371f1d.cdn.intergient.com\/fb87a4ea41\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 10405,
+      "offset": 10397,
       "length": 8,
       "value": "\"Amazon\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 10451,
+      "offset": 10443,
       "length": 5,
       "value": "\"1.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "IntegerLiteral",
-      "offset": 10495,
+      "offset": 10487,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 10535,
+      "offset": 10527,
       "length": 14,
       "value": "\"playwire.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "IntegerLiteral",
-      "offset": 10587,
+      "offset": 10579,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 10685,
+      "offset": 10677,
       "length": 9,
       "value": "\"gamInit\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/PWConstant.swift",
       "kind": "StringLiteral",
-      "offset": 10736,
+      "offset": 10728,
       "length": 13,
       "value": "\"sdk_version\""
     },
