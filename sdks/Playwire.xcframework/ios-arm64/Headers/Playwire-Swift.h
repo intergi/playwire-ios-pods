@@ -693,27 +693,6 @@ typedef SWIFT_ENUM(NSInteger, PWCMPType, open) {
   PWCMPTypeGoogleUmp = 2,
 };
 
-SWIFT_CLASS("_TtC8Playwire7PWC_AMZ")
-@interface PWC_AMZ : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_amazonRequestSuccess;)
-+ (NSString * _Nonnull)EVT_amazonRequestSuccess SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_amazonRequestSuccess_response;)
-+ (NSString * _Nonnull)EVT_amazonRequestSuccess_response SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_amazonRequestSuccess_timestamp;)
-+ (NSString * _Nonnull)EVT_amazonRequestSuccess_timestamp SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_amazonRequestSuccess_duration;)
-+ (NSString * _Nonnull)EVT_amazonRequestSuccess_duration SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_amazonRequestFail;)
-+ (NSString * _Nonnull)EVT_amazonRequestFail SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_amazonRequestFail_error;)
-+ (NSString * _Nonnull)EVT_amazonRequestFail_error SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_amazonRequestFail_timestamp;)
-+ (NSString * _Nonnull)EVT_amazonRequestFail_timestamp SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVT_amazonRequestFail_duration;)
-+ (NSString * _Nonnull)EVT_amazonRequestFail_duration SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class PWOMConfig;
 @class PWSchainConfig;
 SWIFT_CLASS("_TtC8Playwire8PWConfig")
@@ -939,72 +918,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PlaywireSDK 
 - (void)configureWithRequest:(GAMRequest * _Nonnull)request;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC8Playwire15Playwire_Amazon")
-@interface Playwire_Amazon : NSObject <PWAdNetworkRegistrable>
-+ (void)register;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC8Playwire17Playwire_AppLovin")
-@interface Playwire_AppLovin : NSObject <PWAdNetworkRegistrable>
-+ (void)register;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC8Playwire19Playwire_Chartboost")
-@interface Playwire_Chartboost : NSObject <PWAdNetworkRegistrable>
-+ (void)register;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC8Playwire14Playwire_Fyber")
-@interface Playwire_Fyber : NSObject <PWAdNetworkRegistrable>
-+ (void)register;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC8Playwire15Playwire_InMobi")
-@interface Playwire_InMobi : NSObject <PWAdNetworkRegistrable>
-+ (void)register;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC8Playwire19Playwire_IronSource")
-@interface Playwire_IronSource : NSObject <PWAdNetworkRegistrable>
-+ (void)register;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC8Playwire13Playwire_Meta")
-@interface Playwire_Meta : NSObject <PWAdNetworkRegistrable>
-+ (void)register;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC8Playwire15Playwire_Moloco")
-@interface Playwire_Moloco : NSObject <PWAdNetworkRegistrable>
-+ (void)register;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC8Playwire15Playwire_Pangle")
-@interface Playwire_Pangle : NSObject <PWAdNetworkRegistrable>
-+ (void)register;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC8Playwire14Playwire_Unity")
-@interface Playwire_Unity : NSObject <PWAdNetworkRegistrable>
-+ (void)register;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC8Playwire15Playwire_Vungle")
-@interface Playwire_Vungle : NSObject <PWAdNetworkRegistrable>
-+ (void)register;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif

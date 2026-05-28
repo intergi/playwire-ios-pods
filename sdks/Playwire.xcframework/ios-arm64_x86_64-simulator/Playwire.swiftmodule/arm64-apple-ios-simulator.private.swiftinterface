@@ -3,18 +3,9 @@
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Playwire
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AdSupport
-import AppLovinSDK
 import AppTrackingTransparency
-import ChartboostSDK
-import DTBiOSSDK
-import FBAudienceNetwork
 import Foundation
 import GoogleMobileAds
-import IASDKCore
-import MetaAdapter
-import Network
-import PAGAdSDK
-import PangleAdapter
 import PlaywireMobile
 import Swift
 import UIKit
@@ -23,75 +14,6 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_inheritsConvenienceInitializers @objcMembers public class PWC_AMZ : ObjectiveC.NSObject {
-  @objc public static let EVT_amazonRequestSuccess: Swift.String
-  @objc public static let EVT_amazonRequestSuccess_response: Swift.String
-  @objc public static let EVT_amazonRequestSuccess_timestamp: Swift.String
-  @objc public static let EVT_amazonRequestSuccess_duration: Swift.String
-  @objc public static let EVT_amazonRequestFail: Swift.String
-  @objc public static let EVT_amazonRequestFail_error: Swift.String
-  @objc public static let EVT_amazonRequestFail_timestamp: Swift.String
-  @objc public static let EVT_amazonRequestFail_duration: Swift.String
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class Playwire_Amazon : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
-  @objc public class func register()
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension AppLovinSDK.MAAd : Playwire.NativeAdObject {
-}
-@_inheritsConvenienceInitializers @objc public class Playwire_AppLovin : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
-  @objc public class func register()
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class Playwire_Chartboost : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
-  @objc public class func register()
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class Playwire_Fyber : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
-  @objc public class func register()
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class Playwire_InMobi : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
-  @objc public class func register()
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class Playwire_IronSource : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
-  @objc public class func register()
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class Playwire_Meta : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
-  @objc public class func register()
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class Playwire_Pangle : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
-  @objc public class func register()
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class Playwire_Unity : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
-  @objc public class func register()
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class Playwire_Vungle : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
-  @objc public class func register()
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class Playwire_Moloco : ObjectiveC.NSObject, Playwire.PWAdNetworkRegistrable {
-  @objc public class func register()
-  @objc override dynamic public init()
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor @preconcurrency public class PWViewAd : UIKit.UIView {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public var adUnitName: Swift.String? {
@@ -597,9 +519,8 @@ extension Playwire.PWFullScreenAd : Playwire.PWFullScreenAdNetworkDelegate {
   final public let adNetworkType: Playwire.PWAdNetworkType
   final public let adObject: Any
   final public let revenue: Swift.Double?
-  final public let source: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(adNetworkType: Playwire.PWAdNetworkType, adObject: Any, revenue: Swift.Double? = nil, source: Swift.String? = nil)
+  public init(adNetworkType: Playwire.PWAdNetworkType, adObject: Any, revenue: Swift.Double?)
   #endif
   @objc deinit
 }
@@ -625,7 +546,9 @@ public protocol PWAdNetwork {
   #if compiler(>=5.3) && $NonescapableTypes
   func createFullScreenAd(adUnit: Playwire.PWAdUnit) -> Playwire.PWAd?
   #endif
-  func loadFullScreenAd(adUnit: Playwire.PWAdUnit, adContent: Playwire.PWAd, extras: [Swift.AnyHashable : Any])
+  #if compiler(>=5.3) && $NonescapableTypes
+  func loadFullScreenAd(adUnit: Playwire.PWAdUnit, adContent: Playwire.PWAd?, extras: [Swift.AnyHashable : Any])
+  #endif
   func showFullScreenAd(_ adContent: Playwire.PWAd, from viewController: UIKit.UIViewController)
 }
 public protocol PWAdSizeManager : AnyObject {
@@ -900,6 +823,25 @@ public protocol PWNativeViewFactory : AnyObject {
   @objc public static let PWAdNetworkParam_GAMAdRequest: Swift.String
   @objc override dynamic public init()
   @objc deinit
+}
+@usableFromInline
+internal protocol _AnyEncodable {
+  var value: Any { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  init<T>(_ value: T?)
+  #endif
+}
+extension Playwire._AnyEncodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension Playwire._AnyEncodable {
+  public init(nilLiteral _: ())
+  public init(booleanLiteral value: Swift.Bool)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(stringLiteral value: Swift.String)
+  public init(arrayLiteral elements: Any...)
+  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor @preconcurrency public class PWNativeView : Playwire.PWViewAd {
   #if compiler(>=5.3) && $NonescapableTypes
