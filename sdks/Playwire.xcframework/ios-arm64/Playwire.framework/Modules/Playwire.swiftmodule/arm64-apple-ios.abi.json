@@ -17644,7 +17644,7 @@
       "kind": "StringLiteral",
       "offset": 43,
       "length": 16,
-      "value": "\"13.0.0-alpha.0\""
+      "value": "\"13.0.0-alpha.1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/Constants.swift",
@@ -18503,42 +18503,42 @@
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/ads\/PWAdError.swift",
       "kind": "Dictionary",
-      "offset": 1647,
+      "offset": 2203,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/ads\/PWAdError.swift",
       "kind": "StringLiteral",
-      "offset": 1867,
+      "offset": 2423,
       "length": 102,
       "value": "\"PWAdError(name: \"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/ads\/PWAdError.swift",
       "kind": "StringLiteral",
-      "offset": 1893,
+      "offset": 2449,
       "length": 1,
       "value": "\"\", code: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/ads\/PWAdError.swift",
       "kind": "StringLiteral",
-      "offset": 1919,
+      "offset": 2475,
       "length": 1,
       "value": "\", message: \"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/ads\/PWAdError.swift",
       "kind": "StringLiteral",
-      "offset": 1942,
+      "offset": 2498,
       "length": 1,
       "value": "\"\", metadata: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/ads\/PWAdError.swift",
       "kind": "StringLiteral",
-      "offset": 1967,
+      "offset": 2523,
       "length": 1,
       "value": "\")\""
     },
