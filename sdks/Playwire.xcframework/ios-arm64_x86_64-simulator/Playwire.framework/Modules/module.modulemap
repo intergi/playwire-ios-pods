@@ -1,4 +1,11 @@
 framework module Playwire {
+  umbrella header "Playwire-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Playwire.Swift {
   header "Playwire-Swift.h"
   requires objc
 }
