@@ -1043,7 +1043,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PlaywireSDK 
 @property (nonatomic) enum PWCMPType cmp;
 - (void)startWithPublisherId:(NSString * _Nonnull)publisherId appId:(NSString * _Nonnull)appId viewController:(UIViewController * _Nonnull)viewController completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)initializeWithPublisherId:(NSString * _Nonnull)publisherId appId:(NSString * _Nonnull)appId viewController:(UIViewController * _Nonnull)viewController completionHandler:(void (^ _Nonnull)(void))completionHandler SWIFT_DEPRECATED_MSG("This method silently fails on error. Please migrate to 'start' to properly handle SDK initialization failures.");
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull adUnitsDictionary;
 @property (nonatomic) BOOL isMuted;
 - (void)configureWithRequest:(GAMRequest * _Nonnull)request;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

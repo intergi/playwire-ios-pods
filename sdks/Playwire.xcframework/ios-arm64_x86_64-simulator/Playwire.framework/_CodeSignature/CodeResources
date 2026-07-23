@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/Playwire-Swift.h</key>
 		<data>
-		UANKcM/gO9R9+kp5FoocZ6brjPY=
+		fHs4sj969lDL+m3PwS70WmNJzs0=
 		</data>
 		<key>HyBidCustomCTAView.nib</key>
 		<data>
@@ -118,11 +118,11 @@
 		</data>
 		<key>Modules/Playwire.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		yCLjB7gG8nH50jEiFbhGFfeR8FA=
+		ESDxFzkKn8+52V1a8U/z+B2rITs=
 		</data>
 		<key>Modules/Playwire.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		epGL1ZZQ01MKE+gF0vHKWKVHvEc=
+		yHJecPst6cptWhGYXX9RWsZyFfM=
 		</data>
 		<key>Modules/Playwire.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -130,19 +130,19 @@
 		</data>
 		<key>Modules/Playwire.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7Dn7B/9O1CWVbX3zwNyRfkwjStg=
+		yHJecPst6cptWhGYXX9RWsZyFfM=
 		</data>
 		<key>Modules/Playwire.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xtZRgyHfdtYpswCGyaSLc8rdJAo=
+		X9BmOmkCPgx2od/E5/EDLRKPn4E=
 		</data>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		yCLjB7gG8nH50jEiFbhGFfeR8FA=
+		ESDxFzkKn8+52V1a8U/z+B2rITs=
 		</data>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		LOh5KVUOx7goIbKZBRfU7+lAdQk=
+		UCfGM0hmSrmhLhHrXUsZFDhNSXM=
 		</data>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -150,11 +150,11 @@
 		</data>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5yjtx0U1HErSp8GC5bHkf5ZGpF8=
+		UCfGM0hmSrmhLhHrXUsZFDhNSXM=
 		</data>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hmMkyvkhecH5Gz5FLv6Dyq3mWdE=
+		/LrGNg6MuOi1RPEYgGgdkwre/JI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -486,7 +486,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4V4BZOL+eQ4rp+zsnN+ADkwz73mEkxGqa9fJCPuX0Dk=
+			CNWgxfSTIMosEFbGJN7SWlpH1QiP49wiC06OUWfTE6Q=
 			</data>
 		</dict>
 		<key>HyBidCustomCTAView.nib</key>
@@ -612,14 +612,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xpQehfvRRrEKhcTdDOzbbPqFa169syACEfLxK/UC9jI=
+			y6lfsSIZzrpFgL5TTAo6P6IyyqVpDdBmn/s1zt6jlvU=
 			</data>
 		</dict>
 		<key>Modules/Playwire.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BI9bTQfE5EqaoDVnt2rUKgROlmiSFgQqIaDQ5nbM7vY=
+			2qQQig0oJhQFh4C43IqF7cayWKK73us1Kl6UR6eCamQ=
 			</data>
 		</dict>
 		<key>Modules/Playwire.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -633,28 +633,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5eJTw14h3G51+7axxkrDL9itNtQE0SVV27jaYLp2Ip8=
+			2qQQig0oJhQFh4C43IqF7cayWKK73us1Kl6UR6eCamQ=
 			</data>
 		</dict>
 		<key>Modules/Playwire.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SYlP1GLkNrT1CuveB/Z0sGtealQOxATEtdWj5A7aCdU=
+			cCNd/ZtHadom8gyHkWU/IblM7vZ/O+q76chmCfcLoP8=
 			</data>
 		</dict>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xpQehfvRRrEKhcTdDOzbbPqFa169syACEfLxK/UC9jI=
+			y6lfsSIZzrpFgL5TTAo6P6IyyqVpDdBmn/s1zt6jlvU=
 			</data>
 		</dict>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u423rXOdis3Z4Ijqa3/kYB1zJRD/YBANuNhA0zxzG9g=
+			r0pUolCggQbCJsBYBYiov21rNnTfZwehnnJGMal8SVY=
 			</data>
 		</dict>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -668,14 +668,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nWwryVKA0edd8GQMHLwuHUU4x9H9SE+n7jixB7Gn3Xo=
+			r0pUolCggQbCJsBYBYiov21rNnTfZwehnnJGMal8SVY=
 			</data>
 		</dict>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hbyKn69Mslq1//0Rh4H02ekZKiOLBxS8qKIHrGdYgWc=
+			4RX9Pq1cWCiQGldA3vJmDKsHJuAV2qv4dB6j64ht31c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

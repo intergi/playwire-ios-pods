@@ -7,7 +7,6 @@ import AdSupport
 import AppLovinSDK
 import AppTrackingTransparency
 import ChartboostSDK
-import ConfiantSDK
 import CoreGraphics
 import DTBiOSSDK
 import DeveloperToolsSupport
@@ -289,9 +288,6 @@ extension Playwire.PMAd {
 @objc public protocol PMInterstitialAdDelegate : Playwire.PMFullScreenAdDelegate {
 }
 @objc public protocol PMInterstitialAd : Playwire.PMFullScreenAd {
-}
-@_spi(PlaywireDemo) public protocol LogWriter {
-  @_spi(PlaywireDemo) func write(level: Playwire.LogLevel, message: Swift.String)
 }
 @_inheritsConvenienceInitializers @objc public class PWTargeting : ObjectiveC.NSObject {
   @objc public func clear() -> Playwire.PWTargeting
@@ -592,18 +588,12 @@ public struct PWAdRevenue {
   #endif
   @objc @available(*, deprecated, message: "This method silently fails on error. Please migrate to 'start' to properly handle SDK initialization failures.")
   public func initialize(publisherId: Swift.String, appId: Swift.String, viewController: UIKit.UIViewController, completionHandler: @escaping () -> Swift.Void)
-  @objc public var adUnitsDictionary: [Swift.String : [Swift.String]] {
-    @objc get
-  }
   @objc public var isMuted: Swift.Bool {
     @objc get
     @objc set
   }
   @objc open func configure(request: GoogleMobileAds.AdManagerRequest)
   @objc deinit
-}
-extension Playwire.PlaywireSDK {
-  @_spi(PlaywireDemo) public func addLogWriter(writer: any Playwire.LogWriter)
 }
 extension Playwire.PWAdErrorCode : Swift.Equatable {}
 extension Playwire.PWAdErrorCode : Swift.Hashable {}

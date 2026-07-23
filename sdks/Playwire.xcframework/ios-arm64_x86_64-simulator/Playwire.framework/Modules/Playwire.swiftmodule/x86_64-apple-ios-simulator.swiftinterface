@@ -7,7 +7,6 @@ import AdSupport
 import AppLovinSDK
 import AppTrackingTransparency
 import ChartboostSDK
-import ConfiantSDK
 import CoreGraphics
 import DTBiOSSDK
 import DeveloperToolsSupport
@@ -589,9 +588,6 @@ public struct PWAdRevenue {
   #endif
   @objc @available(*, deprecated, message: "This method silently fails on error. Please migrate to 'start' to properly handle SDK initialization failures.")
   public func initialize(publisherId: Swift.String, appId: Swift.String, viewController: UIKit.UIViewController, completionHandler: @escaping () -> Swift.Void)
-  @objc public var adUnitsDictionary: [Swift.String : [Swift.String]] {
-    @objc get
-  }
   @objc public var isMuted: Swift.Bool {
     @objc get
     @objc set
