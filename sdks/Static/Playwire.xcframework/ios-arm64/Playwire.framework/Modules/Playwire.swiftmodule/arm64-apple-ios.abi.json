@@ -18786,7 +18786,7 @@
       "kind": "StringLiteral",
       "offset": 43,
       "length": 16,
-      "value": "\"13.0.0-alpha.8\""
+      "value": "\"13.0.0-alpha.9\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/Constants.swift",
