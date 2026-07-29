@@ -289,6 +289,9 @@ extension Playwire.PMAd {
 }
 @objc public protocol PMInterstitialAd : Playwire.PMFullScreenAd {
 }
+@_spi(PlaywireDemo) public protocol LogWriter {
+  @_spi(PlaywireDemo) func write(level: Playwire.LogLevel, message: Swift.String)
+}
 @_inheritsConvenienceInitializers @objc public class PWTargeting : ObjectiveC.NSObject {
   @objc public func clear() -> Playwire.PWTargeting
   #if compiler(>=5.3) && $NonescapableTypes
@@ -594,6 +597,9 @@ public struct PWAdRevenue {
   }
   @objc open func configure(request: GoogleMobileAds.AdManagerRequest)
   @objc deinit
+}
+extension Playwire.PlaywireSDK {
+  @_spi(PlaywireDemo) public func addLogWriter(writer: any Playwire.LogWriter)
 }
 extension Playwire.PWAdErrorCode : Swift.Equatable {}
 extension Playwire.PWAdErrorCode : Swift.Hashable {}

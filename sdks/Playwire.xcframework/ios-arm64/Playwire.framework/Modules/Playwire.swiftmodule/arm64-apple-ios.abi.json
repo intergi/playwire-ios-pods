@@ -8254,6 +8254,76 @@
         "moduleName": "Playwire"
       },
       {
+        "kind": "TypeDecl",
+        "name": "LogWriter",
+        "printedName": "LogWriter",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "write",
+            "printedName": "write(level:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "Playwire.LogLevel",
+                "usr": "c:@M@Playwire@E@LogLevel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Playwire9LogWriterP5write5level7messageyAA0B5LevelO_SStF",
+            "mangledName": "$s8Playwire9LogWriterP5write5level7messageyAA0B5LevelO_SStF",
+            "moduleName": "Playwire",
+            "genericSig": "<τ_0_0 where τ_0_0 : Playwire.LogWriter>",
+            "sugared_genericSig": "<Self where Self : Playwire.LogWriter>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "PlaywireDemo"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8Playwire9LogWriterP",
+        "mangledName": "$s8Playwire9LogWriterP",
+        "moduleName": "Playwire",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "PlaywireDemo"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -16585,6 +16655,37 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "addLogWriter",
+            "printedName": "addLogWriter(writer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogWriter",
+                "printedName": "any Playwire.LogWriter",
+                "usr": "s:8Playwire9LogWriterP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8Playwire0A3SDKC12addLogWriter6writeryAA0dE0_p_tF",
+            "mangledName": "$s8Playwire0A3SDKC12addLogWriter6writeryAA0dE0_p_tF",
+            "moduleName": "Playwire",
+            "declAttributes": [
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "PlaywireDemo"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -18270,7 +18371,7 @@
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/logger\/LogWriter.swift",
       "kind": "StringLiteral",
-      "offset": 199,
+      "offset": 226,
       "length": 18,
       "value": "\"com.playwire.sdk\""
     },
@@ -18685,7 +18786,7 @@
       "kind": "StringLiteral",
       "offset": 43,
       "length": 16,
-      "value": "\"13.0.0-alpha.7\""
+      "value": "\"13.0.0-alpha.8\""
     },
     {
       "filePath": "\/Users\/runner\/work\/playwire-ios-sdk\/playwire-ios-sdk\/Playwire\/Constants.swift",
