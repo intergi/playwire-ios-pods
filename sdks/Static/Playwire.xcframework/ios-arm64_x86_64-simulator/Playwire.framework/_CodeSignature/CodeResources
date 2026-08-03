@@ -6,7 +6,7 @@
 	<dict>
 		<key>AdsGlobalSDK.bundle/Info.plist</key>
 		<data>
-		//KVjaZuWizklT1jnjJ0aKaflw8=
+		2c+NkAwEbrXfVMFBqsLxnxn89kw=
 		</data>
 		<key>AdsGlobalSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>FBAudienceNetwork.bundle/Info.plist</key>
 		<data>
-		MeVtBX+op/8My2ssQTJWUnJiC/o=
+		qy6dlTCK19H5M0TKUcbXh2OYm7k=
 		</data>
 		<key>FBAudienceNetwork.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Fyber_Marketplace_SDK.bundle/Info.plist</key>
 		<data>
-		VhK9hGqKcogrRifBf721BLRaouU=
+		Xh/sl98CLKkvP2Ibc/lrT74PFAs=
 		</data>
 		<key>Fyber_Marketplace_SDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>GoogleMobileAdsResources.bundle/Info.plist</key>
 		<data>
-		NMxtgqMaj+DKl0MHPQ7czawuU4Y=
+		Ur8/K7ynw5Dq52WvF0Y9aFxfcV4=
 		</data>
 		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>HyBidResources.bundle/Info.plist</key>
 		<data>
-		Ty5nKvH1FFY/s7uPORDw7VowYwk=
+		1Nh1U0zDXB1t2Ej2Dt32dI3IFZU=
 		</data>
 		<key>HyBidResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fWe12FP70AXp/CQYbEFsTmIWm7I=
+		OSC9RDriVsmL9op2k2ppyVcqCaw=
 		</data>
 		<key>IronSourceAdQualityPrivacyInfo.bundle/Info.plist</key>
 		<data>
-		TnDzgZFiC49N6asQGyb9rVZr4SY=
+		qYM6VFBvTLLQHUQcMs2ZFfjSxmY=
 		</data>
 		<key>IronSourceAdQualityPrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>IronSourcePrivacyInfo.bundle/Info.plist</key>
 		<data>
-		o0YRUcCp6Iz+PDcq2i/hfpkUbsU=
+		oB6Kk7KXgs7jOxrojeHljOvyVvo=
 		</data>
 		<key>IronSourcePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Modules/Playwire.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Z5/1UzjtW6AZT3sgW/dF0yq2f40=
+		TzhkY1S0HdzL5PxQco6O1rdNvZY=
 		</data>
 		<key>Modules/Playwire.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -134,11 +134,11 @@
 		</data>
 		<key>Modules/Playwire.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UbS8jHT297wTJSDPL0yAxydXX5k=
+		1RdDopHXuvUpBFFk/GVMQDL4sUU=
 		</data>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Z5/1UzjtW6AZT3sgW/dF0yq2f40=
+		TzhkY1S0HdzL5PxQco6O1rdNvZY=
 		</data>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3QywnuKo7Y53kR2Le3DTx1BPm88=
+		+PUG6smudk5PPIGvyW06zvpCUK0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>MolocoSDK.bundle/Info.plist</key>
 		<data>
-		H8a6RZDZDmb2jNrT1zOhcQqNkbA=
+		H6l+a76h+xsanu9vp4yu31q1wEI=
 		</data>
 		<key>MolocoSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -310,7 +310,7 @@
 		</data>
 		<key>TikTokBusinessSDK.bundle/Info.plist</key>
 		<data>
-		9LcDIiI0bscLShV92kLKoqzpIKc=
+		wqrgaURZf/sRXjPBafd9VQhs66I=
 		</data>
 		<key>TikTokBusinessSDK.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -318,7 +318,7 @@
 		</data>
 		<key>UnityAdsResources.bundle/Info.plist</key>
 		<data>
-		klElEnLZJK19CKKoPkq3LR3oQrw=
+		ecmTsnNgn5hFU7QDs3CK8hytMZw=
 		</data>
 		<key>UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -334,7 +334,7 @@
 		</data>
 		<key>UserMessagingPlatformResources.bundle/Info.plist</key>
 		<data>
-		9uSy9WZUiLs3W0d9zaVT0wRL8Vo=
+		yHnRbAzPhyqAA2llSGgOqNxHP0Y=
 		</data>
 		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -346,7 +346,7 @@
 		</data>
 		<key>VungleAds.bundle/Info.plist</key>
 		<data>
-		Cq9p/jZyHLMjm5OINc0y8PxPOtM=
+		AVzSHaokiMCSLPcnp2y1GukOgbk=
 		</data>
 		<key>VungleAds.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -423,7 +423,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KY8oaMc27mMRwViawCC9YHbhK3SG8KUlKKrNBDo/WC0=
+			NzFe0bqtdRqBdTrsPzxODDlAZBg6aG/IIMVj/kICfMQ=
 			</data>
 		</dict>
 		<key>AdsGlobalSDK.bundle/PrivacyInfo.xcprivacy</key>
@@ -444,7 +444,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qiZ819j2TXX+W/E+P5XkAI1V0GBmuAEV3snJKho26Lw=
+			nUZeUUK2gETqnT77/UHzN1VeIyR/qT2hwqcXkvL8/is=
 			</data>
 		</dict>
 		<key>FBAudienceNetwork.bundle/PrivacyInfo.xcprivacy</key>
@@ -458,7 +458,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KBsxO/hUithcPW/FWr9EXe7zFrLSOogr6+ijrafxnYc=
+			SDVnjblWwKvjN/R1eebRaLQteJh2RLQ+F4wteKXHRGQ=
 			</data>
 		</dict>
 		<key>Fyber_Marketplace_SDK.bundle/PrivacyInfo.xcprivacy</key>
@@ -472,7 +472,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Xp5OP7nltXT+utRAz/ODmiOnn6cYjyD5griGx2nmZk=
+			0lD2JdvRfR6kpJ4SandtGbr+EcMuw8U6GLlHuHUC4Rw=
 			</data>
 		</dict>
 		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
@@ -570,7 +570,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qrh8JT4ETs28az5sJDTlFhhcRyYhjuURbv3BnoH5Xf4=
+			yqIj62PHrwQY3IauUp84Duq1G2irtYUZc/OPvZF/nIs=
 			</data>
 		</dict>
 		<key>HyBidResources.bundle/PrivacyInfo.xcprivacy</key>
@@ -584,7 +584,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9CaE4eJeAvcgpWUYi/9F8QGEr/wK4PBVaslp3Cs17jg=
+			/rE1f2XLkXU34hCnH4F99Sh2/1Eii96YjED4cHhLTDM=
 			</data>
 		</dict>
 		<key>IronSourceAdQualityPrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
@@ -598,7 +598,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7zfQte0TkvO/OexccoihWYutg9QOFfNyC/mcTi3mtFA=
+			CJZFP1pYNG8QG9YfWsSSAcoIpQmD+gsqxBmg2ckBriw=
 			</data>
 		</dict>
 		<key>IronSourcePrivacyInfo.bundle/PrivacyInfo.xcprivacy</key>
@@ -612,7 +612,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DNnCVZ9jggY7VHqH9jYTbDw5qIs2Zch7x7xUo048xVk=
+			GihdX80eh+bu1OQmGQzlrDTmkAgU8tzcxMMu+rmjE4Q=
 			</data>
 		</dict>
 		<key>Modules/Playwire.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -640,14 +640,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+yNhqhoShNpeOfGTtqZybMHxmZr7Vi2i8nU/lJ5EVUI=
+			72CV+3FetF+tYLs0A0vpPTvvGJ5nfsG/VH+BPLzytzg=
 			</data>
 		</dict>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DNnCVZ9jggY7VHqH9jYTbDw5qIs2Zch7x7xUo048xVk=
+			GihdX80eh+bu1OQmGQzlrDTmkAgU8tzcxMMu+rmjE4Q=
 			</data>
 		</dict>
 		<key>Modules/Playwire.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -675,7 +675,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O5rhWTG1zlJzyCAnfdVUKJkqEuioqc9zD34td2jopgY=
+			pG1Vq4KFkqzULOKpChfxluUIIRBf1/ix9WRRgYJlHRs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -689,7 +689,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uQ2L/uvE/ehyv6s4tXle3p0fcvcaqYrtRvIYnEHs29I=
+			lmD0Qd3+eGsruzuMjNN1uLmKipX0qTPRtRXNdVxc0PA=
 			</data>
 		</dict>
 		<key>MolocoSDK.bundle/PrivacyInfo.xcprivacy</key>
@@ -948,7 +948,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TBBNpSSyv7DCuzjw+X5Dx8AO38t3uILO383zsA1dYqY=
+			a3TwR3Zrv4FPqjmm6MlQ4KttmHHfcFDzcsC+jy8zg4c=
 			</data>
 		</dict>
 		<key>TikTokBusinessSDK.bundle/PrivacyInfo.xcprivacy</key>
@@ -962,7 +962,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4FiTsMpxFFV6HMWi0GdR7DsPZbrhoPCZeguodMOPJ7Y=
+			tVjp+BJhVPgTvUmZjFPD0x0OOL0jX+hcqpPduB8D5wc=
 			</data>
 		</dict>
 		<key>UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
@@ -990,7 +990,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MZvd/RE+zS73uSVczv6w6h+Unl4ndWIsXHj0dWf7gVY=
+			I7apeJIJZL/4wrRx+Q6rTGRI0epiR3gIPMaxZC9ONjg=
 			</data>
 		</dict>
 		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
@@ -1011,7 +1011,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QdVpWV6WJm3Fy/uBJJ4MwMPJTNlgdiHpbSi0IFUYnk0=
+			2dS828rrknFJm0p2L0PQS4MuP+UJmM178l8ZcBzXRIw=
 			</data>
 		</dict>
 		<key>VungleAds.bundle/PrivacyInfo.xcprivacy</key>
